@@ -1,3 +1,5 @@
+@import "src/config.scss";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,12 +11,9 @@ h1 h2 h3 p {
 }
 
 body {
-  font-family: 'Righteous', Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  /*background: #f4f4f4;*/
-
 }
 
 .container {
@@ -69,11 +68,6 @@ body {
 .image {
   background-image: url("../../../public/resources/profile_picture.png");
 }
-//
-//svg {
-//  width: 0;
-//  height: 0;
-//}
 
 #infoTitle {
   font-size: 4vh;
@@ -104,36 +98,6 @@ body {
   opacity: 1;
 }
 
-//@media (max-width: 1000px) {
-//  .container {
-//    padding-top: 2vh;
-//    padding-bottom: 5vh;
-//  }
-//
-//  .container .card {
-//    width: 78vw;
-//    height: 59vh;
-//    margin-right: 0;
-//    margin-bottom: 5vh;
-//  }
-//
-//  .container .card .image {
-//    width: 82vw;
-//    height: 62vh;
-//    transform: translate(1vh, 1vh);
-//  }
-//
-//  .container .card:before {
-//    border-width: 1.7vh;
-//  }
-//
-//  .container .card .info {
-//    padding: 5% 3% 3% 3%;
-//    font-size: 2.5vh;
-//  }
-//}
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .container .card {
     width: 30vw;

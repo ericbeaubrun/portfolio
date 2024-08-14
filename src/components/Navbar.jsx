@@ -21,7 +21,7 @@ export const Navbar = () => {
                         </div>
                     </NavLink>
 
-                    <NavLink to="/projets">
+                    <NavLink to="/experiences">
                         <div className="item">
                             <div data-text="Mon parcours détaillé" className="linktext">Experiences</div>
                         </div>

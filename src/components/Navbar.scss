@@ -1,22 +1,17 @@
 @import "src/config.scss";
 
-@import url(https://fonts.googleapis.com/css?family=Righteous);
-@import url(https://fonts.googleapis.com/css?family=Black+Ops+One);
-
-
 .item {
     margin-bottom: 3vh;
 }
 
 .landing {
     background: #34495E;
-    //font-family: 'Righteous',Arial, sans-serif; @TODO
     height: 0;
 }
 
 .nav-9 nav {
     padding-top: 2vh;
-    background: #e6e1d5;
+    background: $BACKGROUND_COLOR_DARKER;
     position: fixed;
     top: 0;
     left: 50%;
@@ -26,7 +21,6 @@
 }
 
 .nav-9 .linktext {
-    //font-size: 2vh;
     font-size: 1rem;
     top: 0;
     text-align: center;
@@ -34,7 +28,6 @@
     z-index: 2;
     color: #323b4c;
     text-decoration: none;
-    //font-family: 'Righteous', Arial, sans-serif; @TODO
     text-transform: uppercase;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
@@ -90,7 +83,6 @@
     z-index: 2;
     color: #1745a3;
     text-decoration: none;
-    //font-family: 'Righteous', Arial, sans-serif; @TODO
     text-transform: uppercase;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
@@ -121,59 +113,52 @@
 }
 
 
-
+//**************************************************************************************************
 // WAVE BACKGROUND
-.wave-background {
-    z-index: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: $BACKGROUND_COLOR_DARK;
-    margin: 0;
-
-    &:before,
-    &:after {
-        content: "";
-        position: fixed;
-        left: 50%;
-
-        //min-width: 170vw;
-        //min-height: 400vh;
-        //min-width: 140vw;
-        //min-height: 300vh;
-        min-width: 165vw;
-        min-height: 325vh;
-
-        //background-color: $BACKGROUND_COLOR_LIGHT;
-        background-color: #e8e3d8;
-        animation-name: rotate;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    }
-
-    &:before {
-        bottom: 90vh;
-        border-radius: 50%;
-        animation-duration: 10s;
-    }
-
-    &:after {
-        bottom: 85vh;
-        opacity: .2;
-        border-radius: 47%;
-        animation-duration: 10s;
-    }
-}
-
-@keyframes rotate {
-    0% {
-        transform: translate(-50%, 0) rotateZ(0deg);
-    }
-    50% {
-        transform: translate(-50%, -2%) rotateZ(180deg);
-    }
-    100% {
-        transform: translate(-50%, 0%) rotateZ(360deg);
-    }
-}
+//.wave-background {
+//    z-index: 0;
+//    display: flex;
+//    justify-content: center;
+//    align-items: center;
+//    flex-direction: column;
+//    background-color: $COLOR;
+//    margin: 0;
+//
+//    &:before,
+//    &:after {
+//        content: "";
+//        position: fixed;
+//        left: 50%;
+//        min-width: 165vw;
+//        min-height: 325vh;
+//        background-color: #e8e3d8;
+//        animation-name: rotate;
+//        animation-iteration-count: infinite;
+//        animation-timing-function: linear;
+//    }
+//
+//    &:before {
+//        bottom: 90vh;
+//        border-radius: 50%;
+//        animation-duration: 10s;
+//    }
+//
+//    &:after {
+//        bottom: 85vh;
+//        opacity: .2;
+//        border-radius: 47%;
+//        animation-duration: 10s;
+//    }
+//}
+//
+//@keyframes rotate {
+//    0% {
+//        transform: translate(-50%, 0) rotateZ(0deg);
+//    }
+//    50% {
+//        transform: translate(-50%, -2%) rotateZ(180deg);
+//    }
+//    100% {
+//        transform: translate(-50%, 0%) rotateZ(360deg);
+//    }
+//}

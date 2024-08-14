@@ -1,23 +1,9 @@
 @import "src/config.scss";
 
-$secondary-color: #e8e6e3;
-$input-bg-color: #e8e6e3;
-$button-text-color: #e8e6e3;
-
-$primary-color: #383735;
-$button-bg-color: #383735;
-$input-border-focus-color: #383735;
-
-$input-border-color: #383735;
-$button-hover-bg-color: darken($primary-color, 10%);
-$font-family: 'Arial', sans-serif;
-
 form {
-  background-color: $secondary-color;
+  background-color: $BACKGROUND_COLOR_COMPONENT;
   padding: 2rem;
-  border-radius: 8px;
-  //box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  font-family: $font-family;
+  border-radius: $BORDER_RADIUS_DEFAULT;
   margin-bottom: 6vh;
 }
 
@@ -25,13 +11,13 @@ label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
-  color: $primary-color;
+  color: $BACKGROUND_COLOR_BLACK;
 }
 
 .contactForm {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-  background-color: #e8e6e3;
+  box-shadow: $BOX_SHADOW;
+  border-radius: $BORDER_RADIUS_DEFAULT;
+  background-color: $BACKGROUND_COLOR_COMPONENT;
 }
 
 input[type="text"],
@@ -40,15 +26,14 @@ textarea {
   width: 100%;
   padding: 0.75rem;
   margin-bottom: 1rem;
-  border: 1px solid $input-border-color;
+  border: 1px solid $BACKGROUND_COLOR_BLACK;
   border-radius: 4px;
-  background-color: $input-bg-color;
-  font-family: $font-family;
+  background-color: $BACKGROUND_COLOR_COMPONENT;
   font-size: 1rem;
   transition: border-color 0.3s ease;
 
   &:focus {
-    border-color: $input-border-focus-color;
+    border-color: $BACKGROUND_COLOR_BLACK;
     outline: none;
   }
 }
@@ -59,19 +44,20 @@ textarea {
 }
 
 button {
-  //width: 100%;
   padding: 0.75rem;
   border: none;
-  border-radius: 4px;
-  background-color: $button-bg-color;
-  color: $button-text-color;
+  border-radius: $BORDER_RADIUS_BUTTON;
+  background-color: $BACKGROUND_COLOR_BLACK;
+  color: $TEXT_COLOR_LIGHT;
+  min-width: 6.5vw;
+
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: $button-hover-bg-color;
+    background-color: darken($BACKGROUND_COLOR_BLACK, 10%);
   }
 
   &:focus {
@@ -79,7 +65,6 @@ button {
   }
 }
 
-// Responsive Design
 @media (max-width: 768px) {
   form {
     padding: 1.5rem;

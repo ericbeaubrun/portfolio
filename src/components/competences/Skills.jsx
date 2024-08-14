@@ -1,4 +1,3 @@
-import React from 'react';
 import './Skills.scss';
 
 export const Skills = ({title, skills}) => {

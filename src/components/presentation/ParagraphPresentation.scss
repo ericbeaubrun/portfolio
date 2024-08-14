@@ -1,7 +1,9 @@
+@import "src/config.scss";
+
 .animated-title {
   .myname-container {
-    background-color: #383735;
-    color: #edece8;
+    background-color: $BACKGROUND_COLOR_BLACK;
+    color: $TEXT_COLOR_LIGHT;
 
     #myname {
       font-size: 1.5rem;
@@ -18,8 +20,8 @@
   .animated-title {
     .myname-container {
 
-      background-color: #383735;
-      color: #edece8;
+      background-color: $BACKGROUND_COLOR_BLACK;
+      color: $TEXT_COLOR_LIGHT;
 
       #myname {
         font-size: 1.5rem;

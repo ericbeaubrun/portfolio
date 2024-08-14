@@ -1,17 +1,20 @@
+@import "src/config.scss";
+
 .buttonWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;  // Espace entre les boutons
+  gap: 20px;
   padding: 20px;
 }
 
 .btn {
+  min-width: 10vw;
   padding: 10px 20px;
   font-size: 1.5rem;
   font-weight: 600;
   border-radius: 20px;
-border: none;
+  border: none;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -26,19 +29,19 @@ border: none;
 }
 
 .btn-dark {
-  background-color: #383735;
-  color: white;
+  background-color: $BACKGROUND_COLOR_BLACK;
+  color: $TEXT_COLOR_LIGHT;
 
   &:hover {
-    background-color: #555;
+    background-color: lighten($BACKGROUND_COLOR_BLACK, 8%);
   }
 }
 
 .btn-light {
-  background-color: white;
-  color: #333;
+  background-color: $TEXT_COLOR_LIGHT;
+  color: $TEXT_COLOR_DARK;
 
   &:hover {
-    background-color: #e0e0e0;
+    background-color: darken($TEXT_COLOR_LIGHT, 4%);
   }
 }
