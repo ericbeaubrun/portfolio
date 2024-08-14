@@ -6,6 +6,7 @@ import {Buttons} from '../presentation/Buttons.jsx';
 
 import Footer from "../Footer.jsx";
 import CenteredImage from "../presentation/CenteredImage.jsx";
+import {motion} from "framer-motion";
 
 
 export const Presentation = () => {
@@ -17,21 +18,20 @@ export const Presentation = () => {
 
     return (
         <>
-            {/*<Titre text="Etudiant en Master développement full stack"/>*/}
             <TitrePresentation/>
-            <ProfilePicture/>
-
-            <ParagraphPresentation text={text_presentation1}/>
-            <ParagraphPresentation text={text_presentation2}/>
-            <ParagraphPresentation text={text_presentation3}/>
-            <ParagraphPresentation text={text_presentation4}/>
-
-            <CenteredImage
-
-                alt="Description of the image"
-            />
-
-            <Buttons/>
+            <motion.div
+                initial={{opacity: 0, y: -20}}
+                animate={{opacity: 1, y: 0}}
+                transition={{duration: 0.5, delay: 0.2}}
+                className="animated-title">
+                <ProfilePicture/>
+                <ParagraphPresentation text={text_presentation1}/>
+                <ParagraphPresentation text={text_presentation2}/>
+                <ParagraphPresentation text={text_presentation3}/>
+                <ParagraphPresentation text={text_presentation4}/>
+                <CenteredImage alt="Description of the image"/>
+                <Buttons/>
+            </motion.div>
 
             <Footer/>
         </>

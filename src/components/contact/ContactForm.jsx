@@ -39,7 +39,7 @@ export const ContactForm = () => {
 
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="name">Nom:</label>
+                    <label htmlFor="name">Nom :</label>
                     <input
                         type="text"
                         id="name"
@@ -50,7 +50,7 @@ export const ContactForm = () => {
                     />
                 </div>
                 <div>
-                    <label htmlFor="email">Email:</label>
+                    <label htmlFor="email">Email :</label>
                     <input
                         type="email"
                         id="email"
@@ -61,7 +61,7 @@ export const ContactForm = () => {
                     />
                 </div>
                 <div>
-                    <label htmlFor="message">Message:</label>
+                    <label htmlFor="message">Message :</label>
                     <textarea
                         id="message"
                         name="message"
@@ -70,7 +70,7 @@ export const ContactForm = () => {
                         required
                     />
                 </div>
-                <button type="submit">Envoyer</button>
+                <button type="submit">&#x27A4;&nbsp;&nbsp;Envoyer&nbsp;</button>
             </form>
         </div>
 

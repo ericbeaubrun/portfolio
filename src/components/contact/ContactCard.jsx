@@ -4,18 +4,18 @@ import mailIcon from '/resources/email.png';
 import phoneIcon from '/resources/telephone.png';
 import linkedinIcon from '/resources/linkedin.png';
 import githubIcon from '/resources/github.png';
-import {ProfilePicture2} from "./ProfilePicture2.jsx";
+import {ContactPicture} from "./ContactPicture.jsx";
 
 export const ContactCard = () => {
     return (
         <div className="contact-card">
             <div>
-                <ProfilePicture2
+                <ContactPicture
 
                     altText="Photo de profil"
                 />
             </div>
-            <h2>Mes coordonées</h2>
+            <h2 id="contact-title">Mes coordonées</h2>
             <ul className="contact-list">
                 <li>
                     <img src={mailIcon} alt="Email" className="icon" />

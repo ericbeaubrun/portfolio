@@ -14,14 +14,15 @@ export const Competences = () => {
         {name: 'Typescript', icon: url + 'ts'},
         {name: 'React', icon: url + 'react'},
         {name: 'Angular', icon: url + 'angular'},
+        {name: 'Vite', icon: url + 'vite'},
     ];
 
     const skills2 = [
         {name: 'Java', icon: url + 'java'},
-        {name: 'py', icon: url + 'python'},
-        {name: 'spring', icon: url + 'spring'},
-        {name: 'php', icon: url + 'php'},
-        {name: 'c', icon: url + 'c'},
+        {name: 'Python', icon: url + 'py'},
+        {name: 'Spring', icon: url + 'spring'},
+        {name: 'PHP', icon: url + 'php'},
+        {name: 'C', icon: url + 'c'},
         {name: 'MySQL', icon: url + 'mysql'},
         {name: 'NodeJS', icon: url + 'nodejs'},
         {name: 'MongoDB', icon: url + 'mongodb'},
@@ -31,7 +32,11 @@ export const Competences = () => {
         {name: 'Notion', icon: url + 'notion'},
         {name: 'Figma', icon: url + 'figma'},
         {name: 'Intellij', icon: url + 'idea'},
+        {name: 'WebStorm', icon: url + 'webstorm'},
         {name: 'Git', icon: url + 'git'},
+        {name: 'Github', icon: url + 'github'},
+        {name: 'Photoshop', icon: url + 'ps'},
+        {name: 'Premiere Pro', icon: url + 'pr'},
 
     ];
 
@@ -43,9 +48,9 @@ export const Competences = () => {
                 transition={{duration: 0.5, delay: 0.2}}
                 className="animated-title">
                 <div className="all-skills-container">
-                    <Skills title={"Front-End"} skills={skills1}/>
                     <Skills title={"Back-End"} skills={skills2}/>
-                    <Skills title={"Other"} skills={skills3}/>
+                    <Skills title={"Front-End"} skills={skills1}/>
+                    <Skills title={"Autres compétences"} skills={skills3}/>
                 </div>
             </motion.div>
 

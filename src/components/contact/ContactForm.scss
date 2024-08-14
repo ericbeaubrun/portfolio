@@ -15,21 +15,20 @@ label {
 }
 
 .contactForm {
+  margin-top: 6.5vh;
   box-shadow: $BOX_SHADOW;
   border-radius: $BORDER_RADIUS_DEFAULT;
   background-color: $BACKGROUND_COLOR_COMPONENT;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
+input[type="text"], input[type="email"], textarea {
+  width: 98%;
   padding: 0.75rem;
   margin-bottom: 1rem;
   border: 1px solid $BACKGROUND_COLOR_BLACK;
-  border-radius: 4px;
+  border-radius: $BORDER_RADIUS_COMPONENT;
   background-color: $BACKGROUND_COLOR_COMPONENT;
-  font-size: 1rem;
+  font-size: $FONT_SIZE_SMALL;
   transition: border-color 0.3s ease;
 
   &:focus {
@@ -40,7 +39,7 @@ textarea {
 
 textarea {
   resize: vertical;
-  min-height: 300px;
+  min-height: 280px;
 }
 
 button {
@@ -50,8 +49,7 @@ button {
   background-color: $BACKGROUND_COLOR_BLACK;
   color: $TEXT_COLOR_LIGHT;
   min-width: 6.5vw;
-
-  font-size: 1rem;
+  font-size: $FONT_SIZE_SMALL;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;

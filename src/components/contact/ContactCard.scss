@@ -1,21 +1,24 @@
 @import "src/config.scss";
 
-$hover-link-color: #6fb3ff;
+$WIDTH : 40vw;
+$MIN_WIDTH : 320px;
 
 .contact-card {
-  background-color: #e8e6e3;
+  background-color: $BACKGROUND_COLOR_COMPONENT;
   border-radius: 8px;
   box-shadow: $BOX_SHADOW;
   padding: 20px;
-  min-width: 320px;
-  width: 40vw;
+  min-width: $MIN_WIDTH;
+  width: $WIDTH;
   margin: 20px auto;
   margin-top: 15vh;
   text-align: left;
 
-  h2 {
+
+  #contact-title {
     margin-bottom: 20px;
-    font-size: 24px;
+    padding-top: 5px;
+    font-size: $FONT_SIZE_LARGE;
     color: $TEXT_COLOR_DARK;
   }
 
@@ -25,7 +28,7 @@ $hover-link-color: #6fb3ff;
 
     li {
       margin-bottom: 15px;
-      font-size: 16px;
+      font-size: $FONT_SIZE_SMALL;
       color: $TEXT_COLOR_DARK;
       display: flex;
       align-items: center;
@@ -42,7 +45,7 @@ $hover-link-color: #6fb3ff;
         transition: color 0.3s;
 
         &:hover {
-          color: $hover-link-color;
+          color: $TEXT_LINK_COLOR_HOVER;
           text-decoration: underline;
         }
       }

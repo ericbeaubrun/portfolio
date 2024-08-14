@@ -1,10 +1,16 @@
 import ProjectCard from "../experiences/ProjectCard.jsx";
+import {motion} from "framer-motion";
+import React from "react";
 
 
 export const Experiences = () => {
     return (
         <>
-            <div>
+            <motion.div
+                initial={{opacity: 0, y: -20}}
+                animate={{opacity: 1, y: 0}}
+                transition={{duration: 0.5, delay: 0.2}}
+                className="animated-title">
                 {/* 1 */}
                 <ProjectCard
                     icon={"./resources/github.png"}
@@ -81,8 +87,7 @@ export const Experiences = () => {
                     roles={['Développement frontend', 'Gestion de base de données']}
                     skills={['React', 'Node.js', 'MongoDB']}
                 />
-
-            </div>
+            </motion.div>
         </>
     );
 };

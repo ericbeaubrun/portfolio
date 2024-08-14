@@ -1,5 +1,7 @@
 @import "src/config.scss";
 
+$MAX_WIDTH: 600px;
+
 .skills-container {
   display: flex;
   flex-direction: column;
@@ -20,7 +22,7 @@
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: 20px;
   width: 93%;
-  max-width: 600px;
+  max-width: $MAX_WIDTH;
 }
 
 .skill-card {

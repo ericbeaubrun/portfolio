@@ -1,5 +1,9 @@
 @import "src/config.scss";
 
+$WIDTH: 100vw;
+$MIN_WIDTH : 320px;
+
 .all-skills-container {
-  width: 100vw;
+  width: $WIDTH;
+  min-width: $MIN_WIDTH;
 }

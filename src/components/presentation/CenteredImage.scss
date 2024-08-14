@@ -7,31 +7,28 @@
   height: auto;
   width: 100%;
   padding: 20px;
-  //box-sizing: border-box;
-  background-color: #ede8df;
 }
 
 .responsiveImage {
   width: 100%;
   height: auto;
-  max-width: 600px;  // Taille maximale en largeur (pour les grands écrans)
-  max-height: 1500px;  // Taille maximale en hauteur (pour les grands écrans)
+  max-width: 600px;
+  max-height: 1500px;
   border-radius: 10px;
   //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-  // Ajustements pour les écrans plus petits
   @media (max-width: 1200px) {
-    max-width: 600px;  // Réduire la largeur pour les écrans de taille moyenne
+    max-width: 600px;
   }
 
   @media (max-width: 768px) {
-    max-width: 100%;  // Prendre toute la largeur disponible pour les petits écrans
-    max-height: 80vh; // Limiter la hauteur pour que l'image reste visible sans trop scroller
+    max-width: 100%;
+    max-height: 80vh;
   }
 
   @media (max-width: 480px) {
-    max-width: 100%;  // Prendre toute la largeur disponible
-    height: auto;  // Ajuster la hauteur automatiquement
-    max-height: 70vh;  // Encore réduire la hauteur pour éviter trop de scrolling sur les petits écrans
+    max-width: 100%;
+    height: auto;
+    max-height: 70vh;
   }
 }

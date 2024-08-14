@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './ProjectCard.scss';
 
-const ProjectCard = ({ icon, title, date, description, longDescription, roles, skills }) => {
+const ProjectCard = ({icon, title, date, description, longDescription, roles, skills}) => {
     const [showDetails, setShowDetails] = useState(false);
 
     const toggleDetails = () => {
@@ -11,7 +11,7 @@ const ProjectCard = ({ icon, title, date, description, longDescription, roles, s
     return (
         <div className="project-card">
             <div className="project-header">
-                <img src={icon} alt={`${title} icon`} className="project-icon" />
+                <img src={icon} alt={`${title} icon`} className="project-icon"/>
                 <div className="project-info">
                     <h2 className="project-title">{title}</h2>
                     <p className="project-date">{date}</p>
