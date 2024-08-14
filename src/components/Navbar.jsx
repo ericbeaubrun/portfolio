@@ -4,38 +4,30 @@ import {NavLink} from "react-router-dom";
 export const Navbar = () => {
     return (
         <>
-            {/*<div className="wave-background"></div>*/}
-
             <section className="landing"></section>
             <a className="anchor" name="nav-9"></a>
 
             <section className="nav-9 navbar">
                 <nav>
-                    <NavLink to="portfolio/">
+                    <NavLink to="/presentation">
                         <div className="item">
                             <div data-text="Profil et objectifs" className="linktext">Présentation</div>
                         </div>
                     </NavLink>
 
-                    <NavLink to="portfolio/competences">
+                    <NavLink to="/competences">
                         <div className="item">
                             <div data-text="Mes points forts" className="linktext">Compétences</div>
                         </div>
                     </NavLink>
 
-                    <NavLink to="portfolio/projets">
+                    <NavLink to="/projets">
                         <div className="item">
                             <div data-text="Mon parcours détaillé" className="linktext">Experiences</div>
                         </div>
                     </NavLink>
 
-                    {/*<NavLink to="/todo">*/}
-                    {/*    <div className="item">*/}
-                    {/*        <div data-text="Découvrir mon histoire" className="linktext">Parcours professionnel</div>*/}
-                    {/*    </div>*/}
-                    {/*</NavLink>*/}
-
-                    <NavLink to="portfolio/contact">
+                    <NavLink to="/contact">
                         <div className="item">
                             <div data-text="me joindre" className="linktext">Contact</div>
                         </div>

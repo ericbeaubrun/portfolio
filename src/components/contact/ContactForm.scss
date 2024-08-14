@@ -1,3 +1,5 @@
+@import "src/config.scss";
+
 $secondary-color: #e8e6e3;
 $input-bg-color: #e8e6e3;
 $button-text-color: #e8e6e3;
@@ -14,7 +16,7 @@ form {
   background-color: $secondary-color;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  //box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-family: $font-family;
   margin-bottom: 6vh;
 }

@@ -1,44 +1,4 @@
-// import {Route, Routes} from "react-router-dom";
-//
-// import "./App.scss";
-// import {Navbar} from "./components/Navbar.jsx";
-// import {Projets, Contact, Presentation, Competences} from "./components/pages";
-//
-// export const App = () => {
-//
-//     return (
-//         <>
-//             <div className="App">
-//
-//                 {/*<motion.div*/}
-//                 {/*    initial={{opacity: 0, y: -20}} // Animation de départ*/}
-//                 {/*    animate={{opacity: 1, y: 0}} // Animation d'arrivée*/}
-//                 {/*    transition={{duration: 0.5, delay: 0.2}} // Durée et délai de l'animation*/}
-//                 {/*    className="animated-title">*/}
-//                 {/*    <div className="wave-background">*/}
-//                 {/*    </div>*/}
-//                 {/*</motion.div>*/}
-//
-//                 <Navbar/>
-//
-//                 <Routes>
-//                     <Route path="portfolio/" element={<Presentation/>}/>
-//                     <Route path="portfolio/competences" element={<Competences/>}/>
-//                     <Route path="portfolio/experiences" element={<Projets/>}/>
-//                     <Route path="portfolio/contact" element={<Contact/>}/>
-//                 </Routes>
-//
-//                 );
-//
-//             </div>
-//         </>
-//     );
-// };
-//
-// export default App;
-
-
-import {Route, Routes, HashRouter} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import "./App.scss";
 import {Navbar} from "./components/Navbar.jsx";
 import {Projets, Contact, Presentation, Competences} from "./components/pages";
@@ -49,6 +9,7 @@ export const App = () => {
             <Navbar/>
             <Routes>
                 <Route path="/" element={<Presentation/>}/>
+                <Route path="/presentation" element={<Presentation/>}/>
                 <Route path="/competences" element={<Competences/>}/>
                 <Route path="/experiences" element={<Projets/>}/>
                 <Route path="/contact" element={<Contact/>}/>
