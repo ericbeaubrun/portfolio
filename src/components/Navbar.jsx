@@ -1,6 +1,5 @@
 import './Navbar.scss';
 import {NavLink} from "react-router-dom";
-import {motion} from "framer-motion";
 
 export const Navbar = () => {
     return (

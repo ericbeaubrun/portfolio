@@ -6,7 +6,7 @@ export const Buttons = () => {
     };
 
     const handleCvButton = () => {
-        window.location.href = "/resources/cv_eric_adelaide_beaubrun.pdf";
+        window.location.href = " /portfolio/resources/cv_eric_adelaide_beaubrun.pdf";
     };
 
     return (
