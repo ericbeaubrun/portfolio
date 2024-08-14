@@ -3,6 +3,15 @@ import {motion} from "framer-motion";
 import Footer from "../Footer.jsx";
 import {AnimatedTitle} from "../AnimatedTitle.jsx";
 
+import idiaTechIcon from '/resources/idia-tech.png';
+import aerienIcon from '/resources/aerien.png';
+import applicationPedagogiqueIcon from '/resources/application_pedagogique.png';
+import presencesIcon from '/resources/presences.png';
+import libraryIcon from '/resources/librairie.png';
+import conqueteIcon from '/resources/conquete.png';
+import documentIcon from '/resources/document.png';
+
+
 // const title = [
 //     {
 //         type: "heading1",
@@ -23,7 +32,7 @@ export const Experiences = () => {
                 className="animated-title">
 
                 <ProjectCard
-                    icon={"./resources/idia-tech.png"}
+                    icon={idiaTechIcon}
                     title="Stage en Développement Java et Web-Mining"
                     date="Janvier 2024"
                     description="Brève description du projet."
@@ -44,7 +53,7 @@ export const Experiences = () => {
                 />
 
                 <ProjectCard
-                    icon={"./resources/aerien.png"}
+                    icon={aerienIcon}
                     title="Simulateur de Trafic Aérien"
                     date="Janvier 2024"
                     description="Développement d'un simulateur de trafic aérien en Java, incluant une interface graphique
@@ -64,7 +73,7 @@ trajectoire, l’évitement des collisions et la concurrence en multithreading.
                 />
 
                 <ProjectCard
-                    icon={"./resources/application_pedagogique.png"}
+                    icon={applicationPedagogiqueIcon}
                     title="Application Pédagogique pour les Étudiants"
                     date="Octobre 2023"
                     description="Développement d'une application interactive en Python pour enseigner la programmation
@@ -86,7 +95,7 @@ réel, et le stockage des statistiques des étudiants au format JSON.
                 />
 
                 <ProjectCard
-                    icon={"./resources/presences.png"}
+                    icon={presencesIcon}
                     title="Système de Gestion de Présences des Étudiants"
                     date="Septembre 2023"
                     description="Création d'un système en Java et Python pour le suivi des présences des étudiants via des
@@ -108,7 +117,7 @@ PostgreSQL, et une interface de communication réseau (TCP/IP)."
                 />
 
                 <ProjectCard
-                    icon={"./resources/librairie.png"}
+                    icon={libraryIcon}
                     title="Librairie en Ligne"
                     date="Mars 2022"
                     description="Brève description du projet."
@@ -124,7 +133,7 @@ PostgreSQL, et une interface de communication réseau (TCP/IP)."
                 />
 
                 <ProjectCard
-                    icon={"./resources/conquete.png"}
+                    icon={conqueteIcon}
                     title="Jeu de Plateau Stratégique Multijoueur"
                     date="Janvier 2022"
                     description="Création d'un jeu de plateau stratégique en Java, intégrant une IA pour des parties
@@ -142,9 +151,8 @@ des parties. Traitements XML et tests unitaires réalisés avec JUnit."
                         'Conception UI/UX'
                     ]}
                 />
-
                 <ProjectCard
-                    icon={"./resources/document.png"}
+                    icon={documentIcon}
                     title="Logiciel de Gestion de Documents"
                     date="Octobre 2021"
                     description="Brève description du projet."

@@ -1,4 +1,3 @@
-import React from 'react';
 import './ContactCard.scss';
 import mailIcon from '/resources/email.png';
 import phoneIcon from '/resources/telephone.png';
