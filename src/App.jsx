@@ -1,4 +1,6 @@
 import {Route, Routes} from "react-router-dom";
+// import {HashRouter as Router, Route, Switch} from 'react-router-dom';
+
 import "./App.scss";
 import {Navbar} from "./components/Navbar.jsx";
 import {Projets, Contact, Presentation, Competences} from "./components/pages";
@@ -8,7 +10,7 @@ export const App = () => {
     return (
         <>
             <div className="App">
-                
+
                 {/*<motion.div*/}
                 {/*    initial={{opacity: 0, y: -20}} // Animation de départ*/}
                 {/*    animate={{opacity: 1, y: 0}} // Animation d'arrivée*/}
