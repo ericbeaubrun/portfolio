@@ -12,19 +12,19 @@ export const Navbar = () => {
 
             <section className="nav-9 navbar">
                 <nav>
-                    <NavLink to="/">
+                    <NavLink to="portfolio/">
                         <div className="item">
                             <div data-text="Profil et objectifs" className="linktext">Présentation</div>
                         </div>
                     </NavLink>
 
-                    <NavLink to="/competences">
+                    <NavLink to="portfolio/competences">
                         <div className="item">
                             <div data-text="Mes points forts" className="linktext">Compétences</div>
                         </div>
                     </NavLink>
 
-                    <NavLink to="/projets">
+                    <NavLink to="portfolio/projets">
                         <div className="item">
                             <div data-text="Mon parcours détaillé" className="linktext">Experiences</div>
                         </div>
@@ -36,7 +36,7 @@ export const Navbar = () => {
                     {/*    </div>*/}
                     {/*</NavLink>*/}
 
-                    <NavLink to="/contact">
+                    <NavLink to="portfolio/contact">
                         <div className="item">
                             <div data-text="me joindre" className="linktext">Contact</div>
                         </div>

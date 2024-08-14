@@ -51,7 +51,6 @@ import {Route, Routes} from "react-router-dom";
 import "./App.scss";
 import {Navbar} from "./components/Navbar.jsx";
 import {Projets, Contact, Presentation, Competences} from "./components/pages";
-import {motion} from "framer-motion";
 
 export const App = () => {
 
