@@ -71,10 +71,10 @@ export const App = () => {
                 <Navbar/>
 
                 <Routes>
-                    <Route path="/" element={<Presentation/>}/>
-                    <Route path="/competences" element={<Competences/>}/>
-                    <Route path="/experiences" element={<Projets/>}/>
-                    <Route path="/contact" element={<Contact/>}/>
+                    <Route path="portfolio/" element={<Presentation/>}/>
+                    <Route path="portfolio/competences" element={<Competences/>}/>
+                    <Route path="portfolio/experiences" element={<Projets/>}/>
+                    <Route path="portfolio/contact" element={<Contact/>}/>
                 </Routes>
             </div>
         </>
