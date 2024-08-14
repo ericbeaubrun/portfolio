@@ -23,6 +23,27 @@ export const Experiences = () => {
                 className="animated-title">
 
                 <ProjectCard
+                    icon={"./resources/idia-tech.png"}
+                    title="Stage en Développement Java et Web-Mining"
+                    date="Janvier 2024"
+                    description="Brève description du projet."
+                    longDescription="Longue description du projet, expliquant les détails, les challenges, et les solutions."
+                    roles={[
+                        '???',
+                        '???'
+                    ]}
+                    skills={[
+                        'Java',
+                        'Javascript',
+                        'Python',
+                        'PHP',
+                        'API',
+                        'SQL',
+                        'Prestashop'
+                    ]}
+                />
+
+                <ProjectCard
                     icon={"./resources/aerien.png"}
                     title="Simulateur de Trafic Aérien"
                     date="Janvier 2024"
@@ -31,8 +52,15 @@ paramétrable en temps réel et utilisant des concepts avancés comme le calcul 
 trajectoire, l’évitement des collisions et la concurrence en multithreading.
 "
                     longDescription="Longue description du projet, expliquant les détails, les challenges, et les solutions."
-                    roles={['Développement frontend', 'Gestion de base de données']}
-                    skills={['React', 'Node.js', 'MongoDB']}
+                    roles={[
+                        '???',
+                        '???'
+                    ]}
+                    skills={[
+                        'Java',
+                        'Conception UI/UX',
+                        'Multithreading'
+                    ]}
                 />
 
                 <ProjectCard
@@ -44,8 +72,17 @@ aux étudiants. L'application inclut un éditeur de code, la génération de fee
 réel, et le stockage des statistiques des étudiants au format JSON.
 "
                     longDescription="Longue description du projet, expliquant les détails, les challenges, et les solutions."
-                    roles={['Développement frontend', 'Gestion de base de données']}
-                    skills={['React', 'Node.js', 'MongoDB']}
+                    roles={[
+                        '???',
+                        '???'
+                    ]}
+                    skills={[
+                        'Python',
+                        'PyQT',
+                        'CSS',
+                        'JSON',
+                        'Conception UI/UX'
+                    ]}
                 />
 
                 <ProjectCard
@@ -56,8 +93,34 @@ réel, et le stockage des statistiques des étudiants au format JSON.
 cartes NFC. Le projet inclut la mise en place d'un serveur Java, une base de données
 PostgreSQL, et une interface de communication réseau (TCP/IP)."
                     longDescription="Longue description du projet, expliquant les détails, les challenges, et les solutions."
-                    roles={['Développement frontend', 'Gestion de base de données']}
-                    skills={['React', 'Node.js', 'MongoDB']}
+                    roles={[
+                        '???',
+                        '???'
+                    ]}
+                    skills={[
+                        'Java',
+                        'Python',
+                        'TCP/IP',
+                        'Cybersécurité',
+                        'PostgreSQL',
+                        'SQL'
+                    ]}
+                />
+
+                <ProjectCard
+                    icon={"./resources/librairie.png"}
+                    title="Librairie en Ligne"
+                    date="Mars 2022"
+                    description="Brève description du projet."
+                    longDescription="Longue description du projet, expliquant les détails, les challenges, et les solutions."
+                    roles={[
+                        'Programmation du Back-End du site',
+                        'API'
+                    ]}
+                    skills={[
+                        'PHP',
+                        'API'
+                    ]}
                 />
 
                 <ProjectCard
@@ -68,40 +131,40 @@ PostgreSQL, et une interface de communication réseau (TCP/IP)."
 multijoueur locales, la gestion des sauvegardes et la génération de graphiques statistiques
 des parties. Traitements XML et tests unitaires réalisés avec JUnit."
                     longDescription="Longue description du projet, expliquant les détails, les challenges, et les solutions."
-                    roles={['Développement frontend', 'Gestion de base de données']}
-                    skills={['React', 'Node.js', 'MongoDB']}
-                />
-
-                <ProjectCard
-                    icon={"./resources/librairie.png"}
-                    title="Librairie en Ligne"
-                    date="Janvier 2024"
-                    description="Brève description du projet."
-                    longDescription="Longue description du projet, expliquant les détails, les challenges, et les solutions."
-                    roles={['Développement frontend', 'Gestion de base de données']}
-                    skills={['React', 'Node.js', 'MongoDB']}
+                    roles={[
+                        '???',
+                        '???'
+                    ]}
+                    skills={[
+                        'Java',
+                        'Intelligence Artificielle',
+                        'JUnit',
+                        'Conception UI/UX'
+                    ]}
                 />
 
                 <ProjectCard
                     icon={"./resources/document.png"}
                     title="Logiciel de Gestion de Documents"
-                    date="Janvier 2024"
+                    date="Octobre 2021"
                     description="Brève description du projet."
                     longDescription="Longue description du projet, expliquant les détails, les challenges, et les solutions."
-                    roles={['Développement frontend', 'Gestion de base de données']}
-                    skills={['React', 'Node.js', 'MongoDB']}
+                    roles={[
+                        '???',
+                        '???'
+                    ]}
+                    skills={[
+                        'Python',
+                        'PyQT',
+                        'CSS',
+                        'JSON',
+                        'Conception UI/UX'
+                    ]}
                 />
 
-                <ProjectCard
-                    icon={"./resources/idia-tech.png"}
-                    title="Stage en Développement Java et Web-Mining"
-                    date="Janvier 2024"
-                    description="Brève description du projet."
-                    longDescription="Longue description du projet, expliquant les détails, les challenges, et les solutions."
-                    roles={['Développement frontend', 'Gestion de base de données']}
-                    skills={['React', 'Node.js', 'MongoDB']}
-                />
+
             </motion.div>
+
             <Footer/>
         </>
     );
