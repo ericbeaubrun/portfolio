@@ -1,0 +1,17 @@
+@import "src/config.scss";
+
+body {
+  overflow-y: visible;
+  overflow-x: hidden;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align:  center;
+  background-color: $BACKGROUND_COLOR_DARK;
+  margin: 0;
+}
+
+

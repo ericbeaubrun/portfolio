@@ -1,35 +1,84 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import {Route, Routes} from "react-router-dom";
+// import "./App.scss";
+// import {Navbar} from "./components/Navbar.jsx";
+// import {Projets, Contact, Presentation, Competences} from "./components/pages";
+// import {useEffect, useState} from "react";
+// import LoadingCircle from "./components/LoadingCircle.jsx";
+//
+// const App = () => {
+//     const [loading, setLoading] = useState(true);
+//
+//     useEffect(() => {
+//         // Simulate loading delay
+//         const timeout = setTimeout(() => {
+//             setLoading(false);
+//         }, 1000);
+//
+//         return () => clearTimeout(timeout);
+//     }, []);
+//
+//     return (
+//         <>
+//             {
+//                 loading ?
+//                     (
+//                         <div className="app">
+//                             <LoadingCircle/>
+//                         </div>
+//                     ) : (
+//                         <div className="App">
+//                             <div className="wave-background">
+//                             </div>
+//                                 <Navbar/>
+//
+//                                 <Routes>
+//                                     <Route path="/home" element={<Presentation/>}/>
+//                                     <Route path="/about" element={<Projets/>}/>
+//                                     <Route path="/services" element={<Competences/>}/>
+//                                     <Route path="/contact" element={<Contact/>}/>
+//                                 </Routes>
+//
+//
+//                         </div>
+//                     )
+//             }
+//         </>
+//     );
+// };
+//
+// export default App;
+import {Route, Routes} from "react-router-dom";
+import "./App.scss";
+import {Navbar} from "./components/Navbar.jsx";
+import {Projets, Contact, Presentation, Competences} from "./components/pages";
+import {motion} from "framer-motion";
 
-function App() {
-  const [count, setCount] = useState(0)
+export const App = () => {
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>TEST TEST TEST</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    return (
+        <>
+            <div className="App">
+                
+                {/*<motion.div*/}
+                {/*    initial={{opacity: 0, y: -20}} // Animation de départ*/}
+                {/*    animate={{opacity: 1, y: 0}} // Animation d'arrivée*/}
+                {/*    transition={{duration: 0.5, delay: 0.2}} // Durée et délai de l'animation*/}
+                {/*    className="animated-title">*/}
+                {/*    <div className="wave-background">*/}
+                {/*    </div>*/}
+                {/*</motion.div>*/}
 
-export default App
+                <Navbar/>
+
+                <Routes>
+                    <Route path="/" element={<Presentation/>}/>
+                    <Route path="/competences" element={<Competences/>}/>
+                    <Route path="/experiences" element={<Projets/>}/>
+                    <Route path="/contact" element={<Contact/>}/>
+                </Routes>
+            </div>
+        </>
+    );
+};
+
+export default App;
