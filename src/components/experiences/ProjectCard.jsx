@@ -18,23 +18,37 @@ const ProjectCard = ({icon, title, date, description, longDescription, roles, sk
                     <p className="project-description">{description}</p>
                 </div>
             </div>
-            <button className="toggle-details-button" onClick={toggleDetails}>
-                {showDetails ? 'Voir moins' : 'Voir plus'}
-            </button>
+            {/*<button className="toggle-details-button" onClick={toggleDetails}>*/}
+            {/*    {showDetails ? '&#x25BC; Voir moins' : '&#9660; Voir plus'}*/}
+            {/*</button>*/}
+
+            {
+                showDetails ?
+                    <button className="toggle-details-button" onClick={toggleDetails}>&#x25BC; Voir plus</button>
+                    : <button className="toggle-details-button" onClick={toggleDetails}>&#x2BC8; Voir moins</button>
+            }
+
+
             {showDetails && (
                 <div className="project-details">
                     <p className="long-description">{longDescription}</p>
+
                     <h3>Rôle et Responsabilités :</h3>
                     <ul className="roles-list">
-                        {roles.map((role, index) => (
-                            <li key={index}>{role}</li>
-                        ))}
+                        {
+                            roles.map((role, index) => (
+                                <li key={index}>{role}</li>
+                            ))
+                        }
                     </ul>
+
                     <h3>Compétences :</h3>
                     <ul className="skills-list">
-                        {skills.map((skill, index) => (
-                            <li key={index}>{skill}</li>
-                        ))}
+                        {
+                            skills.map((skill, index) => (
+                                <li key={index}>{skill}</li>
+                            ))
+                        }
                     </ul>
                 </div>
             )}

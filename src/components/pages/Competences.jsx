@@ -2,6 +2,7 @@ import {Skills} from '../competences/Skills.jsx'
 import Footer from "../Footer.jsx";
 import "./Competences.scss"
 import {motion} from "framer-motion";
+import {AnimatedTitle} from "../AnimatedTitle.jsx";
 
 export const Competences = () => {
 
@@ -40,8 +41,17 @@ export const Competences = () => {
 
     ];
 
+    // const title = [
+    //     {
+    //         type: "heading1",
+    //         text: "Mes compétences"
+    //     }
+    // ];
+
     return (
         <>
+            {/*<AnimatedTitle titles={title}/>*/}
+
             <motion.div
                 initial={{opacity: 0, y: -20}}
                 animate={{opacity: 1, y: 0}}

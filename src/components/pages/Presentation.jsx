@@ -1,7 +1,7 @@
 import "./Presentation.scss";
 import {ProfilePicture} from "../presentation/ProfilePicture.jsx";
 import {ParagraphPresentation} from "../presentation/ParagraphPresentation.jsx";
-import {TitrePresentation} from "../presentation/TitrePresentation.jsx";
+import {AnimatedTitle} from "../AnimatedTitle.jsx";
 import {Buttons} from '../presentation/Buttons.jsx';
 
 import Footer from "../Footer.jsx";
@@ -16,9 +16,21 @@ export const Presentation = () => {
     const text_presentation3 = `Je possède des connaissances solides en Java, Spring et React, et j'ai également acquis des compétences en Front-End avec React et Angular, ce qui me permet de concevoir des interfaces utilisateurs complexes, dynamiques, et adaptées à tous les écrans (Responsive Design). De plus, je m'intéresse au motion design, à l'UX, et à l'accessibilité pour créer des expériences utilisateurs optimales.`
     const text_presentation4 = `À long terme, je vise à obtenir un diplôme d'ingénieur BAC+5 et à être embauché en CDI en tant que développeur full stack. Actuellement, je recherche une alternance de 24 à 36 mois pour intégrer une école d'ingénieur et continuer à développer mes compétences dans ce domaine.`
 
+    const titles = [
+        {
+            type: "heading1",
+            text: "Etudiant en Master développement full stack"
+        },
+        {
+            type: "heading2",
+            text: "Eric ADELAIDE BEAUBRUN"
+        }
+    ];
+
     return (
         <>
-            <TitrePresentation/>
+            <AnimatedTitle titles={titles} />
+
             <motion.div
                 initial={{opacity: 0, y: -20}}
                 animate={{opacity: 1, y: 0}}

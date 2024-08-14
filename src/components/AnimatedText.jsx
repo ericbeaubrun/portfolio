@@ -1,17 +1,17 @@
-import React from "react";
 import {motion} from "framer-motion";
 
-const Wrapper = (props) => {
-    return <span className="word-wrapper">{props.children}</span>;
-};
-
-const tagMap = {
-    paragraph: "p",
-    heading1: "h1",
-    heading2: "h2"
-};
-
 const AnimatedText = (props) => {
+
+    const Wrapper = (props) => {
+        return <span className="word-wrapper">{props.children}</span>;
+    };
+
+    const tagMap = {
+        paragraph: "p",
+        heading1: "h1",
+        heading2: "h2"
+    };
+
     const itemVariants = {
         hidden: {
             y: "150%",
