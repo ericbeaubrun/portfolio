@@ -62,7 +62,6 @@ export const AnimatedTitle = ({ titles = [] }) => {
 
     return (
         <motion.div
-            className="App"
             initial="hidden"
             animate="visible"
             variants={containerVariants}

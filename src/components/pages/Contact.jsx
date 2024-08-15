@@ -3,6 +3,8 @@ import Footer from "../Footer.jsx";
 import {ContactCard} from "../contact/ContactCard.jsx";
 import {ContactPicture} from "../contact/ContactPicture.jsx";
 import {motion} from "framer-motion";
+import ScrollProgress from "../ScrollProgress.jsx";
+import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
 
 export const Contact = () => {
     return (

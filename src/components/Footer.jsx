@@ -1,22 +1,44 @@
-import "./Footer.scss"
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import "./Footer.scss";
+import mailIcon from '/resources/email.png';
+import phoneIcon from '/resources/telephone.png';
+import linkedinIcon from '/resources/linkedin.png';
+import localisationIcon from '/resources/localisation.png';
 
 const Footer = () => {
     return (
-        <footer style={{ marginTop:'65px', height: '90px', backgroundColor: '#e6e1d5', textAlign: 'center', lineHeight: '30px' }}>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-                <div style={{ marginRight: '10px' }}>
-                    <FaFacebook />
-                </div>
-                <div style={{ marginRight: '10px' }}>
-                    <FaTwitter />
-                </div>
-                <div>
-                    <FaInstagram />
-                </div>
-                <div style={{ marginLeft: '20px' }}>© 2024 My Website</div>
-            </div>
+        <footer className="footer">
+            <ul className="contact-list">
+                <li>
+                    <img src={localisationIcon} alt="Email" className="icon"/>
+                    Le Mée Sur Seine (77350)
+                </li>
+
+                <li>
+                    <img src={phoneIcon} alt="Téléphone" className="icon"/>
+                    <a href="tel:+33643414079">+33 6 43 41 40 79</a>
+                </li>
+
+                <li>
+                    <img src={mailIcon} alt="Email" className="icon"/>
+                    <a href="mailto:e.adelaide.beaubrun@gmail.com">e.adelaide.beaubrun@gmail.com</a>
+                </li>
+
+                <li>
+                    <img src={linkedinIcon} alt="LinkedIn" className="icon"/>
+                    <a href="https://www.linkedin.com/in/eric-adelaide-beaubrun/" target="_blank"
+                       rel="noopener noreferrer">
+                        linkedin.com/in/eric-adelaide-beaubrun/
+                    </a>
+                </li>
+                {/*<li>*/}
+                {/*    <img src={githubIcon} alt="GitHub" className="icon" />*/}
+                {/*    <a href="https://github.com/ericbeaubrun" target="_blank" rel="noopener noreferrer">*/}
+                {/*        github.com/ericbeaubrun*/}
+                {/*    </a>*/}
+                {/*</li>*/}
+            </ul>
         </footer>
     );
 };
+
 export default Footer;

@@ -3,6 +3,8 @@ import Footer from "../Footer.jsx";
 import "./Competences.scss"
 import {motion} from "framer-motion";
 import {AnimatedTitle} from "../AnimatedTitle.jsx";
+import ScrollProgressLine from "../ScrollProgress.jsx";
+import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
 
 export const Competences = () => {
 

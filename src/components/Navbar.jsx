@@ -11,7 +11,7 @@ export const Navbar = () => {
                 <nav>
                     <NavLink to="/presentation">
                         <div className="item">
-                            <div data-text="Profil et objectifs" className="linktext">Présentation</div>
+                            <div data-text="Parcours et Objectifs" className="linktext">Présentation</div>
                         </div>
                     </NavLink>
 
@@ -23,7 +23,7 @@ export const Navbar = () => {
 
                     <NavLink to="/experiences">
                         <div className="item">
-                            <div data-text="Mon parcours détaillé" className="linktext">Experiences</div>
+                            <div data-text="Projets et Stages" className="linktext">Experiences</div>
                         </div>
                     </NavLink>
 

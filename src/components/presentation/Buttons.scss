@@ -44,6 +44,6 @@
   color: $TEXT_COLOR_LIGHT;
 
   &:hover {
-    background-color: darken($BACKGROUND_COLOR_BLACK, 4%);
+    background-color: lighten($BACKGROUND_COLOR_BLACK, 8%);
   }
 }
