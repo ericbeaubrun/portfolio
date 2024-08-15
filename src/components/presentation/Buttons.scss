@@ -9,7 +9,9 @@
 }
 
 .btn {
-  min-width: 10vw;
+  min-width: 140px;
+  width: 10vw;
+  max-width: 300px;
   padding: 10px 20px;
   font-size: 1.5rem;
   font-weight: 600;
@@ -38,10 +40,10 @@
 }
 
 .btn-light {
-  background-color: $TEXT_COLOR_LIGHT;
-  color: $TEXT_COLOR_DARK;
+  background-color:$BACKGROUND_COLOR_BLACK;
+  color: $TEXT_COLOR_LIGHT;
 
   &:hover {
-    background-color: darken($TEXT_COLOR_LIGHT, 4%);
+    background-color: darken($BACKGROUND_COLOR_BLACK, 4%);
   }
 }

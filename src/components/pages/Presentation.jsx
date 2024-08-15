@@ -37,12 +37,25 @@ export const Presentation = () => {
                 transition={{duration: 0.5, delay: 0.2}}
                 className="animated-title">
                 <ProfilePicture/>
-                <ParagraphPresentation text={text_presentation1}/>
-                <ParagraphPresentation text={text_presentation2}/>
-                <ParagraphPresentation text={text_presentation3}/>
-                <ParagraphPresentation text={text_presentation4}/>
+
+                {/*<motion.div*/}
+                {/*    initial={{opacity: 0, scale: 0.8}}*/}
+                {/*    animate={{*/}
+                {/*        opacity: 1,*/}
+                {/*        scale: 1*/}
+                {/*    }}*/}
+                {/*    transition={{duration: 0.5, ease: "easeOut"}}*/}
+                {/*>*/}
+                    <Buttons/>
+                {/*</motion.div>*/}
+
+
+                <ParagraphPresentation text={text_presentation1} direction={"left"}/>
+                <ParagraphPresentation text={text_presentation2} direction={"right"}/>
+                <ParagraphPresentation text={text_presentation3} direction={"left"}/>
+                <ParagraphPresentation text={text_presentation4} direction={"right"}/>
                 <CenteredImage alt="Description of the image"/>
-                <Buttons/>
+                {/*<Buttons/>*/}
             </motion.div>
 
             <Footer/>
