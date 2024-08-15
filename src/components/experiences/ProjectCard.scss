@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #e8e6e3;
-  border-radius: 8px;
+  border-radius: $BORDER_RADIUS_DEFAULT;
   box-shadow: $BOX_SHADOW;
   padding: 20px;
   min-width: 320px;
@@ -54,16 +54,18 @@
 }
 
 .toggle-details-button {
-  background-color: #007bff;
+  background-color: #12367d;
+  //background-color: #007bff;
   color: #fff;
   padding: 10px 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: $BORDER_RADIUS_BUTTON;
   cursor: pointer;
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #0056b3;
+    //background-color: #0056b3;
+    background-color: lighten(#12367d,8%);
   }
 }
 

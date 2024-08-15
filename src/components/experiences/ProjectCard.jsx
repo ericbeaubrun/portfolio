@@ -11,10 +11,10 @@ const ProjectCard = ({icon, title, date, description, longDescription, roles, sk
 
     return (
         <motion.div
-            initial={{ opacity: 0, y: -20 }}  // L'état initial de l'animation
-            whileInView={{ opacity: 1, y: 0 }}  // Animation lorsqu'il entre en vue
-            transition={{ duration: 0.5, delay: 0.2 }}  // Paramètres de transition
-            viewport={{ once: true }}  // Animation déclenchée seulement une fois
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
             className="animated-title">
 
             <div className="project-card">
