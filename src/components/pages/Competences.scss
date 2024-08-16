@@ -10,9 +10,8 @@ $MAX_WIDTH : 800px;
 }
 
 .skills-divider {
-  /* Centrer la ligne horizontalement avec un espace vertical */
-  border: none; /* Enlève le style par défaut */
-  border-top: 2px solid #ccc; /* Ligne supérieure personnalisée */
+  border: none;
+  border-top: 2px solid #ccc;
   width: 120%;
   min-width: $MIN_WIDTH;
   max-width: $MAX_WIDTH;

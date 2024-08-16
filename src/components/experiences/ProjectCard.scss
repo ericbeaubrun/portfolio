@@ -20,6 +20,24 @@
   }
 }
 
+.github-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.github-link {
+  color: $TEXT_LINK_COLOR;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $TEXT_LINK_COLOR_HOVER;
+    text-decoration: underline;
+  }
+}
+
 
 .project-header {
   display: flex;
@@ -62,8 +80,7 @@
   transition: background-color 0.3s ease;
 
   &:hover {
-    //background-color: #0056b3;
-    background-color: lighten(#12367d,8%);
+    background-color: lighten(#12367d, 8%);
   }
 }
 

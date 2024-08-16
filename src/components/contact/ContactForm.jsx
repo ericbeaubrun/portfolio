@@ -35,7 +35,7 @@ export const ContactForm = () => {
 
     return (
         <div className="contactForm">
-            <h2>Envoyer un mail</h2>
+            <h2>Envoyer un message</h2>
 
             <form onSubmit={handleSubmit}>
                 <div>

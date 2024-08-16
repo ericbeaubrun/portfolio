@@ -29,12 +29,11 @@ export const Experiences = () => {
                 {/*<div className="spacing"></div>*/}
                 <AnimatedTitle titles={title}/>
 
-
                 <ProjectCard
                     icon={idiaTechIcon}
                     title="Stage en Développement Java et Web-Mining"
                     date="Avril 2024"
-                    description="Stage réalisé chez idIA-Tech (idia-tech.com) pour une durée de 2 mois"
+                    description="Stage de 2 mois réalisé chez idIA-Tech (idia-tech.com)."
                     longDescription="Durant mon stage chez Idia Tech, j'ai participé au développement de scripts en Java pour
                     automatiser l'importation de produits depuis des sites fournisseurs vers des plateformes de e-commerce telles que Prestashop.
                     J'ai également contribué à l'amélioration de scripts existants et à divers projets internes de l'entreprise, tels que le site web,
@@ -55,18 +54,18 @@ export const Experiences = () => {
                     ]}
                 />
 
-                {/* @TODO*/}
                 <ProjectCard
+                    githubLink="https://github.com/ericbeaubrun/aerien"
                     icon={aerienIcon}
                     title="Simulateur de Trafic Aérien"
                     date="Janvier 2024"
-                    description=""
+                    description="Projet en équipe réalisé en dernière année de licence."
                     longDescription="Développement d'un simulateur de trafic aérien en Java, incluant une interface graphique
 paramétrable en temps réel et utilisant des concepts avancés comme le calcul de
 trajectoire, l’évitement des collisions et la concurrence en multithreading"
                     roles={[
-                        '???',
-                        '???'
+                        "Mise en place de l'interface graphique.",
+                        "Programmation des algorithmes de traitement."
                     ]}
                     skills={[
                         'Java',
@@ -76,17 +75,18 @@ trajectoire, l’évitement des collisions et la concurrence en multithreading"
                 />
 
                 <ProjectCard
+                    githubLink="https://github.com/ericbeaubrun/learn_py_app"
                     icon={applicationPedagogiqueIcon}
                     title="Application Pédagogique pour les Étudiants"
                     date="Octobre 2023"
-                    description="Développement d'une application interactive en Python pour enseigner la programmation
+                    description=""
+                    longDescription="Développement d'une application interactive en Python pour enseigner la programmation
 aux étudiants. L'application inclut un éditeur de code, la génération de feedbacks en temps
-réel, et le stockage des statistiques des étudiants au format JSON.
-"
-                    longDescription="Longue description du projet, expliquant les détails, les challenges, et les solutions."
+réel, et le stockage des statistiques des étudiants au format JSON."
                     roles={[
-                        '???',
-                        '???'
+                        "Mise en place de l'interface graphique.",
+                        "Programmation des fonctionnalités essentielles.",
+                        "Sécurisation de l'application et anti-triche."
                     ]}
                     skills={[
                         'Python',
@@ -101,21 +101,23 @@ réel, et le stockage des statistiques des étudiants au format JSON.
                     icon={presencesIcon}
                     title="Système de Gestion de Présences des Étudiants"
                     date="Septembre 2023"
-                    description="Création d'un système en Java et Python pour le suivi des présences des étudiants via des
+                    description="Projet en équipe réalisé en dernière année de licence."
+                    longDescription="Création d'un système en Java et Python pour le suivi des présences des étudiants via des
 cartes NFC. Le projet inclut la mise en place d'un serveur Java, une base de données
 PostgreSQL, et une interface de communication réseau (TCP/IP)."
-                    longDescription="Longue description du projet, expliquant les détails, les challenges, et les solutions."
                     roles={[
-                        '???',
-                        '???'
+                        "Modélisation et mise en place de la base de données.",
+                        "Développement intégral du serveur en Java.",
+                        "Sécurisation et gestion des erreurs coté serveur.",
+                        "Programmation des requêtes SQL."
                     ]}
                     skills={[
                         'Java',
                         'Python',
                         'TCP/IP',
-                        'Cybersécurité',
-                        'PostgreSQL',
-                        'SQL'
+                        'Cyber-sécurité',
+                        'SQL',
+                        'PostgreSQL'
                     ]}
                 />
 
@@ -123,29 +125,41 @@ PostgreSQL, et une interface de communication réseau (TCP/IP)."
                     icon={libraryIcon}
                     title="Librairie en Ligne"
                     date="Mars 2022"
-                    description="Brève description du projet."
-                    longDescription="Longue description du projet, expliquant les détails, les challenges, et les solutions."
+                    description="Projet de Développement Web réalisé en deuxième année de licence."
+                    longDescription="Projet visant à créer un site web dynamique permettant la recherche et la consultation de livres via appels API,
+                    tout en mettant en œuvre des fonctionnalités telles que l'affichage de graphique statistiques, le stockage des livres consultés par les utilisateurs,
+                    et la gestion des cookies pour personnaliser l'expérience utilisateur."
                     roles={[
-                        'Programmation du Back-End du site',
-                        'API'
+                        "Programmation du Back-End du site",
+                        "Ajout de fonctionnalité de recherche de livres avec appels API.",
+                        "Gestion des cookies et ajout  d'un historique utilisateur.",
+                        "Optimisations des performances du site."
                     ]}
                     skills={[
                         'PHP',
-                        'API'
+                        'HTML',
+                        'CSS',
+                        'Javascript',
+                        'JSON',
+                        'XML'
                     ]}
                 />
 
                 <ProjectCard
+                    githubLink="https://github.com/ericbeaubrun/conquete"
                     icon={conqueteIcon}
                     title="Jeu de Plateau Stratégique Multijoueur"
                     date="Janvier 2022"
-                    description="Création d'un jeu de plateau stratégique en Java, intégrant une IA pour des parties
+                    description="Projet de Génie Logiciel réalisé en équipe en deuxième année de licence."
+                    longDescription="Création d'un jeu de plateau stratégique en Java, intégrant une IA pour des parties
 multijoueur locales, la gestion des sauvegardes et la génération de graphiques statistiques
 des parties. Traitements XML et tests unitaires réalisés avec JUnit."
-                    longDescription="Longue description du projet, expliquant les détails, les challenges, et les solutions."
                     roles={[
-                        '???',
-                        '???'
+                        "Développement de l'interface graphique.",
+                        "Programmation des algorithmes de traitment.",
+                        "Programmation du comportement de l'IA contre le joeur.",
+                        "Ajout des fonctionnalités de sauvegarde.",
+                        "Réalisation des Tests unitaires."
                     ]}
                     skills={[
                         'Java',
@@ -158,17 +172,15 @@ des parties. Traitements XML et tests unitaires réalisés avec JUnit."
                     icon={documentIcon}
                     title="Logiciel de Gestion de Documents"
                     date="Octobre 2021"
-                    description="Brève description du projet."
-                    longDescription="Longue description du projet, expliquant les détails, les challenges, et les solutions."
+                    description=""
+                    longDescription="Développement d'un outil en Java simplifiant la manipulation, l’extraction et le traitement des métadonnées
+                    de documents. Navigation dans une arborescence de fichiers et traitement de fichiers XML."
                     roles={[
-                        '???',
-                        '???'
+                        "Développement de l'intégralité de l'application."
                     ]}
                     skills={[
-                        'Python',
-                        'PyQT',
-                        'CSS',
-                        'JSON',
+                        'Java',
+                        'XML',
                         'Conception UI/UX'
                     ]}
                 />
