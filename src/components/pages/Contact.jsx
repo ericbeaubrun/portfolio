@@ -1,10 +1,7 @@
 import {ContactForm} from "../contact/ContactForm.jsx";
-import Footer from "../Footer.jsx";
 import {ContactCard} from "../contact/ContactCard.jsx";
-import {ContactPicture} from "../contact/ContactPicture.jsx";
 import {motion} from "framer-motion";
-import ScrollProgress from "../ScrollProgress.jsx";
-import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
+import "./Contact.scss";
 
 export const Contact = () => {
     return (

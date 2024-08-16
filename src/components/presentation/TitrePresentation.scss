@@ -1,3 +1,5 @@
+@import "src/config.scss";
+
 .title-container {
   margin: 0 auto;
   padding-top: 13vh;
@@ -10,6 +12,7 @@
 h1 {
   //font-size: 3vh;
   font-size: 2rem;
+
 }
 
 h2 {
@@ -37,3 +40,29 @@ h2 {
   white-space: nowrap;
 }
 
+//.title-container {
+//  width: 1px;
+//  text-align: left;
+//}
+//
+//h1 {
+//  width: 1px;
+//  display:flex;
+//}
+//
+//h2 {
+//  display:flex;
+//  width: 1px;
+//}
+.word-wrapper {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+}
+
+.word-wrapper span {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+}

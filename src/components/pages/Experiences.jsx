@@ -10,32 +10,39 @@ import libraryIcon from '/resources/librairie.png';
 import conqueteIcon from '/resources/conquete.png';
 import documentIcon from '/resources/document.png';
 import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
+import {AnimatedTitle} from "../AnimatedTitle.jsx";
 
-// const title = [
-//     {
-//         type: "heading1",
-//         text: "Mes Expériences"
-//     }
-// ];
+const title = [
+    {
+        type: "heading1",
+        text: "Mes Expériences"
+    }
+];
 
 export const Experiences = () => {
     return (
         <>
+
             <div className="experiences-container">
                 <ScrollProgressCircle/>
-                {/*<AnimatedTitle titles={title}/>*/}
 
-                <div className="spacing"></div>
+                {/*<div className="spacing"></div>*/}
+                <AnimatedTitle titles={title}/>
+
 
                 <ProjectCard
                     icon={idiaTechIcon}
                     title="Stage en Développement Java et Web-Mining"
                     date="Avril 2024"
-                    description="Brève description du projet."
-                    longDescription="Longue description du projet, expliquant les détails, les challenges, et les solutions."
+                    description="Stage réalisé chez idIA-Tech (idia-tech.com) pour une durée de 2 mois"
+                    longDescription="Durant mon stage chez Idia Tech, j'ai participé au développement de scripts en Java pour
+                    automatiser l'importation de produits depuis des sites fournisseurs vers des plateformes de e-commerce telles que Prestashop.
+                    J'ai également contribué à l'amélioration de scripts existants et à divers projets internes de l'entreprise, tels que le site web,
+                    le chatbot, et les scripts de prospection. Cette expérience m'a permis de renforcer mes compétences en programmation Java, Python et PHP."
                     roles={[
-                        '???',
-                        '???'
+                        "Suivre le cahier des charges pour programmer des scripts d'automatisation d'imports de données.",
+                        "Programmer en Java des fonctionnalités sur le projet Grimport Crawler.",
+                        "Contribuer à d'aures projets en court de développement (chatBot, site web, scripts) .",
                     ]}
                     skills={[
                         'Java',
@@ -48,15 +55,15 @@ export const Experiences = () => {
                     ]}
                 />
 
+                {/* @TODO*/}
                 <ProjectCard
                     icon={aerienIcon}
                     title="Simulateur de Trafic Aérien"
                     date="Janvier 2024"
-                    description="Développement d'un simulateur de trafic aérien en Java, incluant une interface graphique
+                    description=""
+                    longDescription="Développement d'un simulateur de trafic aérien en Java, incluant une interface graphique
 paramétrable en temps réel et utilisant des concepts avancés comme le calcul de
-trajectoire, l’évitement des collisions et la concurrence en multithreading.
-"
-                    longDescription="Longue description du projet, expliquant les détails, les challenges, et les solutions."
+trajectoire, l’évitement des collisions et la concurrence en multithreading"
                     roles={[
                         '???',
                         '???'
@@ -166,6 +173,8 @@ des parties. Traitements XML et tests unitaires réalisés avec JUnit."
                     ]}
                 />
             </div>
+
+            <div className="spacing"></div>
 
             <Footer/>
         </>

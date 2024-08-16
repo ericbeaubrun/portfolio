@@ -16,12 +16,8 @@ export const ProfilePicture = () => {
                         <div className="info">
                             <h2 id="infoTitle">Qui suit-je ?</h2>
                             <p id="infoText">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus libero voluptatum
-                                sit!
-                                Sequi facere in tempora quibusdam mollitia quibusdam mollitia facere in tempora
-                                quibusdam
-                                mollitiaprovident
-                                facere in tempora quibusdam mollitia quibusdam mollitia mollitia aut?
+                                Passionné par l'informatique et les jeux vidéo, je me distingue par ma curiosité pour les nouvelles technologies,
+                                mon ouverture d'esprit, mon autonomie et mon aisance relationnelle.
                             </p>
                         </div>
                     </div>

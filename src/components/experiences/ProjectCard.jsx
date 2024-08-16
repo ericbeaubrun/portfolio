@@ -59,7 +59,6 @@ const ProjectCard = ({icon, title, date, description, longDescription, roles, sk
             </div>
 
         </motion.div>
-
     );
 };
 

@@ -6,6 +6,7 @@ import ScrollProgressLine from "./components/ScrollProgress.jsx";
 
 export const App = () => {
     return (
+
         <div className="App">
             <ScrollProgressLine/>
             <Navbar/>

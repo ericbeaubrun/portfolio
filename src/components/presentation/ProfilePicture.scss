@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  padding-top: 1vh;
+  padding-top: 0vh;
   padding-bottom: 16vh;
   display: flex;
   justify-content: center;
@@ -53,6 +53,7 @@ body {
   height: calc(102%);
   //border: 3vh solid #2E2E2E;
   border: 1.5vw solid #2E2E2E;
+  border-radius: 8px;
   z-index: 1;
   background: linear-gradient(145deg, #ffffff, #e6e6e6);
   box-shadow: 7px 7px 21px black, -7px -7px 21px #ffffff;
@@ -70,11 +71,13 @@ body {
 }
 
 #infoTitle {
-  font-size: 4vh;
+  font-size: 3.5vh;
+  color: $TEXT_COLOR_LIGHT;
 }
 
 #infoText {
   font-size: 2vh;
+  color: $TEXT_COLOR_LIGHT;
 }
 
 .container .card .info {

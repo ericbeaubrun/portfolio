@@ -43,16 +43,18 @@ export const Competences = () => {
 
     ];
 
-    // const title = [
-    //     {
-    //         type: "heading1",
-    //         text: "Mes compétences"
-    //     }
-    // ];
+    const title = [
+        {
+            type: "heading1",
+            text: "Mes compétences"
+        }
+    ];
 
     return (
         <>
-            {/*<AnimatedTitle titles={title}/>*/}
+            <ScrollProgressCircle/>
+
+            <AnimatedTitle titles={title}/>
 
             <motion.div
                 initial={{opacity: 0, y: -20}}
@@ -60,12 +62,16 @@ export const Competences = () => {
                 transition={{duration: 0.5, delay: 0.2}}
                 className="animated-title">
                 <div className="all-skills-container">
+                    <hr className="skills-divider"/>
                     <Skills title={"Back-End"} skills={skills2}/>
+                    <hr className="skills-divider"/>
                     <Skills title={"Front-End"} skills={skills1}/>
+                    <hr className="skills-divider"/>
                     <Skills title={"Autres compétences"} skills={skills3}/>
                 </div>
             </motion.div>
 
+            <div className="spacing"></div>
             <Footer/>
         </>
     );

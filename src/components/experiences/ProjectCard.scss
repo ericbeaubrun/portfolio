@@ -14,7 +14,6 @@
   margin: 20px auto;
   margin-top: 6vh;
   text-align: left;
-  font-family: "Arial", sans-serif;
 
   &:hover {
     box-shadow: $BOX_SHADOW_HOVER;
@@ -55,8 +54,7 @@
 
 .toggle-details-button {
   background-color: #12367d;
-  //background-color: #007bff;
-  color: #fff;
+  color: $TEXT_COLOR_LIGHT;
   padding: 10px 15px;
   border: none;
   border-radius: $BORDER_RADIUS_BUTTON;

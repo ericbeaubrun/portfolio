@@ -19,7 +19,7 @@ $MIN_WIDTH : 320px;
     margin-bottom: 20px;
     padding-top: 5px;
     font-size: $FONT_SIZE_LARGE;
-    color: $TEXT_COLOR_DARK;
+    color: black;
   }
 
   .contact-list {
@@ -34,8 +34,8 @@ $MIN_WIDTH : 320px;
       align-items: center;
 
       .icon {
-        width: 32px;
-        height: 32px;
+        width: 26px;
+        height: 26px;
         margin-right: 10px;
       }
 
