@@ -1,4 +1,4 @@
-// import "./TitrePresentation.scss";
+// import "./AnimatedTitle.scss";
 // import {motion} from "framer-motion";
 // import AnimatedText from "./AnimatedText.jsx";
 //
@@ -42,7 +42,7 @@
 //         </motion.div>
 //     );
 // }
-import "./presentation/TitrePresentation.scss";
+import "./AnimatedTitle.scss";
 import {motion} from "framer-motion";
 import AnimatedText from "./AnimatedText.jsx";
 

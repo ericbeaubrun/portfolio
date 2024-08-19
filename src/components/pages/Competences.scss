@@ -17,3 +17,9 @@ $MAX_WIDTH : 800px;
   max-width: $MAX_WIDTH;
   margin: 10vh auto 20px;
 }
+
+@media (max-width: 768px) {
+  .skills-divider {
+    width: 100%;
+  }
+}

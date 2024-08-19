@@ -1,6 +1,6 @@
 @import "src/config.scss";
 
-$WIDTH : 40vw;
+$WIDTH : 50vw;
 $MIN_WIDTH : 320px;
 
 .contact-card {
@@ -9,11 +9,24 @@ $MIN_WIDTH : 320px;
   box-shadow: $BOX_SHADOW;
   padding: 20px;
   min-width: $MIN_WIDTH;
+
   width: $WIDTH;
+//  //width: 40vw;
+//  width: 50vw;
+//  max-width: 1000px;
+//  //width: 93%;
+//
+//
+//@media (max-width: 1200px) {
+//  .project-card{
+//    width: 90%;
+//    max-width: 600px;
+//  }
+//}
+
   margin: 20px auto;
   margin-top: 15vh;
   text-align: left;
-
 
   #contact-title {
     margin-bottom: 20px;
@@ -50,5 +63,12 @@ $MIN_WIDTH : 320px;
         }
       }
     }
+  }
+}
+
+@media (max-width: 1000px) {
+  .contact-card{
+    width: 70vw;
+    max-width: 800px;
   }
 }

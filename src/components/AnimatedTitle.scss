@@ -1,0 +1,49 @@
+@import "../config";
+
+.title-container {
+  margin: 0 auto;
+  padding-top: 10vh;
+}
+
+.spacing {
+  padding-top: 8vh;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 5vh;
+}
+
+h2 {
+  padding-top: 3vh;
+  font-size: 1.5rem;
+}
+
+.word-wrapper {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+}
+
+.word-wrapper span {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .title-container {
+    padding-top: 15vh;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 2vh;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    padding-top: 2vh;
+  }
+}
