@@ -8,6 +8,7 @@ import Footer from "../Footer.jsx";
 import CenteredImage from "../presentation/CenteredImage.jsx";
 import {motion} from "framer-motion";
 import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
+import ParcoursChronologique from "../presentation/ParcoursChronologique.jsx";
 
 export const Presentation = () => {
 
@@ -51,6 +52,7 @@ export const Presentation = () => {
 
     return (
         <>
+
             <ScrollProgressCircle/>
 
             <div className="area">
@@ -104,7 +106,9 @@ export const Presentation = () => {
             <ParagraphPresentation text={text_presentation4} direction={"right"}/>
 
             <h2 id="titre-parcours">Résumé de mon parcours</h2>
-            <CenteredImage alt="Description of the image"/>
+            {/*<CenteredImage alt="Description of the image"/>*/}
+
+            <ParcoursChronologique/>
 
             <Buttons
                 textBtn1="Compétences"

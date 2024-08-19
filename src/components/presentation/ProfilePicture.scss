@@ -39,7 +39,7 @@ body {
   width: 100%;
   height: 100%;
   background-size: cover;
-  transform: translate(1vw, 1vw); // TODO
+  transform: translate(1vw, 1vw);
 }
 
 .container .card:before {
@@ -119,180 +119,14 @@ body {
     padding: 5%;
     font-size: 2.5vh;
   }
+
+  .container .card .image {
+    width: 100%;
+    height: 100%;
+    transform: translate(2.3vw, 2.3vw);
+  }
+  .container .card .info {
+    width: 103%;
+    height: 103%;
+  }
 }
-//@import "src/config.scss";
-//
-//* {
-//  box-sizing: border-box;
-//  margin: 0;
-//  padding: 0;
-//}
-//
-//h1 h2 h3 p {
-//  z-index: 4;
-//}
-//
-//body {
-//  display: flex;
-//  justify-content: center;
-//  align-items: center;
-//}
-//
-//.container {
-//  padding-top: 0vh;
-//  padding-bottom: 16vh;
-//  display: flex;
-//  justify-content: center;
-//  align-items: center;
-//  flex-wrap: wrap;
-//}
-//
-//.container .card {
-//  position: relative;
-//  width: 14vw;
-//  height: 34vh;
-//  margin-right: 6.8vh;
-//}
-//
-//.container .card:nth-of-type(2) {
-//  transform: rotate(5deg);
-//}
-//
-//.container .card .image {
-//  position: relative;
-//  width: 15.5vw;
-//  height: 36vh;
-//  background-size: cover;
-//  transform: translate(3vh, 3vh);
-//}
-//
-//.container .card:before {
-//  content: "";
-//  position: absolute;
-//  top: 0;
-//  left: 0;
-//  width: calc(102%);
-//  height: calc(102%);
-//  //border: 3vh solid #2E2E2E;
-//  border: 1.5vw solid #2E2E2E;
-//  border-radius: 8px;
-//  z-index: 1;
-//  background: linear-gradient(145deg, #ffffff, #e6e6e6);
-//  box-shadow: 7px 7px 21px black, -7px -7px 21px #ffffff;
-//  background: transparent;
-//}
-//
-//.container .card:nth-of-type(1)::before {
-//  filter: url(#wavy1);
-//  filter: url(#wavy2);
-//  filter: url(#wavy3);
-//}
-//
-//.image {
-//  background-image: url("../../../public/resources/profile_picture.png");
-//}
-//
-//#infoTitle {
-//  font-size: 3.5vh;
-//  color: $TEXT_COLOR_LIGHT;
-//}
-//
-//#infoText {
-//  font-size: 2vh;
-//  color: $TEXT_COLOR_LIGHT;
-//}
-//
-//.container .card .info {
-//  position: absolute;
-//  top: 1vh;
-//  left: 1vh;
-//  //width: 101%;
-//  width: 111%;
-//  height: 111%;
-//  padding: 0% 7% 7% 7%;
-//  transform: translate(1vh, 1vh);
-//  text-align: center;
-//  background-color: rgba(0, 0, 0, 0.5);
-//  color: #fff;
-//  line-height: 1.4;
-//  //line-height: 1.0;
-//  font-size: 2vh;
-//  opacity: 0;
-//  transition-duration: 1s;
-//}
-//
-//.container .card:hover .info {
-//  opacity: 1;
-//
-//}
-//
-////@media (max-width: 1000px) {
-////  .container .card {
-////    width: 30vw;
-////    height: 50vh;
-////    margin-right: 3vh;
-////  }
-////
-////  .container {
-////    padding-right: 7vw;
-////  }
-////
-////  .container .card .image {
-////    width: 32vw;
-////    height: 52vh;
-////    transform: translate(2vh, 2vh);
-////  }
-////
-////  .container .card:before {
-////    border-width: 2vh;
-////  }
-////
-////  .container .card .info {
-////    top: 0vh;
-////    left: 0vh;
-////    width: 103%;
-////    height: 103%;
-////    padding: 0% 7% 7% 7%;
-////    text-align: center;
-////    line-height: 2.5;
-////    font-size: 2vh;
-////  }
-////
-////}
-//
-//@media (max-width: 632px) {
-//  .container {
-//    padding-top: 2vh;
-//    padding-bottom: 5vh;
-//  }
-//
-//  .container .card {
-//    width: 78vw;
-//    height: 60vh;
-//    margin-right: 0;
-//    margin-bottom: 5vh;
-//  }
-//
-//  .container .card .image {
-//    width: 82vw;
-//    height: 62vh;
-//    transform: translate(1vh, 1vh);
-//  }
-//
-//  .container .card:before {
-//    border-width: 1.5vh;
-//  }
-//
-//  .container .card .info {
-//    padding: 5% 3% 3% 3%;
-//    width: 101%;
-//    height: 111%;
-//
-//    font-size: 2.5vh;
-//  }
-//}
-//
-// TODO
-
-
-
