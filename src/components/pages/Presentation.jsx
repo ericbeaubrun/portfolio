@@ -76,39 +76,28 @@ export const Presentation = () => {
                     className="animated-title">
                     <ProfilePicture/>
 
-                    <motion.div
-                        initial={{opacity: 0, scale: 0.8}}
-                        animate={{
-                            opacity: 1,
-                            scale: 1
-                        }}
-                        transition={{duration: 0.5, ease: "easeOut"}}
-                    >
-                        <Buttons
-                            textBtn1="Linkedin"
-                            linkBtn1="https://www.linkedin.com/in/eric-adelaide-beaubrun/"
-                            textBtn2="CV"
-                            linkBtn2="/portfolio/resources/cv_eric_adelaide_beaubrun.pdf"
-                        />
-                    </motion.div>
 
-                    <div className="spacing"></div>
-                    <div className="spacing"></div>
-
-
+                    <Buttons
+                        textBtn1="Linkedin"
+                        linkBtn1="https://www.linkedin.com/in/eric-adelaide-beaubrun/"
+                        textBtn2="CV"
+                        linkBtn2="/portfolio/resources/cv_eric_adelaide_beaubrun.pdf"
+                    />
                 </motion.div>
-            </div>
 
+                <div className="spacing"></div>
+                <div className="spacing"></div>
+
+            </div>
 
             <ParagraphPresentation text={text_presentation1} direction={"left"}/>
             <ParagraphPresentation text={text_presentation2} direction={"right"}/>
             <ParagraphPresentation text={text_presentation3} direction={"left"}/>
             <ParagraphPresentation text={text_presentation4} direction={"right"}/>
 
-            <h2 id="titre-parcours">Résumé de mon parcours</h2>
-            {/*<CenteredImage alt="Description of the image"/>*/}
-
+            <h2 id="titre-parcours">Mon parcours</h2>
             <ParcoursChronologique/>
+            {/*<CenteredImage alt="Description of the image"/>*/}
 
             <Buttons
                 textBtn1="Compétences"
@@ -116,7 +105,6 @@ export const Presentation = () => {
                 textBtn2="Experiences"
                 linkBtn2="/portfolio/#/experiences"
             />
-
 
             <Footer/>
         </>
