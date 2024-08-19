@@ -1,9 +1,11 @@
 import './ContactCard.scss';
+import ContactPicture from "./ContactPicture.jsx";
+
+// Icons
 import mailIcon from '/resources/email.png';
 import phoneIcon from '/resources/telephone.png';
 import linkedinIcon from '/resources/linkedin.png';
 import githubIcon from '/resources/github.png';
-import {ContactPicture} from "./ContactPicture.jsx";
 
 export const ContactCard = () => {
     return (

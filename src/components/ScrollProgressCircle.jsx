@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { motion, useScroll } from 'framer-motion';
+import {useEffect, useState} from 'react';
+import {motion, useScroll} from 'framer-motion';
 
 const ScrollProgressCircle = () => {
-    const { scrollYProgress } = useScroll();
+    const {scrollYProgress} = useScroll();
     const [scrollYValue, setScrollYValue] = useState(0);
 
     useEffect(() => {
@@ -36,13 +36,12 @@ const ScrollProgressCircle = () => {
           a 15.9155 15.9155 0 0 1 0 31.831
           a 15.9155 15.9155 0 0 1 0 -31.831"
                 fill="none"
-                // stroke="#3498db"
                 stroke="#1745a3"
                 strokeWidth="2"
                 strokeDasharray="100"
                 strokeDashoffset={100 - scrollYValue * 100}
-                initial={{ pathLength: 0 }}
-                animate={{ pathLength: scrollYValue }}
+                initial={{pathLength: 0}}
+                animate={{pathLength: scrollYValue}}
             />
         </motion.svg>
     );

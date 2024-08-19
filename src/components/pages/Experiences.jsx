@@ -1,7 +1,10 @@
 import ProjectCard from "../experiences/ProjectCard.jsx";
 import Footer from "../Footer.jsx";
 import "./Experiences.scss"
+import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
+import AnimatedTitle from "../AnimatedTitle.jsx";
 
+// Icons
 import idiaTechIcon from '/resources/idia-tech.png';
 import aerienIcon from '/resources/aerien.png';
 import applicationPedagogiqueIcon from '/resources/application_pedagogique.png';
@@ -9,8 +12,7 @@ import presencesIcon from '/resources/presences.png';
 import libraryIcon from '/resources/librairie.png';
 import conqueteIcon from '/resources/conquete.png';
 import documentIcon from '/resources/document.png';
-import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
-import {AnimatedTitle} from "../AnimatedTitle.jsx";
+
 
 const title = [
     {
@@ -19,16 +21,12 @@ const title = [
     }
 ];
 
-export const Experiences = () => {
+const Experiences = () => {
     return (
         <>
-
             <div className="experiences-container">
                 <ScrollProgressCircle/>
-
-                {/*<div className="spacing"></div>*/}
                 <AnimatedTitle titles={title}/>
-
                 <ProjectCard
                     icon={idiaTechIcon}
                     title="Stage en Développement Java et Web-Mining"
@@ -192,3 +190,5 @@ des parties. Traitements XML et tests unitaires réalisés avec JUnit."
         </>
     );
 };
+
+export default Experiences;

@@ -1,7 +1,7 @@
 import './ContactPicture.scss';
-import ppIcon from '/resources/pp2.jpg';
+import ppIcon from '/resources/profile_picture2.jpg';
 
-export const ContactPicture = ({altText}) => {
+const ContactPicture = ({altText}) => {
     return (
         <div className="profile-picture-container">
             <img src={ppIcon} alt={altText} className="profile-picture" />
@@ -9,3 +9,4 @@ export const ContactPicture = ({altText}) => {
     );
 };
 
+export default ContactPicture;

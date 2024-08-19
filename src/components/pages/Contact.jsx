@@ -3,7 +3,7 @@ import {ContactCard} from "../contact/ContactCard.jsx";
 import {motion} from "framer-motion";
 import "./Contact.scss";
 
-export const Contact = () => {
+const Contact = () => {
     return (
         <>
             <motion.div
@@ -18,3 +18,5 @@ export const Contact = () => {
         </>
     );
 };
+
+export default Contact;

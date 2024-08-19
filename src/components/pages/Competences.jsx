@@ -2,11 +2,10 @@ import {Skills} from '../competences/Skills.jsx'
 import Footer from "../Footer.jsx";
 import "./Competences.scss"
 import {motion} from "framer-motion";
-import {AnimatedTitle} from "../AnimatedTitle.jsx";
-import ScrollProgressLine from "../ScrollProgress.jsx";
+import AnimatedTitle from "../AnimatedTitle.jsx";
 import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
 
-export const Competences = () => {
+const Competences = () => {
 
     const url = 'https://skillicons.dev/icons?i=';
 
@@ -76,3 +75,5 @@ export const Competences = () => {
         </>
     );
 };
+
+export default Competences;

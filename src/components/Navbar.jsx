@@ -1,7 +1,7 @@
 import './Navbar.scss';
 import {NavLink} from "react-router-dom";
 
-export const Navbar = () => {
+const Navbar = () => {
     return (
         <>
             <section className="landing"></section>
@@ -37,3 +37,5 @@ export const Navbar = () => {
         </>
     );
 };
+
+export default Navbar;

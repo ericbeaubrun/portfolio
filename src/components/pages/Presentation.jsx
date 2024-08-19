@@ -1,16 +1,14 @@
 import "./Presentation.scss";
-import {ProfilePicture} from "../presentation/ProfilePicture.jsx";
-import {ParagraphPresentation} from "../presentation/ParagraphPresentation.jsx";
-import {AnimatedTitle} from "../AnimatedTitle.jsx";
-import {Buttons} from '../presentation/Buttons.jsx';
-
-import Footer from "../Footer.jsx";
-import CenteredImage from "../presentation/CenteredImage.jsx";
 import {motion} from "framer-motion";
+import ProfilePicture from "../presentation/ProfilePicture.jsx";
+import ParagraphPresentation from "../presentation/ParagraphPresentation.jsx";
+import AnimatedTitle from "../AnimatedTitle.jsx";
+import Buttons from '../presentation/Buttons.jsx';
+import Footer from "../Footer.jsx";
 import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
 import ParcoursChronologique from "../presentation/ParcoursChronologique.jsx";
 
-export const Presentation = () => {
+const Presentation = () => {
 
 
     const text_presentation1 = `
@@ -110,3 +108,5 @@ export const Presentation = () => {
         </>
     );
 };
+
+export default Presentation;

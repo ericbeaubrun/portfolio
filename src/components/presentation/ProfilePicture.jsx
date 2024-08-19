@@ -1,7 +1,7 @@
 import './ProfilePicture.scss';
 import {motion} from 'framer-motion';
 
-export const ProfilePicture = () => {
+const ProfilePicture = () => {
     return (
         <>
             <motion.div
@@ -26,3 +26,5 @@ export const ProfilePicture = () => {
         </>
     );
 }
+
+export default ProfilePicture;

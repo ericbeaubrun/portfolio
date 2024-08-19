@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import "./ContactForm.scss"
+import { useState } from 'react';
 import emailjs from 'emailjs-com';
 
 export const ContactForm = () => {

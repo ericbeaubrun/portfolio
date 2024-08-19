@@ -1,5 +1,5 @@
 import './Skills.scss';
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 
 export const Skills = ({title, skills}) => {
     return (
