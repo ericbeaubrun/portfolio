@@ -66,7 +66,7 @@ textarea {
 }
 
 #form-submit-btn {
-  background: #635a50;
+  background: #534d46;
   color: $TEXT_COLOR_LIGHT;
   border: none;
   border-radius: $BORDER_RADIUS_BUTTON;
@@ -77,9 +77,10 @@ textarea {
   font-weight: bold;
   cursor: pointer;
   font-size: $FONT_SIZE_SMALL;
+  min-width: 120px;
 
   &:hover {
-    background-color: darken(#635a50, 5%);;
+    background-color: darken(#534d46, 5%);;
   }
 
   &:focus {
