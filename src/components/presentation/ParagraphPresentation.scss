@@ -4,9 +4,8 @@ $TEXT_MARGIN : 14vw;
 
 .animated-title {
   .paragraph-text-container {
-    background-color: $BACKGROUND_COLOR_BLACK;
-    color: $TEXT_COLOR_LIGHT;
-
+    background-color: #d8d4cd;
+    color: black;
     #paragraph-text {
       font-size: $FONT_SIZE_MEDIUM;
       text-align: center;
@@ -22,9 +21,6 @@ $TEXT_MARGIN : 14vw;
 @media (max-width: 640px) {
   .animated-title {
     .paragraph-text-container {
-      background-color: $BACKGROUND_COLOR_BLACK;
-      color: $TEXT_COLOR_LIGHT;
-
       #paragraph-text {
         font-size: $FONT_SIZE_MEDIUM;
       }

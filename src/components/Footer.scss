@@ -2,8 +2,7 @@
 
 .footer {
   width: 100%;
-  margin-top: 65px;
-  background-color: #e6e1d5;
+  background-color: $BACKGROUND_COLOR_BLACK;
   text-align: center;
   padding: 20px 0;
 
@@ -26,9 +25,10 @@
         height: 20px;
         margin-right: 5px;
       }
+      color: $TEXT_COLOR_LIGHT;
 
       a {
-        color: #000;
+        color: $TEXT_COLOR_LIGHT;
         text-decoration: none;
 
         &:hover {

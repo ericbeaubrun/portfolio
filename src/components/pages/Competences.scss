@@ -1,12 +1,20 @@
 @import "src/config.scss";
 
 $WIDTH: 100vw;
-$MIN_WIDTH : 320px;
-$MAX_WIDTH : 800px;
+$MIN_WIDTH: 320px;
+$MAX_WIDTH: 800px;
 
 .all-skills-container {
   width: $WIDTH;
   min-width: $MIN_WIDTH;
+}
+
+.all-skills-wrapper {
+  background-image: url('../../../public/resources/background/background1.svg');
+  padding-bottom: 14vh;
+  background-size: cover;
+  background-position: center;
+  transform-origin: center;
 }
 
 .skills-divider {

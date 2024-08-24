@@ -6,19 +6,20 @@ import cyIcon from "/resources/cy.png";
 const ParcoursChronologique = () => {
     const parcours = [
         {
-            annee: '2020',
-            titre: 'Baccalauréat',
-            description: "Obtention de mon BAC spé Maths qui m'a permis de consolider mes connaissances en sciences et de découvrir la programmation informatique.",
+            annee: 'Juin 2020',
+            titre: 'Baccalauréat scientifique',
+            description: "Obtention de mon BAC qui m'a permis de consolider mes connaissances en sciences et de découvrir la programmation informatique.",
         },
         {
             annee: '2021-2024',
-            titre: 'Université',
-            description: "Admission à l'Université dans un parcours Licence Maths, Informatique, Physique et Ingénierie, où j'ai travaillé sur de nombreux projets, développant des solutions Logicielles, Web, Backend et Frontend.",
+            titre: "Admission à l'université",
+            description: "Admission à l'Université dans un parcours Licence (Maths, Informatique, Physique et Ingénierie) où j'ai travaillé sur de nombreux projets" +
+                " permettant de développer des solutions Back-End et Front-End.",
         },
         {
             annee: 'Avril 2024',
             titre: 'Stage en entreprise',
-            description: "Réalisation d’un stage passionnant chez idIA-Tech en tant que développeur dans le domaine du Web-Mining.",
+            description: "Réalisation d’un stage passionnant dans le domaine du Web-Mining en tant que développeur Java au sein d'idIA-Tech.",
             icon: idiaTechIcon,
         },
         {
@@ -44,7 +45,7 @@ const ParcoursChronologique = () => {
                                     <img src={item.icon} alt={`Icone ${item.titre}`}/>
                                 </div>
                             )}
-                            <h3 className="timeline-year">{item.annee}</h3>
+                            <h3 className={"timeline-year timeline-year"+index}>{item.annee}</h3>
                             <h4 className="timeline-title">{item.titre}</h4>
                             <p className="timeline-description">{item.description}</p>
                         </div>

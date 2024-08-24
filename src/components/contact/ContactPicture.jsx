@@ -1,5 +1,5 @@
 import './ContactPicture.scss';
-import ppIcon from '/resources/profile_picture2.jpg';
+import ppIcon from '/resources/profile_picture3.png';
 
 const ContactPicture = ({altText}) => {
     return (

@@ -1,28 +1,35 @@
 @import "src/config.scss";
 
-$WIDTH : 50vw;
-$MIN_WIDTH : 320px;
+$WIDTH: 50vw;
+$MIN_WIDTH: 320px;
+
+// GREEN : #91cc5f
 
 .contact-card {
+  //background-color: $BACKGROUND_COLOR_COMPONENT;
+  //background-color: $BACKGROUND_COLOR_BLACK;
+  background-color: white;
+  background-color: #383735;
   background-color: $BACKGROUND_COLOR_COMPONENT;
   border-radius: 8px;
   box-shadow: $BOX_SHADOW;
   padding: 20px;
   min-width: $MIN_WIDTH;
+  max-width: 1000px;
 
   width: $WIDTH;
-//  //width: 40vw;
-//  width: 50vw;
-//  max-width: 1000px;
-//  //width: 93%;
-//
-//
-//@media (max-width: 1200px) {
-//  .project-card{
-//    width: 90%;
-//    max-width: 600px;
-//  }
-//}
+  //  //width: 40vw;
+  //  width: 50vw;
+  //  max-width: 1000px;
+  //  //width: 93%;
+  //
+  //
+  //@media (max-width: 1200px) {
+  //  .project-card{
+  //    width: 90%;
+  //    max-width: 600px;
+  //  }
+  //}
 
   margin: 20px auto;
   margin-top: 15vh;
@@ -32,7 +39,7 @@ $MIN_WIDTH : 320px;
     margin-bottom: 20px;
     padding-top: 5px;
     font-size: $FONT_SIZE_LARGE;
-    color: black;
+    color: $TEXT_COLOR_DARK;
   }
 
   .contact-list {
@@ -53,12 +60,13 @@ $MIN_WIDTH : 320px;
       }
 
       a {
-        color: $TEXT_LINK_COLOR;
+        color: $TEXT_COLOR_DARK;
+        //color: $TEXT_LINK_COLOR;
         text-decoration: none;
         transition: color 0.3s;
 
         &:hover {
-          color: $TEXT_LINK_COLOR_HOVER;
+          //color: $TEXT_LINK_COLOR_HOVER;
           text-decoration: underline;
         }
       }
@@ -67,8 +75,151 @@ $MIN_WIDTH : 320px;
 }
 
 @media (max-width: 1000px) {
-  .contact-card{
-    width: 70vw;
+  .contact-card {
+    width: 90vw;
     max-width: 800px;
+  }
+}
+
+//********************************************************************************************************
+$block-width: 300px;
+$block-height: 270px;
+$border-width: .625rem;
+$border-radius-outer: 8px;
+$border-radius-inner: calc(#{$border-radius-outer} / 2);
+
+//.rainbow {
+//  width: 100%;
+//  height: 100%;
+//  animation: o-rotate-360 linear 15.5s infinite;
+//
+//  span {
+//
+//    //border-radius: 100px ;
+//    //border-radius: 100%;
+//    display: block;
+//    width: 100%;
+//    height: 100%;
+//    position: relative;
+//    transform: translate(-50%, -50%);
+//    &:after {
+//      display: block;
+//      content: "";
+//      width: 100%;
+//      height: 100%;
+//      position: absolute;
+//      left: 100%;
+//    }
+//
+//    &:first-child {
+//      //background: #2846a0;
+//      //background: #91cc5f;
+//      //background: #355ed0;
+//      //background: #8d93a6;
+//      //background: #91cc5f;
+//      background: green;
+//      border-radius: 100%;
+//
+//
+//      &:after {
+//        background: transparent;
+//      }
+//    }
+//
+//    &:last-child {
+//      background: transparent;
+//
+//      &:after {
+//        //background: #2846a0;
+//        //background: #91cc5f;
+//        //background: #355ed0;
+//        //background: #4e79ef;
+//        //background: #8d93a6;
+//        //background: #91cc5f;
+//        background: green;
+//
+//        border-radius: 100%;
+//
+//      }
+//    }
+//  }
+//}
+
+
+.rainbow {
+  width: 100%;
+  height: 100%;
+  animation: o-rotate-360 linear 15.5s infinite;
+
+  span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translate(-50%, -50%);
+
+    &:after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 100%;
+    }
+
+    &:first-child {
+      background: linear-gradient(0deg, #91cc5f, #e8e6e3);
+      border-radius: 100%;
+
+      &:after {
+        background: transparent;
+      }
+    }
+
+    &:last-child {
+      background: transparent;
+
+      &:after {
+        background: linear-gradient(0deg, #e8e6e3, #91cc5f);
+
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+.c-subscribe-box {
+  box-shadow:  0 4px 20px rgba(0, 0, 0, 0.6);;
+
+  height: 366px;
+  overflow: hidden;
+  position: relative;
+  border-radius: $border-radius-outer;
+
+  &__wrapper {
+    width: calc(100% - #{$border-width});
+    height: calc(100% - #{$border-width});
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: $BACKGROUND_COLOR_COMPONENT;
+    //background: transparent ;
+
+    padding: 1.2rem 1rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: $border-radius-inner;
+  }
+}
+
+@keyframes o-rotate-360 {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }

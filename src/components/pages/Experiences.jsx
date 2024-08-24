@@ -13,6 +13,18 @@ import libraryIcon from '/resources/librairie.png';
 import conqueteIcon from '/resources/conquete.png';
 import documentIcon from '/resources/document.png';
 
+import aerienIcon1 from '/resources/projects/aerien1.png';
+import aerienIcon2 from '/resources/projects/aerien2.png';
+import aerienIcon3 from '/resources/projects/aerien3.png';
+import aerienIcon4 from '/resources/projects/aerien4.png';
+import conqueteIcon1 from '/resources/projects/conquete1.png';
+import conqueteIcon2 from '/resources/projects/conquete2.png';
+import conqueteIcon3 from '/resources/projects/conquete3.jpg';
+import conqueteIcon4 from '/resources/projects/conquete4.jpg';
+import learnPyIcon1 from '/resources/projects/learn_py1.png';
+import learnPyIcon2 from '/resources/projects/learn_py2.png';
+import learnPyIcon3 from '/resources/projects/learn_py3.png';
+import learnPyIcon4 from '/resources/projects/learn_py4.png';
 
 const title = [
     {
@@ -26,8 +38,13 @@ const Experiences = () => {
         <>
             <div className="experiences-container">
                 <ScrollProgressCircle/>
-                <AnimatedTitle titles={title}/>
+
+                <div className='background-title'>
+                    <AnimatedTitle titles={title}/>
+                </div>
+
                 <ProjectCard
+                    isCompleted={false}
                     icon={idiaTechIcon}
                     title="Stage en Développement Java et Web-Mining"
                     date="Avril 2024"
@@ -37,9 +54,10 @@ const Experiences = () => {
                     J'ai également contribué à l'amélioration de scripts existants et à divers projets internes de l'entreprise, tels que le site web,
                     le chatbot, et les scripts de prospection. Cette expérience m'a permis de renforcer mes compétences en programmation Java, Python et PHP."
                     roles={[
+                        "Programmer des scripts (Java) permettant d’extraire d’importer et de traiter des données depuis des sites web.",
                         "Suivre le cahier des charges pour programmer des scripts d'automatisation d'imports de données.",
                         "Programmer en Java des fonctionnalités sur le projet Grimport Crawler.",
-                        "Contribuer à d'aures projets en court de développement (chatBot, site web, scripts) .",
+                        "Contribuer à d'aures projets en court de développement (chatBot, site web, scripts).",
                     ]}
                     skills={[
                         'Java',
@@ -53,6 +71,9 @@ const Experiences = () => {
                 />
 
                 <ProjectCard
+                    amountPerson={4}
+                    isCompleted={true}
+                    images={[aerienIcon1, aerienIcon2, aerienIcon3, aerienIcon4]}
                     githubLink="https://github.com/ericbeaubrun/aerien"
                     icon={aerienIcon}
                     title="Simulateur de Trafic Aérien"
@@ -60,7 +81,7 @@ const Experiences = () => {
                     description="Projet en équipe réalisé en dernière année de licence."
                     longDescription="Développement d'un simulateur de trafic aérien en Java, incluant une interface graphique
 paramétrable en temps réel et utilisant des concepts avancés comme le calcul de
-trajectoire, l’évitement des collisions et la concurrence en multithreading"
+trajectoire, l’évitement des collisions et la concurrence en multithreading."
                     roles={[
                         "Mise en place de l'interface graphique.",
                         "Programmation des algorithmes de traitement."
@@ -73,6 +94,9 @@ trajectoire, l’évitement des collisions et la concurrence en multithreading"
                 />
 
                 <ProjectCard
+                    amountPerson={5}
+                    isCompleted={true}
+                    images={[learnPyIcon1, learnPyIcon2, learnPyIcon3, learnPyIcon4]}
                     githubLink="https://github.com/ericbeaubrun/learn_py_app"
                     icon={applicationPedagogiqueIcon}
                     title="Application Pédagogique pour les Étudiants"
@@ -96,10 +120,12 @@ réel, et le stockage des statistiques des étudiants au format JSON."
                 />
 
                 <ProjectCard
+                    amountPerson={3}
+                    isCompleted={false}
                     icon={presencesIcon}
                     title="Système de Gestion de Présences des Étudiants"
                     date="Septembre 2023"
-                    description="Projet en équipe réalisé en dernière année de licence."
+                    description="Projet de Base de Données et Réseau réalisé en dernière année de licence."
                     longDescription="Création d'un système en Java et Python pour le suivi des présences des étudiants via des
 cartes NFC. Le projet inclut la mise en place d'un serveur Java, une base de données
 PostgreSQL, et une interface de communication réseau (TCP/IP)."
@@ -120,16 +146,18 @@ PostgreSQL, et une interface de communication réseau (TCP/IP)."
                 />
 
                 <ProjectCard
+                    amountPerson={2}
+                    isCompleted={false}
                     icon={libraryIcon}
                     title="Librairie en Ligne"
                     date="Mars 2022"
                     description="Projet de Développement Web réalisé en deuxième année de licence."
                     longDescription="Projet visant à créer un site web dynamique permettant la recherche et la consultation de livres via appels API,
-                    tout en mettant en œuvre des fonctionnalités telles que l'affichage de graphique statistiques, le stockage des livres consultés par les utilisateurs,
+                    tout en mettant en œuvre des fonctionnalités telles que l'affichage de graphiques statistiques, le stockage des livres consultés par les utilisateurs,
                     et la gestion des cookies pour personnaliser l'expérience utilisateur."
                     roles={[
                         "Programmation du Back-End du site",
-                        "Ajout de fonctionnalité de recherche de livres avec appels API.",
+                        "Ajout de fonctionnalités de recherches de livres avec appels API.",
                         "Gestion des cookies et ajout  d'un historique utilisateur.",
                         "Optimisations des performances du site."
                     ]}
@@ -144,6 +172,9 @@ PostgreSQL, et une interface de communication réseau (TCP/IP)."
                 />
 
                 <ProjectCard
+                    amountPerson={3}
+                    isCompleted={true}
+                    images={[conqueteIcon1, conqueteIcon2, conqueteIcon3, conqueteIcon4]}
                     githubLink="https://github.com/ericbeaubrun/conquete"
                     icon={conqueteIcon}
                     title="Jeu de Plateau Stratégique Multijoueur"
@@ -154,10 +185,10 @@ multijoueur locales, la gestion des sauvegardes et la génération de graphiques
 des parties. Traitements XML et tests unitaires réalisés avec JUnit."
                     roles={[
                         "Développement de l'interface graphique.",
-                        "Programmation des algorithmes de traitment.",
-                        "Programmation du comportement de l'IA contre le joeur.",
+                        "Programmation des algorithmes de traitement.",
+                        "Programmation du comportement de l'IA contre le joueur.",
                         "Ajout des fonctionnalités de sauvegarde.",
-                        "Réalisation des Tests unitaires."
+                        "Réalisation des tests unitaires."
                     ]}
                     skills={[
                         'Java',
@@ -167,6 +198,7 @@ des parties. Traitements XML et tests unitaires réalisés avec JUnit."
                     ]}
                 />
                 <ProjectCard
+                    isCompleted={false}
                     icon={documentIcon}
                     title="Logiciel de Gestion de Documents"
                     date="Octobre 2021"
@@ -183,8 +215,6 @@ des parties. Traitements XML et tests unitaires réalisés avec JUnit."
                     ]}
                 />
             </div>
-
-            <div className="spacing"></div>
 
             <Footer/>
         </>

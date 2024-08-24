@@ -1,3 +1,5 @@
+@import 'src/config.scss';
+
 .timeline-container {
   display: flex;
   flex-direction: column;
@@ -7,12 +9,14 @@
   margin: 0 auto;
   width: 50vw;
   min-width: 400px;
+  padding-bottom: 2vh;
 }
 
 .timeline-item {
   position: relative;
   width: 80%;
   padding: 20px;
+  padding-bottom: 7vh;
   box-sizing: border-box;
   display: flex;
 
@@ -37,12 +41,12 @@
 }
 
 .timeline-content {
-  background-color: #ffffff;
+  background-color: $BACKGROUND_COLOR_COMPONENT;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: $BOX_SHADOW_HOVER;
   max-width: 500px;
-  width: 100%;
+  width: 150vw;
   display: flex;
   flex-direction: column;
   z-index: auto;
@@ -60,9 +64,14 @@
 .timeline-year {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #1745a3;
+  color: #312920;
   z-index: auto;
 }
+
+.timeline-year0 {color:#c4bd08}
+.timeline-year1 {color: #6b5de0}
+.timeline-year2 {color:#87cfcb}
+.timeline-year3 {color:#63b32e}
 
 .timeline-title {
   font-size: 1.25rem;
@@ -73,15 +82,25 @@
 
 .timeline-description {
   font-size: 1rem;
-  color: #333;
+  color: #312920;
   z-index: auto;
 }
+
+@media (max-width: 1350px) {
+  .timeline-content {
+    width: 100%;
+  }
+
+  .timeline-container {
+    min-width: 100vw;
+  }
+}
+
 
 @media (max-width: 768px) {
   .timeline-item {
     padding: 20px;
     justify-content: center;
-    width: 100%;
 
     &:before {
       display: none;

@@ -3,4 +3,16 @@
   transform: none;
   width: 100vw;
   min-width: 320px;
+  background-image: url('../../../public/resources/background/background2.svg');
+  padding-bottom: 14vh;
+  background-size: cover;
+  background-position: center;
+  transform-origin: center;
 }
+
+//.background-title  {
+//background-image: url('data:image/png;base64,...');
+//background-repeat: no-repeat;
+//background-position: bottom;
+//background-size: 550px;
+//}

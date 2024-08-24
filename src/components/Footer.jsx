@@ -1,16 +1,15 @@
 import "./Footer.scss";
-import mailIcon from '/resources/email.png';
-import phoneIcon from '/resources/telephone.png';
-import linkedinIcon from '/resources/linkedin.png';
-import localisationIcon from '/resources/localisation.png';
+import mailIcon from '/resources/email2.png';
+import phoneIcon from '/resources/telephone2.png';
+import linkedinIcon from '/resources/linkedin2.png';
+import localisationIcon from '/resources/localisation2.png';
 
 const Footer = () => {
     return (
         <footer className="footer">
             <ul className="contact-list">
                 <li>
-                    <img src={localisationIcon} alt="Email" className="icon"/>
-                    Le Mée Sur Seine (77350)
+                    (Dernière mise à jour le 24/08/2024)
                 </li>
 
                 <li>
@@ -30,12 +29,12 @@ const Footer = () => {
                         linkedin.com/in/eric-adelaide-beaubrun/
                     </a>
                 </li>
-                {/*<li>*/}
-                {/*    <img src={githubIcon} alt="GitHub" className="icon" />*/}
-                {/*    <a href="https://github.com/ericbeaubrun" target="_blank" rel="noopener noreferrer">*/}
-                {/*        github.com/ericbeaubrun*/}
-                {/*    </a>*/}
-                {/*</li>*/}
+
+                <li>
+                    <img src={localisationIcon} alt="Email" className="icon"/>
+                    Le Mée Sur Seine (77350)
+                </li>
+
             </ul>
         </footer>
     );

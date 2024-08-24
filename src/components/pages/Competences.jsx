@@ -13,10 +13,10 @@ const Competences = () => {
         {name: 'HTML', icon: url + 'html'},
         {name: 'CSS', icon: url + 'css'},
         {name: 'Javascript', icon: url + 'js'},
-        {name: 'Typescript', icon: url + 'ts'},
         {name: 'React', icon: url + 'react'},
-        {name: 'Angular', icon: url + 'angular'},
         {name: 'Vite', icon: url + 'vite'},
+        {name: 'Sass', icon: url + 'sass'},
+        {name: 'Typescript', icon: url + 'ts'},
     ];
 
     const skills2 = [
@@ -26,17 +26,16 @@ const Competences = () => {
         {name: 'PHP', icon: url + 'php'},
         {name: 'C', icon: url + 'c'},
         {name: 'MySQL', icon: url + 'mysql'},
-        {name: 'NodeJS', icon: url + 'nodejs'},
-        {name: 'MongoDB', icon: url + 'mongodb'},
+        {name: 'PostgreSQL', icon: url + 'postgres'},
+        {name: 'Node.js', icon: url + 'nodejs'},
     ];
 
     const skills3 = [
-        {name: 'Notion', icon: url + 'notion'},
+        {name: 'Git', icon: url + 'git'},
         {name: 'Figma', icon: url + 'figma'},
         {name: 'Intellij', icon: url + 'idea'},
         {name: 'WebStorm', icon: url + 'webstorm'},
-        {name: 'Git', icon: url + 'git'},
-        {name: 'Github', icon: url + 'github'},
+        {name: 'Notion', icon: url + 'notion'},
         {name: 'Photoshop', icon: url + 'ps'},
         {name: 'Premiere Pro', icon: url + 'pr'},
 
@@ -51,26 +50,34 @@ const Competences = () => {
 
     return (
         <>
-            <ScrollProgressCircle/>
 
-            <AnimatedTitle titles={title}/>
+            <div className="all-skills-wrapper">
+                <ScrollProgressCircle/>
 
-            <motion.div
-                initial={{opacity: 0, y: -20}}
-                animate={{opacity: 1, y: 0}}
-                transition={{duration: 0.5, delay: 0.2}}
-                className="animated-title">
-                <div className="all-skills-container">
-                    <hr className="skills-divider"/>
-                    <Skills title={"Back-End"} skills={skills2}/>
-                    <hr className="skills-divider"/>
-                    <Skills title={"Front-End"} skills={skills1}/>
-                    <hr className="skills-divider"/>
-                    <Skills title={"Autres compétences"} skills={skills3}/>
+                <div className='background-title'>
+                    <AnimatedTitle titles={title}/>
                 </div>
-            </motion.div>
 
-            <div className="spacing"></div>
+                <motion.div
+                    initial={{opacity: 0, y: -20}}
+                    animate={{opacity: 1, y: 0}}
+                    transition={{duration: 0.5, delay: 0.2}}>
+
+                    <div className="all-skills-container">
+                        <hr className="skills-divider"/>
+                        <Skills title={"Back-End"} skills={skills2}/>
+
+                        <hr className="skills-divider"/>
+                        <Skills title={"Front-End"} skills={skills1}/>
+
+                        <hr className="skills-divider"/>
+                        <Skills title={"Autres outils et logiciels"} skills={skills3}/>
+                    </div>
+
+                </motion.div>
+
+
+            </div>
             <Footer/>
         </>
     );

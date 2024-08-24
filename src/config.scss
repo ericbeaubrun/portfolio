@@ -1,25 +1,30 @@
-$BACKGROUND_COLOR_DARKER: #e6e1d5;
+
+// Background colors
+$COLOR: #f0dbbd;
 $BACKGROUND_COLOR: #ede8df;
+$BACKGROUND_COLOR_BLACK:#383735;
+$BACKGROUND_COLOR_DARKER: #e6e1d5;
 $BACKGROUND_COLOR_COMPONENT: #e8e6e3;
 
-$BACKGROUND_COLOR_BLACK:#383735;
-
-$BOX_SHADOW: 0 4px 20px rgba(0, 0, 0, 0.3);
-$BOX_SHADOW_HOVER: 0 8px 16px rgba(0, 0, 0, 0.2);
-
-$FONT_SIZE_LARGE: 1.5rem;
-$FONT_SIZE_MEDIUM: 1.2rem;
-$FONT_SIZE_SMALL: 1rem;
-
-$COLOR: #f0dbbd;
-
+// Text colors
 $TEXT_COLOR_LIGHT: white;
-$TEXT_COLOR_DARK: #323b4c;
+$TEXT_COLOR_DARK: #312920;
 $TEXT_LINK_COLOR: #4e90e0;
 $TEXT_LINK_COLOR_HOVER: #6fb3ff;
 
-$BORDER_RADIUS_COMPONENT: 4px;
-$BORDER_RADIUS_DEFAULT: 8px;
+// Fonts
+$FONT_SIZE_SMALL: 1rem;
+$FONT_SIZE_MEDIUM: 1.2rem;
+$FONT_SIZE_LARGE: 1.5rem;
+$FONT : Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+// Border radius
 $BORDER_RADIUS_BUTTON: 20px;
+$BORDER_RADIUS_DEFAULT: 8px;
+$BORDER_RADIUS_COMPONENT: 4px;
+
+// Shadows
+$BOX_SHADOW: 0 4px 20px rgba(0, 0, 0, 0.3);
+$BOX_SHADOW_HOVER: 0 8px 16px rgba(0, 0, 0, 0.2);
 
 

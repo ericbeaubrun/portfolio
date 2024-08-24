@@ -1,66 +1,85 @@
 @import "src/config.scss";
 
+$WIDTH: 50vw;
+$MIN_WIDTH: 320px;
+
+
 form {
   background-color: $BACKGROUND_COLOR_COMPONENT;
   padding: 2rem;
   border-radius: $BORDER_RADIUS_DEFAULT;
-  margin-bottom: 6vh;
+  //margin-bottom: 6vh;
 }
 
 h2 {
-  color: black;
-
+  color: $TEXT_COLOR_DARK;
 }
 
 label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
-  color: black;
+  color: $TEXT_COLOR_DARK;
 }
 
+
 .contactForm {
+  min-width: $MIN_WIDTH;
+  max-width: 1000px;
+
+  width: $WIDTH;
   margin-top: 6.5vh;
-  box-shadow: $BOX_SHADOW;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);;
   border-radius: $BORDER_RADIUS_DEFAULT;
   background-color: $BACKGROUND_COLOR_COMPONENT;
+
 }
 
 input[type="text"], input[type="email"], textarea {
+  font-family: $FONT;
+  color: $TEXT_COLOR_DARK;
+  //font-family: "Arial", sans-serif;
   width: 98%;
   padding: 0.75rem;
   margin-bottom: 1rem;
-  border: 1px solid $BACKGROUND_COLOR_BLACK;
+  //border: 1px solid $BORDER_RADIUS_COMPONENT;
+  border-color: black;
   border-radius: $BORDER_RADIUS_COMPONENT;
-  background-color: $BACKGROUND_COLOR_COMPONENT;
+  //background-color: #cbd5d8;
+  background-color: #eee;
   font-size: $FONT_SIZE_SMALL;
   transition: border-color 0.3s ease;
+  border-width: 1px;
 
   &:focus {
-    border-color: $BACKGROUND_COLOR_BLACK;
+    //border-color: $BACKGROUND_COLOR_BLACK;
     outline: none;
   }
 }
 
 textarea {
+  font-family: $FONT;
   resize: vertical;
   min-height: 280px;
+  border-color: black;
+  border-width: 1px;
 }
 
-button {
-  padding: 0.75rem;
+#form-submit-btn {
+  background: #635a50;
+  color: $TEXT_COLOR_LIGHT;
   border: none;
   border-radius: $BORDER_RADIUS_BUTTON;
-  background-color: $BACKGROUND_COLOR_BLACK;
-  color: $TEXT_COLOR_LIGHT;
-  min-width: 6.5vw;
-  font-size: $FONT_SIZE_SMALL;
+  transition: background-color 0.3s ease;
+  width: 15%;
+  height: 45px;
+  padding: 0.75rem;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: $FONT_SIZE_SMALL;
 
   &:hover {
-    background-color: darken($BACKGROUND_COLOR_BLACK, 10%);
+    background-color: darken(#635a50, 5%);;
   }
 
   &:focus {
@@ -68,12 +87,25 @@ button {
   }
 }
 
-@media (max-width: 768px) {
-  form {
-    padding: 1.5rem;
-  }
-
-  button {
-    padding: 0.75rem;
+@media (max-width: 1000px) {
+  .contactForm {
+    width: 90vw;
+    max-width: 800px;
   }
 }
+
+//@media (max-width: 768px) {
+//  form {
+//    padding: 1.5rem;
+//  }
+//
+//  button {
+//    padding: 0.75rem;
+//  }
+//}
+//@media (max-width: 1200px) {
+//  .project-card{
+//    width: 90%;
+//    max-width: 600px;
+//  }
+//}

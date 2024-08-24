@@ -1,7 +1,18 @@
 import './Navbar.scss';
-import {NavLink} from "react-router-dom";
+import {NavLink, useLocation} from "react-router-dom";
+import {useEffect} from 'react';
+
 
 const Navbar = () => {
+
+
+    const location = useLocation();
+    useEffect(() => {
+        // Scroll to the top of the page on route change
+        window.scrollTo(0, 0);
+    }, [location]);
+
+
     return (
         <>
             <section className="landing"></section>

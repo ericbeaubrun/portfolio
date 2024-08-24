@@ -7,18 +7,22 @@
     box-sizing: border-box;
 }
 
+h1, h2 {
+    color: $TEXT_COLOR_DARK;
+}
+
 body {
     overflow-x: hidden;
     background-color: $BACKGROUND_COLOR;
     margin: 0;
     //font-family: 'Exo', sans-serif;
-    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: $FONT
 }
 
 .area {
     background-color: #ede8df;
     width: 100%;
-    min-height: 100vh;
+    min-height: 85vh;
     position: relative;
     z-index: 0;
     overflow: hidden;
@@ -40,8 +44,9 @@ body {
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(0, 0, 0, 0.1); /* Utilisation de noir clair pour contraste */
+    background: rgba(0, 0, 0, 0.1);
     animation: animate 25s linear infinite;
+    //animation: animate 1s linear infinite;
     bottom: -150px;
 }
 

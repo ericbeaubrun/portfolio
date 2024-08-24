@@ -1,11 +1,13 @@
 @import "src/config.scss";
 
+$COLOR : #312920;
+
 .item {
     margin-bottom: 3vh;
 }
 
 .landing {
-    background: #34495E;
+    background: $COLOR;
     height: 0;
 }
 
@@ -26,7 +28,7 @@
     text-align: center;
     position: relative;
     z-index: 2;
-    color: #323b4c;
+    color: $COLOR;
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.3s ease-in-out;
@@ -39,8 +41,8 @@
     top: 0;
     left: -1vh;
     width: calc(100% + 2vh);
-    border-left: 0.4vh solid #323b4c;
-    border-right: 0.4vh solid #323b4c;
+    border-left: 0.4vh solid $COLOR;
+    border-right: 0.4vh solid $COLOR;
     height: 150%;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
@@ -63,7 +65,7 @@
     -webkit-transition: 0.3s ease-in-out;
     font-size: 0.5em;
     /*font-size: 1.2vh;*/
-    color: #323b4c;
+    color: $COLOR;
     transform: translateY(30px);
     -webkit-transform: translateY(30px);
     opacity: 0;
@@ -81,7 +83,7 @@
     margin-right: 4vh;
     background: transparent;
     z-index: 2;
-    color: #1745a3;
+    color: #93480b;
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.3s ease-in-out;
@@ -105,60 +107,9 @@
 }
 
 .nav-9 .item:hover .linktext {
-    color: #1745a3;
+    color:#93480b;
     top: -1.2vh;
     transform: scale(1.3);
     text-decoration: none;
     -webkit-transform: scale(1.3);
 }
-
-
-//**************************************************************************************************
-// WAVE BACKGROUND
-//.wave-background {
-//    z-index: 0;
-//    display: flex;
-//    justify-content: center;
-//    align-items: center;
-//    flex-direction: column;
-//    background-color: $COLOR;
-//    margin: 0;
-//
-//    &:before,
-//    &:after {
-//        content: "";
-//        position: fixed;
-//        left: 50%;
-//        min-width: 165vw;
-//        min-height: 325vh;
-//        background-color: #e8e3d8;
-//        animation-name: rotate;
-//        animation-iteration-count: infinite;
-//        animation-timing-function: linear;
-//    }
-//
-//    &:before {
-//        bottom: 90vh;
-//        border-radius: 50%;
-//        animation-duration: 10s;
-//    }
-//
-//    &:after {
-//        bottom: 85vh;
-//        opacity: .2;
-//        border-radius: 47%;
-//        animation-duration: 10s;
-//    }
-//}
-//
-//@keyframes rotate {
-//    0% {
-//        transform: translate(-50%, 0) rotateZ(0deg);
-//    }
-//    50% {
-//        transform: translate(-50%, -2%) rotateZ(180deg);
-//    }
-//    100% {
-//        transform: translate(-50%, 0%) rotateZ(360deg);
-//    }
-//}
