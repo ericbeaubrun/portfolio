@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
 
-  "homepage": "https://adelaide-beaubrun.fr",
+  "homepage": "https://adelaide-beaubrun.fr/portfolio/#/presentation",
   "scripts": {
     "build": "vite build",
     "predeploy": "npm run build",
