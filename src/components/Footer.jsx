@@ -9,7 +9,7 @@ const Footer = () => {
         <footer className="footer">
             <ul className="contact-list">
                 <li>
-                    (Dernière mise à jour le 24/08/2024)
+                    (Dernière mise à jour le 28/08/2024)
                 </li>
 
                 <li>
