@@ -1,23 +1,9 @@
 @import "src/config.scss";
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, p {
-  z-index: 4;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+$BORDER_RADIUS_PICTURE: 40px;
 
 .container {
-  padding-top: 0vh;
+  //padding-top: 0vh;
   padding-bottom: 16vh;
   display: flex;
   justify-content: center;
@@ -40,6 +26,7 @@ body {
   height: 100%;
   background-size: cover;
   transform: translate(1vw, 1vw);
+  margin: -1px;
 }
 
 .container .card:before {
@@ -51,7 +38,7 @@ body {
   height: 100%;
   //border: 1.0vw solid #2E2E2E;
   border: 1.0vw solid #383735;
-  border-radius: 8px;
+  border-radius: $BORDER_RADIUS_PICTURE;
   z-index: 1;
   background: linear-gradient(145deg, #ffffff, #e6e6e6);
   box-shadow: 7px 7px 21px black, -7px -7px 21px #ffffff;
@@ -87,7 +74,7 @@ body {
   font-size: 2vh;
   opacity: 0;
   transition: opacity 1s;
-  border-radius: 8px;
+  border-radius: $BORDER_RADIUS_PICTURE;
   z-index: 3;
 }
 

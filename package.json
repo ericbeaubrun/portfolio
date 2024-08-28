@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ericbeaubrun.github.io/portfolio",
+
+  "homepage": "https://adelaide-beaubrun.fr/portfolio",
   "scripts": {
     "build": "vite build",
     "predeploy": "npm run build",

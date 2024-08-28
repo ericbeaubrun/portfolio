@@ -28,7 +28,7 @@ const ScrollProgressCircle = () => {
           a 15.9155 15.9155 0 0 1 0 31.831
           a 15.9155 15.9155 0 0 1 0 -31.831"
                 fill="none"
-                stroke="#e6e1d5"
+                stroke="#c6b6a9"
                 strokeWidth="2"
             />
             <motion.path
