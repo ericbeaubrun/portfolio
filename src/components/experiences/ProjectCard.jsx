@@ -1,5 +1,5 @@
 import './ProjectCard.scss';
-import {useState,useEffect} from "react";
+import {useState, useEffect} from "react";
 import {motion} from "framer-motion";
 import Slider from "react-slick";
 
@@ -23,7 +23,7 @@ const ProjectCard = ({
                          amountPerson
                      }) => {
 
-    // const [showDetails, setShowDetails] = useState(false);
+    // const [showDqetails, setShowDetails] = useState(false);
     //
     // const toggleDetails = () => {
     //     setShowDetails(!showDetails);
@@ -37,7 +37,7 @@ const ProjectCard = ({
     const toggleDetails = () => {
         const newState = !showDetails;
         setShowDetails(newState);
-        localStorage.setItem(`showDetails-${title}`, JSON.stringify(newState)); // Sauvegarde dans localStorage
+        localStorage.setItem(`showDetails-${title}`, JSON.stringify(newState));
     };
 
     useEffect(() => {
@@ -50,12 +50,13 @@ const ProjectCard = ({
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        speed: 500,
+        autoplaySpeed: 5000,
         arrows: false,
+        pauseOnHover: false
     };
 
     return (
@@ -67,7 +68,6 @@ const ProjectCard = ({
             className="animated-title">
 
             <div className="project-card">
-                {/* Ajout du point lumineux */}
                 <div className={`status-indicator ${isCompleted ? 'completed' : 'not-completed'}`}></div>
 
                 <div className="project-header">
@@ -91,7 +91,8 @@ const ProjectCard = ({
                         : <button className="toggle-details-button" onClick={toggleDetails}>&#x2BC8; Détails</button>
                 }
 
-                {showDetails && images && images.length > 0 &&
+                {
+                    showDetails && images && images.length > 0 &&
                     (
                         <div className="carousel-wrapper">
                             <Slider {...settings} className="project-carousel">
@@ -106,14 +107,15 @@ const ProjectCard = ({
                     )
                 }
 
-                {showDetails &&
+                {
+                    showDetails &&
                     (
-
                         <div className="project-details">
                             <p className="long-description">{longDescription}</p>
 
                             {amountPerson && (<p id={"group-amount"}><img src={groupIcon} alt="Icone de groupe"
-                                                                          className="group-icon"/>Réalisé à {amountPerson}</p>)}
+                                                                          className="group-icon"/>Réalisé
+                                à {amountPerson}</p>)}
 
                             <h3>Rôle et Responsabilités :</h3>
                             <ul className="roles-list">

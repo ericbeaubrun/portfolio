@@ -2,6 +2,8 @@
 
 $MAX_WIDTH: 600px;
 
+$SELECTION_COLOR : #fdfdfc;
+
 .skills-container {
   display: flex;
   flex-direction: column;
@@ -34,7 +36,6 @@ $MAX_WIDTH: 600px;
   border-radius: 8px;
   transition: transform 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 }
 
 .skill-card:hover {
@@ -51,6 +52,54 @@ $MAX_WIDTH: 600px;
   font-size: 1.1rem;
   color: #555;
   z-index: auto;
+}
+
+.skills-container {
+  .skill-card {
+
+    &.selected {
+      background-color: $SELECTION_COLOR;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+
+
+      .skill-icon {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .skill-details {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: $SELECTION_COLOR;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    width: 100vw;
+    min-width: 320px;
+    max-width: $MAX_WIDTH;
+
+
+    .skill-details-title {
+      font-size: 1.1rem;
+      color: #555;
+      z-index: auto;
+      font-style: normal;
+      //font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .skill-experience {
+      margin-bottom: 10px;
+
+    }
+
+    .skill-details-description {
+      font-size: 16px;
+      color: #666;
+    }
+  }
 }
 
 @media (max-width: 576px) {

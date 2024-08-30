@@ -6,6 +6,7 @@ import Presentation from "./components/pages/Presentation.jsx";
 import Experiences from "./components/pages/Experiences.jsx";
 import Competences from "./components/pages/Competences.jsx";
 import Contact from "./components/pages/Contact.jsx";
+import NotFound from "./components/pages/NotFound.jsx";
 
 export const App = () => {
     return (
@@ -20,6 +21,7 @@ export const App = () => {
                 <Route path="/competences" element={<Competences/>}/>
                 <Route path="/experiences" element={<Experiences/>}/>
                 <Route path="/contact" element={<Contact/>}/>
+                <Route path="*" element={<NotFound/>}/>
             </Routes>
         </div>
     );

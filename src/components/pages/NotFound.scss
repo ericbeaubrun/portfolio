@@ -1,0 +1,33 @@
+@import "src/config.scss";
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ede8df;
+  text-align: center;
+}
+
+.not-found-content {
+  max-width: 600px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.not-found-gif {
+  width: 200px;
+  height: auto;
+}
+
+.not-found-text {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.not-found-description {
+  font-size: 1rem;
+  color: #555;
+}

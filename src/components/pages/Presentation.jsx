@@ -26,34 +26,33 @@ const carouselImages = [
 const Presentation = () => {
 
     const text_presentation1 = `
-    Bienvenue sur mon portfolio ! Je m'appelle Eric, j'ai 23 ans et je suis passionné 
-    d'informatique depuis mon plus jeune âge. Titulaire d'une licence en informatique, mon objectif est de 
-    devenir ingénieur développeur full stack, spécialisé dans le développement web, tout en explorant également les domaines du 
-    développement d'applications mobiles et de bureau.
-    `
-
-    const text_presentation2 = `
-    Je possède des compétences solides en Back-End avec Java et Spring, ainsi qu'en Front-End, principalement avec React 
-    et un peu avec Angular. Étant curieux de nature, je suis également intéressé par l'apprentissage d'autres technologies comme Django.
+   Bienvenue sur mon portfolio ! Je m'appelle Eric, j'ai 23 ans et je suis passionné par l'informatique depuis plus d'une dizaine d'années. Actuellement titulaire d'une licence en informatique, j'ai pu explorer de nombreux domaines telle que le web, le logiciel, le réseau, la data, l'intelligence artificielle et bien d'autres encore...
     `
 
     const text_presentation3 = `
-    À long terme, je souhaite obtenir un diplôme d'ingénieur BAC+5 et décrocher un poste en CDI en tant que développeur full stack. 
-    Actuellement, je suis à la recherche d'une alternance de 24 à 36 mois pour affiner mes compétences dans ce domaine et 
-    intégrer une école d'ingénieur en Île-de-France.
+    Mon objectif est donc de devenir développeur full stack, spécialisé dans le développement web (Java/React), tout en explorant également les domaines de la cybersécurité, du DevOps et du développement d'applications mobiles.
+    `
+
+    // const text_presentation = `
+    // À long terme, je souhaite obtenir un diplôme d'ingénieur BAC+5 et décrocher un poste en CDI en tant que développeur full stack.
+    // Actuellement, je suis à la recherche d'une alternance de 24 à 36 mois pour affiner mes compétences dans ce domaine et
+    // intégrer une école d'ingénieur en Île-de-France.
+    // `
+
+    const text_presentation2 = `
+    Je possède des compétences solides en back-end avec Java et Spring, ainsi qu'en front-end avec JavaScript/TypeScript et React. Étant curieux de nature, je suis également très intéressé par l'apprentissage d'autres technologies comme Django et Next.js.
     `
 
     const text_presentation_4 = [
-        "Ma passion pour l'informatique est née au lycée, lorsque j'ai commencé à programmer sur ma calculatrice (TI 82 Advanced). " +
-        "J'ai créé mes premiers programmes, allant de simples jeux à des jeux plus complexes comme Puissance 4. " +
-        "Cette première expérience en programmation a renforcé mon envie de m'orienter vers une filière informatique afin d'apprendre " +
-        "à résoudre des problèmes plus complexes et d'automatiser des tâches."
+        `
+        Ma passion pour le développement est née au lycée, lorsque j'ai commencé à programmer sur ma calculatrice. J'ai fait mes premières créations, allant de simples petits programmes à des jeux plus complexes comme le Puissance 4. Cette expérience a renforcé mon envie de m'orienter vers une filière informatique afin d'apprendre à résoudre des problèmes, à automatiser des tâches et à mettre en place des interfaces graphiques.
+        `
     ];
 
     const titles = [
         {
             type: "heading1",
-            text: "Étudiant en Master développement full stack"
+            text: "Étudiant Développeur Full Stack"
         },
         {
             type: "heading2",

@@ -13,18 +13,22 @@ import libraryIcon from '/resources/librairie.png';
 import conqueteIcon from '/resources/conquete.png';
 import documentIcon from '/resources/document.png';
 
-import aerienIcon1 from '/resources/projects/aerien1.png';
-import aerienIcon2 from '/resources/projects/aerien2.png';
-import aerienIcon3 from '/resources/projects/aerien3.png';
-import aerienIcon4 from '/resources/projects/aerien4.png';
-import conqueteIcon1 from '/resources/projects/conquete1.png';
-import conqueteIcon2 from '/resources/projects/conquete2.png';
-import conqueteIcon3 from '/resources/projects/conquete3.jpg';
-import conqueteIcon4 from '/resources/projects/conquete4.jpg';
-import learnPyIcon1 from '/resources/projects/learn_py1.png';
-import learnPyIcon2 from '/resources/projects/learn_py2.png';
-import learnPyIcon3 from '/resources/projects/learn_py3.png';
-import learnPyIcon4 from '/resources/projects/learn_py4.png';
+import aerienIcon1 from '/resources/projects/aerien1.gif';
+import aerienIcon2 from '/resources/projects/aerien2.gif';
+import aerienIcon3 from '/resources/projects/aerien3.gif';
+import aerienIcon4 from '/resources/projects/aerien4.gif';
+
+import learnPyIcon1 from '/resources/projects/learn_py1.gif';
+import learnPyIcon2 from '/resources/projects/learn_py2.gif';
+import learnPyIcon3 from '/resources/projects/learn_py3.gif';
+
+import conqueteIcon1 from '/resources/projects/conquete1.gif';
+import conqueteIcon2 from '/resources/projects/conquete2.gif';
+import conqueteIcon3 from '/resources/projects/conquete3.gif';
+import conqueteIcon4 from '/resources/projects/conquete4.gif';
+import conqueteIcon5 from '/resources/projects/conquete5.gif';
+import conqueteIcon6 from '/resources/projects/conquete6.gif';
+
 
 const title = [
     {
@@ -72,7 +76,8 @@ const Experiences = () => {
 
                 <ProjectCard
                     amountPerson={4}
-                    isCompleted={true}
+                    // isCompleted={true}
+                    isCompleted={false}
                     images={[aerienIcon1, aerienIcon2, aerienIcon3, aerienIcon4]}
                     githubLink="https://github.com/ericbeaubrun/aerien"
                     icon={aerienIcon}
@@ -95,8 +100,9 @@ trajectoire, l’évitement des collisions et la concurrence en multithreading."
 
                 <ProjectCard
                     amountPerson={5}
-                    isCompleted={true}
-                    images={[learnPyIcon1, learnPyIcon2, learnPyIcon3, learnPyIcon4]}
+                    // isCompleted={true}
+                    isCompleted={false}
+                    images={[learnPyIcon1, learnPyIcon2, learnPyIcon3]}
                     githubLink="https://github.com/ericbeaubrun/learn_py_app"
                     icon={applicationPedagogiqueIcon}
                     title="Application Pédagogique pour les Étudiants"
@@ -173,8 +179,9 @@ PostgreSQL, et une interface de communication réseau (TCP/IP)."
 
                 <ProjectCard
                     amountPerson={3}
-                    isCompleted={true}
-                    images={[conqueteIcon1, conqueteIcon2, conqueteIcon3, conqueteIcon4]}
+                    // isCompleted={true}
+                    isCompleted={false}
+                    images={[conqueteIcon1, conqueteIcon2, conqueteIcon3, conqueteIcon4, conqueteIcon5, conqueteIcon6]}
                     githubLink="https://github.com/ericbeaubrun/conquete"
                     icon={conqueteIcon}
                     title="Jeu de Plateau Stratégique Multijoueur"

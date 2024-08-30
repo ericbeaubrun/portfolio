@@ -19,13 +19,13 @@
       display: flex;
       align-items: center;
       padding: 5px 16px;
+      color: $TEXT_COLOR_LIGHT;
 
       .icon {
         width: 20px;
         height: 20px;
         margin-right: 5px;
       }
-      color: $TEXT_COLOR_LIGHT;
 
       a {
         color: $TEXT_COLOR_LIGHT;
