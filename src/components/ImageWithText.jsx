@@ -1,6 +1,7 @@
 import ImageCarousel from './ImageCarousel';
 import './ImageWithText.scss';
 
+
 const ImageWithText = ({ images, paragraphs }) => {
     return (
         <div className="image-text-container">

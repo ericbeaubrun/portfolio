@@ -1,7 +1,14 @@
-import { defineConfig } from 'vite'
+import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  plugins: [react()],
-  base: '/portfolio/'
+    plugins: [react()],
+    base: '/portfolio/',
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: `@import "@/styles/variables.scss";`
+            },
+        },
+    },
 })
