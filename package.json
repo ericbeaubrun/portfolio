@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ericbeaubrun.github.io/portfolio",
+  "homepage": "https://portfolio-jymmnaggz-ericbeaubruns-projects.vercel.app/",
+  "base": "/portfolio/",
   "scripts": {
     "build": "vite build",
     "predeploy": "npm run build",
