@@ -8,8 +8,15 @@ import Footer from "../Footer.jsx";
 import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
 import ParcoursChronologique from "../presentation/ParcoursChronologique.jsx";
 import ImageWithText from "../ImageWithText.jsx";
+import ProfileStats from "../presentation/ProfileStats.jsx";
 
 const iconsUrl = "https://skillicons.dev/icons?i=";
+
+const stats = [
+    { number: 5, label: "Années d'expérience" },
+    { number: 100, label: "Projets réalisés" },
+    { number: 25, label: "Sites web" }
+];
 
 const carouselImages = [
     iconsUrl + 'java',
@@ -26,7 +33,7 @@ const carouselImages = [
 const Presentation = () => {
 
     const text_presentation1 = `
-   Bienvenue sur mon portfolio ! Je m'appelle Eric, j'ai 23 ans et je suis passionné par l'informatique depuis plus d'une dizaine d'années. Actuellement titulaire d'une licence en informatique, j'ai pu explorer de nombreux domaines telle que le web, le logiciel, le réseau, la data, l'intelligence artificielle et bien d'autres encore...
+    Je m'appelle Eric, j'ai 23 ans et je suis passionné par l'informatique depuis plus d'une dizaine d'années. Actuellement titulaire d'une licence en informatique, j'ai pu explorer de nombreux domaines telle que le web, le logiciel, le réseau, la data, l'intelligence artificielle et bien d'autres encore...
     `
 
     const text_presentation3 = `
@@ -45,7 +52,7 @@ const Presentation = () => {
 
     const text_presentation_4 = [
         `
-        Ma passion pour le développement est née au lycée, lorsque j'ai commencé à programmer sur ma calculatrice. J'ai fait mes premières créations, allant de simples petits programmes à des jeux plus complexes comme le Puissance 4. Cette expérience a renforcé mon envie de m'orienter vers une filière informatique afin d'apprendre à résoudre des problèmes, à automatiser des tâches et à mettre en place des interfaces graphiques.
+        Ma passion pour le développement est née au lycée, lorsque j'ai commencé à programmer sur ma calculatrice. J'ai fait mes premières créations, allant de simples petits programmes à des jeux plus complexes comme le Puissance 4. Cette expérience a renforcé mon envie de m'orienter vers une filière informatique pour apprendre à résoudre des problèmes et à automatiser des tâches.
         `
     ];
 
@@ -97,20 +104,24 @@ const Presentation = () => {
                 <div className="wave"></div>
             </div>
 
-
+            <h2 id="paragraph-text-header">Bienvenue sur mon portfolio !</h2>
             <ParagraphPresentation text={text_presentation1} direction={"left"}/>
             <ParagraphPresentation text={text_presentation2} direction={"left"}/>
             <ParagraphPresentation text={text_presentation3} direction={"right"}/>
             <div className="wave-reverse"></div>
 
-            <div className="spacing"></div>
+            <div>
+                <div className={"spacing"}></div>
+                <div className={"spacing"}></div>
+                <h2 className="titre-presentation">En quelques chiffres</h2>
+                <ProfileStats stats={stats}/>
+            </div>
+
             <div className="spacing"></div>
             <div className="spacing"></div>
 
             <ImageWithText images={carouselImages} paragraphs={text_presentation_4}/>
-            <div className="spacing"></div>
-
-            <h2 id="titre-parcours">Mon parcours</h2>
+            <h2 className="titre-presentation">Mon parcours</h2>
             <ParcoursChronologique/>
 
             <Buttons

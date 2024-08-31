@@ -1,0 +1,31 @@
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 0;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.stats-container div {
+  text-align: center;
+}
+
+.stats-number {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stats-container p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .stats-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

@@ -4,7 +4,9 @@ $BORDER_RADIUS_PICTURE: 40px;
 
 .container {
   //padding-top: 0vh;
-  padding-bottom: 16vh;
+  //padding-bottom: 16vh;
+  padding-top: 25px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,12 +53,14 @@ $BORDER_RADIUS_PICTURE: 40px;
 
 #infoTitle {
   font-size: 3.5vh;
+  padding: 10px;
   color: $TEXT_COLOR_LIGHT;
 }
 
 #infoText {
   font-size: 2vh;
   color: $TEXT_COLOR_LIGHT;
+  padding: 5%;
 }
 
 .container .card .info {

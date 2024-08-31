@@ -1,29 +1,36 @@
 @import "src/config.scss";
 
-$TEXT_MARGIN : 14vw;
+$TEXT_MARGIN: 17vw;
 
-.animated-title {
+.paragraph-text-container {
+  background-color: #d8d4cd;
+  color: black;
+
+  #paragraph-text {
+    font-size: $FONT_SIZE_MEDIUM;
+    text-align: center;
+
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    margin-left: $TEXT_MARGIN;
+    margin-right: $TEXT_MARGIN;
+  }
+}
+
+@media (max-width: 1200px) {
   .paragraph-text-container {
-    background-color: #d8d4cd;
-    color: black;
     #paragraph-text {
-      font-size: $FONT_SIZE_MEDIUM;
-      text-align: center;
-
-      padding-top: 2.5vh;
-      padding-bottom: 2.5vh;
-      margin-left: $TEXT_MARGIN;
-      margin-right: $TEXT_MARGIN;
+      margin-left: 10vw;
+      margin-right: 10vw;
     }
   }
 }
 
+
 @media (max-width: 640px) {
-  .animated-title {
-    .paragraph-text-container {
-      #paragraph-text {
-        font-size: $FONT_SIZE_MEDIUM;
-      }
+  .paragraph-text-container {
+    #paragraph-text {
+      font-size: $FONT_SIZE_MEDIUM;
     }
   }
 }

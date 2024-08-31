@@ -1,6 +1,7 @@
 @import "/src/config.scss";
 
 .image-text-container {
+  text-align: left;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,8 +12,8 @@
   box-sizing: border-box;
   min-width: 30vw;
   max-width: 60vw;
-
   margin: 0 auto;
+  //margin-left: 13vw;
 }
 
 .text-container {
@@ -20,7 +21,9 @@
   font-size: 1.2rem;
 }
 
-
+.paragraph-text {
+  max-width: 500px;
+}
 
 .image-text-container {
   display: flex;
@@ -39,6 +42,7 @@
 
 @media (max-width: 1470px) {
   .image-text-container {
+
     min-width: 100%;
     flex-direction: column;
     justify-content: center;
@@ -48,9 +52,25 @@
   }
 
   .text-container {
-    margin-top: 20px;
+    //margin-top: 20px;
   }
 }
+.image-text-container {
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  //width: 100%;
+  //text-align: left;
+}
+
+//.text-container {
+//  margin-left: 20px;
+//}
+
+//.paragraph-text {
+//  margin: 10px 0;
+//}
+
 
 //@media (max-width: 1200px) {
 //  .image-text-container {

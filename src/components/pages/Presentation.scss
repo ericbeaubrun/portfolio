@@ -15,11 +15,16 @@ body {
   margin: 0;
 }
 
-#titre-parcours {
-  padding-top: 12vh;
-  padding-bottom: 2vh;
+
+.titre-presentation {
+  padding-top: 125px;
+  padding-bottom: 50px;
   font-size: 2rem;
-  color: $TEXT_COLOR_DARK;
+}
+
+#paragraph-text-header {
+  font-size: 2rem;
+  background-color: #d8d4cd;
 }
 
 

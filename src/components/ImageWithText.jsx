@@ -7,7 +7,7 @@ const ImageWithText = ({ images, paragraphs }) => {
             <ImageCarousel images={images} />
             <div className="text-container">
                 {paragraphs.map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
+                    <p key={index} className="paragraph-text">{paragraph}</p>
                 ))}
             </div>
         </div>
