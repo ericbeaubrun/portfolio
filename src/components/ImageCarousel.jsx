@@ -1,5 +1,6 @@
 import  { useEffect, useRef } from 'react';
-import './ImageCarousel.scss';
+// import './ImageCarousel.scss';
+import '/src/components/ImageCarousel.scss';
 
 const ImageCarousel = ({ images }) => {
     const carouselRef = useRef(null);

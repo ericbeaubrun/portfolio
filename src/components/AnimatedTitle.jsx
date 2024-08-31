@@ -1,6 +1,9 @@
-import "./AnimatedTitle.scss";
+// import "./AnimatedTitle.scss";
+import "/src/components/AnimatedTitle.scss";
+// import AnimatedText from "./AnimatedText.jsx";
+import AnimatedText from "/src/components/AnimatedText.jsx";
+
 import {motion} from "framer-motion";
-import AnimatedText from "./AnimatedText.jsx";
 
 const AnimatedTitle = ({ titles = [] }) => {
 

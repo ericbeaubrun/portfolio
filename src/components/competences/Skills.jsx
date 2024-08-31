@@ -1,4 +1,6 @@
-import './Skills.scss';
+// import './Skills.scss';
+import '/src/components/competences/Skills.scss';
+
 import {useState} from 'react';
 import {motion} from 'framer-motion';
 

@@ -1,21 +1,33 @@
-import "./Presentation.scss";
+// import ProfilePicture from "../presentation/ProfilePicture.jsx";
+// import ParagraphPresentation from "../presentation/ParagraphPresentation.jsx";
+// import AnimatedTitle from "../AnimatedTitle.jsx";
+// import Buttons from '../presentation/Buttons.jsx';
+// import Footer from "../Footer.jsx";
+// import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
+// import ParcoursChronologique from "../presentation/ParcoursChronologique.jsx";
+// import ImageWithText from "../ImageWithText.jsx";
+// import ProfileStats from "../presentation/ProfileStats.jsx";
+// import "./Presentation.scss";
+
+import ParagraphPresentation from "/src/components/presentation/ParagraphPresentation.jsx";
+import ParcoursChronologique from "/src/components/presentation/ParcoursChronologique.jsx";
+import ProfilePicture from "/src/components/presentation/ProfilePicture.jsx";
+import ScrollProgressCircle from "/src/components/ScrollProgressCircle.jsx";
+import ProfileStats from "/src/components/presentation/ProfileStats.jsx";
+import Buttons from '/src/components/presentation/Buttons.jsx';
+import AnimatedTitle from "/src/components/AnimatedTitle.jsx";
+import ImageWithText from "/src/components/ImageWithText.jsx";
+import Footer from "/src/components/Footer.jsx";
+import "/src/components/pages/Presentation.scss";
+
 import {motion} from "framer-motion";
-import ProfilePicture from "../presentation/ProfilePicture.jsx";
-import ParagraphPresentation from "../presentation/ParagraphPresentation.jsx";
-import AnimatedTitle from "../AnimatedTitle.jsx";
-import Buttons from '../presentation/Buttons.jsx';
-import Footer from "../Footer.jsx";
-import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
-import ParcoursChronologique from "../presentation/ParcoursChronologique.jsx";
-import ImageWithText from "../ImageWithText.jsx";
-import ProfileStats from "../presentation/ProfileStats.jsx";
 
 const iconsUrl = "https://skillicons.dev/icons?i=";
 
 const stats = [
-    { number: 5, label: "Années d'expérience" },
-    { number: 100, label: "Projets réalisés" },
-    { number: 25, label: "Sites web" }
+    {number: 5, label: "Années d'expérience"},
+    {number: 100, label: "Projets réalisés"},
+    {number: 25, label: "Sites web"}
 ];
 
 const carouselImages = [

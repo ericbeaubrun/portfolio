@@ -1,4 +1,6 @@
-import './ProfilePicture.scss';
+// import './ProfilePicture.scss';
+import '/src/components/presentation/ProfilePicture.scss';
+
 import {motion} from 'framer-motion';
 
 const ProfilePicture = () => {

@@ -1,4 +1,6 @@
-import './Buttons.scss';
+// import './Buttons.scss';
+import '/src/components/presentation/Buttons.scss';
+
 import {motion} from "framer-motion";
 
 const Buttons = ({textBtn1, linkBtn1, textBtn2, linkBtn2}) => {

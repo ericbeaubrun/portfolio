@@ -1,5 +1,7 @@
-import "./ProfileStats.scss"
-import  { useEffect, useRef, useState } from "react";
+// import "./ProfileStats.scss"
+import "/src/components/presentation/ProfileStats.scss"
+
+import {useEffect, useRef, useState} from "react";
 import CountUp from "react-countup";
 
 const stats = [

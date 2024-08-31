@@ -1,4 +1,6 @@
-import './ParcoursChronologique.scss';
+// import './ParcoursChronologique.scss';
+import '/src/components/presentation/ParcoursChronologique.scss';
+
 import {motion} from "framer-motion";
 import idiaTechIcon from "/resources/idia-tech2.png";
 import cyIcon from "/resources/cy.png";

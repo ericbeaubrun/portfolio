@@ -1,8 +1,14 @@
-import ProjectCard from "../experiences/ProjectCard.jsx";
-import Footer from "../Footer.jsx";
-import "./Experiences.scss"
-import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
-import AnimatedTitle from "../AnimatedTitle.jsx";
+// import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
+// import ProjectCard from "../experiences/ProjectCard.jsx";
+// import AnimatedTitle from "../AnimatedTitle.jsx";
+// import Footer from "../Footer.jsx";
+// import "./Experiences.scss"
+
+import ScrollProgressCircle from "/src/components/ScrollProgressCircle.jsx";
+import ProjectCard from "/src/components/experiences/ProjectCard.jsx";
+import AnimatedTitle from "/src/components/AnimatedTitle.jsx";
+import Footer from "/src/components/Footer.jsx";
+import "/src/components/pages/Experiences.scss"
 
 // Icons
 import idiaTechIcon from '/resources/idia-tech.png';

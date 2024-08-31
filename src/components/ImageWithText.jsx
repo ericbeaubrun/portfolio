@@ -1,6 +1,8 @@
-import ImageCarousel from './ImageCarousel';
-import './ImageWithText.scss';
+// import ImageCarousel from './ImageCarousel';
+import ImageCarousel from '/src/components/ImageCarousel';
 
+// import '../ImageWithText.scss';
+import '/src/components/ImageWithText.scss';
 
 const ImageWithText = ({ images, paragraphs }) => {
     return (

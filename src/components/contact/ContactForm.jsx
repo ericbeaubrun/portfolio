@@ -1,4 +1,6 @@
-import "./ContactForm.scss"
+// import "./ContactForm.scss"
+import "/src/components/contact/ContactForm.scss"
+
 import {useState} from 'react';
 import emailjs from 'emailjs-com';
 
