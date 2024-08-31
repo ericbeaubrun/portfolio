@@ -15,7 +15,7 @@ const NotFound = () => {
                 <h1 className="not-found-text">Oups ! Page non trouvée.</h1>
                 <p className="not-found-description">
                     La page que vous recherchez est introuvable.&nbsp;
-                    <a href={"/portfolio/"}>Cliquez ici</a>
+                    <a href={"/"}>Cliquez ici</a>
                     &nbsp; pour aller à l'accueil.
                 </p>
             </div>
