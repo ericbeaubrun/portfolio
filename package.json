@@ -1,9 +1,9 @@
 {
-  "name": "untitled",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://adelaide-beaubrun.fr/portfolio/#/presentation",
+  "homepage": "https://ericbeaubrun.github.io/portfolio",
   "scripts": {
     "build": "vite build",
     "predeploy": "npm run build",
