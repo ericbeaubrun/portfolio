@@ -22,6 +22,10 @@ import "/src/components/pages/Presentation.scss";
 
 import {motion} from "framer-motion";
 
+const LINKEDIN_LINK = "https://www.linkedin.com/in/eric-adelaide-beaubrun/";
+
+const CV_FILENAME = "cv.pdf";
+
 const iconsUrl = "https://skillicons.dev/icons?i=";
 
 const stats = [
@@ -105,9 +109,9 @@ const Presentation = () => {
 
                     <Buttons
                         textBtn1="Linkedin"
-                        linkBtn1="https://www.linkedin.com/in/eric-adelaide-beaubrun/"
+                        linkBtn1={LINKEDIN_LINK}
                         textBtn2="CV"
-                        linkBtn2="/portfolio/resources/cv.pdf"
+                        linkBtn2={"/resources/" + CV_FILENAME}
                     />
                 </motion.div>
 
@@ -138,9 +142,9 @@ const Presentation = () => {
 
             <Buttons
                 textBtn1="Compétences"
-                linkBtn1="/portfolio/#/competences"
+                linkBtn1="/#/competences"
                 textBtn2="Experiences"
-                linkBtn2="/portfolio/#/experiences"
+                linkBtn2="/#/experiences"
             />
             <div className="spacing"></div>
 
