@@ -68,10 +68,69 @@
   z-index: auto;
 }
 
-.timeline-year0 {color: #6b63b6}
-.timeline-year1 {color:#b0ab11}
-.timeline-year2 {color:#74c8c4}
-.timeline-year3 {color:#63b32e}
+//.timeline-year0 {
+//  color: #6b63b6
+//}
+//
+//.timeline-year1 {
+//  color: #b0ab11
+//}
+//
+//.timeline-year2 {
+//  color: #74c8c4
+//}
+//
+//.timeline-year3 {
+//  color: #63b32e
+//}
+
+
+
+.timeline-year0 {
+  background: linear-gradient(270deg, #9b9b9b, #838282, #444441, #343433);
+}
+
+.timeline-year1 {
+  background: linear-gradient(270deg, #4d961e, #63b32e, #b0ab11, #9b9608);
+}
+
+.timeline-year2 {
+  background: linear-gradient(270deg, #73d5d1, #69c8c4, #4052a3, #334394);
+}
+
+.timeline-year3 {
+  background: linear-gradient(270deg, #9b9b9b, #838282, #444441, #343433);
+}
+
+.timeline-year4 {
+  background: linear-gradient(270deg, #9b9b9b, #838282, #444441, #343433);
+}
+
+
+
+.timeline-year0,
+.timeline-year1,
+.timeline-year2,
+.timeline-year3,
+.timeline-year4,{
+  background-size: 125% 125%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
 
 .timeline-title {
   font-size: 1.25rem;

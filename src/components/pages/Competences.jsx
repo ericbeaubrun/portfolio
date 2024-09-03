@@ -11,6 +11,7 @@ import ScrollProgressCircle from "/src/components/ScrollProgressCircle.jsx";
 import "/src/components/pages/Competences.scss"
 
 import {motion} from "framer-motion";
+import {TypeAnimation} from "react-type-animation";
 
 const Competences = () => {
 
@@ -183,14 +184,50 @@ const Competences = () => {
         }
     ];
 
+    const DEFAULT_TYPING_SPEED = 5000;
+
     return (
         <>
             <div className="all-skills-wrapper">
                 <ScrollProgressCircle/>
 
+
                 <div className='background-title'>
                     <AnimatedTitle titles={title}/>
                 </div>
+
+                <div className="type-animation-text">
+                    <TypeAnimation
+                        sequence={
+                            [
+                                "Excellente maîtrise des langages de programmation web (HTML5, CSS3, JavaScript/ES6+)",
+                                DEFAULT_TYPING_SPEED,
+
+                                "Compétences dans l'utilisation de frameworks de développement front-end, en particulier React.",
+                                DEFAULT_TYPING_SPEED,
+
+                                "Compréhension des principes de développement d’API, en particulier avec Spring.",
+                                DEFAULT_TYPING_SPEED,
+
+                                "Expérience dans le développement back-end avec Java.",
+                                DEFAULT_TYPING_SPEED,
+
+                                "Expérience dans la mise en place et la gestion de bases de données relationnelles (PostgreSQL, MySQL).",
+                                DEFAULT_TYPING_SPEED,
+
+                                // "Capacité à travailler en équipe tout en faisant preuve d’autonomie et de rigueur.",
+                                // DEFAULT_TYPING_SPEED,
+                                //
+                                // "Capacité à concevoir des interfaces utilisateur complexes.",
+                                // DEFAULT_TYPING_SPEED,
+                            ]
+                        }
+                        deletionSpeed={130}
+                        speed={{type: 'keyStrokeDelayInMs', value: 20}}
+                        repeat={Infinity}
+                    />
+                </div>
+
 
                 <motion.div
                     initial={{opacity: 0, y: -20}}
