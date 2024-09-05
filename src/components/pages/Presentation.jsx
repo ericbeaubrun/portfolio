@@ -104,10 +104,13 @@ const Presentation = () => {
                     <div className="wave"></div>
                 </div>
 
-                <h2 id="paragraph-text-header">Bienvenue sur mon portfolio !</h2>
-                <ParagraphPresentation text={text_presentation1} direction={"left"}/>
-                <ParagraphPresentation text={text_presentation2} direction={"left"}/>
-                <ParagraphPresentation text={text_presentation3} direction={"right"}/>
+                <div className="text-presentation-container">
+                    <h2 id="paragraph-text-header">Bienvenue sur mon portfolio !</h2>
+                    <ParagraphPresentation text={text_presentation1} direction={"left"}/>
+                    <ParagraphPresentation text={text_presentation2} direction={"left"}/>
+                    <ParagraphPresentation text={text_presentation3} direction={"right"}/>
+                </div>
+
                 <div className="wave-reverse"></div>
 
                 <div>

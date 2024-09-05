@@ -77,8 +77,8 @@ const Experiences = () => {
 
                 description="Réalisé dans le cadre d'un projet de Software Engeniering en dernière année de licence."
 
-                longDescription="Ce simulateur de trafic aérien a pour objectif de modéliser les déplacements et
-                    interactions des avions dans un espace aérien contrôlé. Développé en Java, il utilise le multithreading
+                longDescription="Ce simulateur a pour objectif de modéliser les déplacements et
+                    interactions des avions dans un espace aérien prédéfinit. Développé en Java, il utilise le multithreading
                     pour gérer les avions simultanément. La simulation est représentée dans une interface graphique 2D
                     où l'utilisateur peut observer les trajectoires des avions, les données des aéroports,
                     ainsi que des informations en temps réel sur la position, la vitesse et l'altitude des appareils.
@@ -213,7 +213,6 @@ L'application inclut la génération de feedbacks en temps réel, et le stockage
                     'Conception UI/UX'
                 ]}
             />
-
 
             <ProjectCard
                 isCompleted={false}

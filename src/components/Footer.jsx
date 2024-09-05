@@ -11,7 +11,7 @@ const Footer = () => {
         <footer className="footer">
             <ul className="contact-list">
                 <li>
-                    (Mis à jour le 31/08/2024)
+                    (05/09/2024)
                 </li>
 
                 <li>

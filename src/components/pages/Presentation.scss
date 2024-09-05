@@ -24,7 +24,13 @@ body {
 
 #paragraph-text-header {
   font-size: 2rem;
-  background-color: #d8d4cd;
+  margin-left: 10vw;
+  margin-right: 10vw;
+
+}
+
+.text-presentation-container {
+  background-color: #d9d4cd;
 }
 
 .wave {
@@ -48,4 +54,3 @@ body {
 .presentation-container {
   margin-bottom: $FOOTER-MARGIN;
 }
-
