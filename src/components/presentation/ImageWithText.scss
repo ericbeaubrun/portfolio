@@ -1,4 +1,4 @@
-@import "/src/config.scss";
+@import "/src/config";
 
 .image-text-container {
   text-align: left;
@@ -26,6 +26,7 @@
 }
 
 .image-text-container {
+  margin-top: 140px;
   display: flex;
   flex-direction: row;
   align-items: center;

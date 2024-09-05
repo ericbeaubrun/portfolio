@@ -1,31 +1,17 @@
-// import ProfilePicture from "../presentation/ProfilePicture.jsx";
-// import ParagraphPresentation from "../presentation/ParagraphPresentation.jsx";
-// import AnimatedTitle from "../AnimatedTitle.jsx";
-// import Buttons from '../presentation/Buttons.jsx';
-// import Footer from "../Footer.jsx";
-// import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
-// import ParcoursChronologique from "../presentation/ParcoursChronologique.jsx";
-// import ImageWithText from "../ImageWithText.jsx";
-// import ProfileStats from "../presentation/ProfileStats.jsx";
-// import "./Presentation.scss";
-
-import ParagraphPresentation from "/src/components/presentation/ParagraphPresentation.jsx";
-import ParcoursChronologique from "/src/components/presentation/ParcoursChronologique.jsx";
-import ProfilePicture from "/src/components/presentation/ProfilePicture.jsx";
-import ScrollProgressCircle from "/src/components/ScrollProgressCircle.jsx";
-import ProfileStats from "/src/components/presentation/ProfileStats.jsx";
-import Buttons from '/src/components/presentation/Buttons.jsx';
-import AnimatedTitle from "/src/components/AnimatedTitle.jsx";
-import ImageWithText from "/src/components/ImageWithText.jsx";
-import Footer from "/src/components/Footer.jsx";
-import "/src/components/pages/Presentation.scss";
-
+import ProfilePicture from "../presentation/ProfilePicture.jsx";
+import ParagraphPresentation from "../presentation/ParagraphPresentation.jsx";
+import AnimatedTitle from "../AnimatedTitle.jsx";
+import Buttons from '../presentation/Buttons.jsx';
+import Footer from "../Footer.jsx";
+import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
+import ParcoursChronologique from "../presentation/ParcoursChronologique.jsx";
+import ImageWithText from "../presentation/ImageWithText.jsx";
+import ProfileStats from "../presentation/ProfileStats.jsx";
+import "./Presentation.scss";
 import {motion} from "framer-motion";
 
 const LINKEDIN_LINK = "https://www.linkedin.com/in/eric-adelaide-beaubrun/";
-
 const CV_FILENAME = "cv.pdf";
-
 const iconsUrl = "https://skillicons.dev/icons?i=";
 
 const stats = [
@@ -86,67 +72,61 @@ const Presentation = () => {
     return (
         <>
             <ScrollProgressCircle/>
+            <div className="presentation-container">
+                <div className="area">
+                    <AnimatedTitle titles={titles}/>
+                    <ul className="circles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <motion.div
+                        initial={{opacity: 0, y: -20}}
+                        animate={{opacity: 1, y: 0}}
+                        transition={{duration: 0.5, delay: 0.2}}>
+                        <ProfilePicture/>
 
-            <div className="area">
-                <AnimatedTitle titles={titles}/>
-                <ul className="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <motion.div
-                    initial={{opacity: 0, y: -20}}
-                    animate={{opacity: 1, y: 0}}
-                    transition={{duration: 0.5, delay: 0.2}}>
-                    <ProfilePicture/>
+                        <Buttons
+                            textBtn1="Linkedin"
+                            linkBtn1={LINKEDIN_LINK}
+                            textBtn2="CV"
+                            linkBtn2={"/resources/" + CV_FILENAME}
+                        />
+                    </motion.div>
 
-                    <Buttons
-                        textBtn1="Linkedin"
-                        linkBtn1={LINKEDIN_LINK}
-                        textBtn2="CV"
-                        linkBtn2={"/resources/" + CV_FILENAME}
-                    />
-                </motion.div>
+                    <div className="wave"></div>
+                </div>
 
-                <div className="spacing"></div>
-                <div className="spacing"></div>
-                <div className="wave"></div>
+                <h2 id="paragraph-text-header">Bienvenue sur mon portfolio !</h2>
+                <ParagraphPresentation text={text_presentation1} direction={"left"}/>
+                <ParagraphPresentation text={text_presentation2} direction={"left"}/>
+                <ParagraphPresentation text={text_presentation3} direction={"right"}/>
+                <div className="wave-reverse"></div>
+
+                <div>
+                    <h2 className="titre-presentation">Résumé en chiffres</h2>
+                    <ProfileStats stats={stats}/>
+                </div>
+
+
+                <ImageWithText images={carouselImages} paragraphs={text_presentation_4}/>
+                <h2 className="titre-presentation">Mon parcours</h2>
+                <ParcoursChronologique/>
+
+                <Buttons
+                    textBtn1="Compétences"
+                    linkBtn1="/#/competences"
+                    textBtn2="Experiences"
+                    linkBtn2="/#/experiences"
+                />
             </div>
-
-            <h2 id="paragraph-text-header">Bienvenue sur mon portfolio !</h2>
-            <ParagraphPresentation text={text_presentation1} direction={"left"}/>
-            <ParagraphPresentation text={text_presentation2} direction={"left"}/>
-            <ParagraphPresentation text={text_presentation3} direction={"right"}/>
-            <div className="wave-reverse"></div>
-
-            <div>
-                <div className={"spacing"}></div>
-                <div className={"spacing"}></div>
-                <h2 className="titre-presentation">En quelques chiffres</h2>
-                <ProfileStats stats={stats}/>
-            </div>
-
-            <div className="spacing"></div>
-            <div className="spacing"></div>
-
-            <ImageWithText images={carouselImages} paragraphs={text_presentation_4}/>
-            <h2 className="titre-presentation">Mon parcours</h2>
-            <ParcoursChronologique/>
-
-            <Buttons
-                textBtn1="Compétences"
-                linkBtn1="/#/competences"
-                textBtn2="Experiences"
-                linkBtn2="/#/experiences"
-            />
-            <div className="spacing"></div>
 
             <Footer/>
         </>

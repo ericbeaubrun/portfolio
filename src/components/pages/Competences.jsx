@@ -1,15 +1,8 @@
-// import {Skills} from '../competences/Skills.jsx'
-// import Footer from "../Footer.jsx";
-// import AnimatedTitle from "../AnimatedTitle.jsx";
-// import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
-// import "./Competences.scss"
-
-import {Skills} from '/src/components/competences/Skills.jsx'
-import Footer from "/src/components/Footer.jsx";
-import AnimatedTitle from "/src/components/AnimatedTitle.jsx";
-import ScrollProgressCircle from "/src/components/ScrollProgressCircle.jsx";
-import "/src/components/pages/Competences.scss"
-
+import {Skills} from '../competences/Skills.jsx'
+import Footer from "../Footer.jsx";
+import AnimatedTitle from "../AnimatedTitle.jsx";
+import ScrollProgressCircle from "../ScrollProgressCircle.jsx";
+import "./Competences.scss"
 import {motion} from "framer-motion";
 // import {TypeAnimation} from "react-type-animation";
 
@@ -180,7 +173,7 @@ const Competences = () => {
     const title = [
         {
             type: "heading1",
-            text: "Mes Compétences"
+            text: "Mes compétences en développement"
         }
     ];
 

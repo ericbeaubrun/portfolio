@@ -1,8 +1,5 @@
-// import './ContactCard.scss';
-// import ContactPicture from "./ContactPicture.jsx";
-
-import '/src/components/contact/ContactCard.scss';
-import ContactPicture from "/src/components/contact/ContactPicture.jsx";
+import './ContactCard.scss';
+import ContactPicture from "./ContactPicture.jsx";
 
 // Icons
 import mailIcon from '/resources/email.png';

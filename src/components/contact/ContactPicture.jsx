@@ -1,5 +1,4 @@
-// import './ContactPicture.scss';
-import '/src/components/contact/ContactPicture.scss';
+import './ContactPicture.scss';
 
 import ppIcon from '/resources/profile_picture3.png';
 

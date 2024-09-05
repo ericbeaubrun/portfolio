@@ -1,6 +1,4 @@
-// import './ProjectCard.scss';
-import '/src/components/experiences/ProjectCard.scss';
-
+import './ProjectCard.scss';
 import {useState, useEffect} from "react";
 import {motion, AnimatePresence} from "framer-motion";
 import Slider from "react-slick";

@@ -1,6 +1,6 @@
-// import "./Footer.scss";
-import "/src/components/Footer.scss";
+import "./Footer.scss";
 
+// Icons
 import mailIcon from '/resources/email2.png';
 import phoneIcon from '/resources/telephone2.png';
 import linkedinIcon from '/resources/linkedin2.png';

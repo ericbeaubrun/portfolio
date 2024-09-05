@@ -21,6 +21,8 @@
   //}
 }
 
+
+
 .project-card {
   position: relative;
 
@@ -73,9 +75,14 @@
   }
 }
 
+
+.project-icon {
+  margin-top: 2.5vh;
+}
+
 .project-header {
   display: flex;
-  align-items: center;
+  //align-items: center;
   margin-bottom: 20px;
 
   .project-icon {
@@ -116,7 +123,7 @@
   font-weight: bold;
   cursor: pointer;
   font-size: 0.8rem;
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
 
   &:hover {
     background-color: lighten(#635a50, 8%);

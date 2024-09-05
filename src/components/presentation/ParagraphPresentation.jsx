@@ -1,5 +1,4 @@
-// import "./ParagraphPresentation.scss"
-import "/src/components/presentation/ParagraphPresentation.scss"
+import "./ParagraphPresentation.scss"
 
 const ParagraphPresentation = ({text}) => {
     return (

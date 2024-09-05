@@ -11,7 +11,7 @@ $MAX_WIDTH: 800px;
 
 .all-skills-wrapper {
   background-image: url('../../../public/resources/background/background1.svg');
-  padding-bottom: 14vh;
+  padding-bottom: $FOOTER-MARGIN;
   background-size: cover;
   background-position: center;
   transform-origin: center;

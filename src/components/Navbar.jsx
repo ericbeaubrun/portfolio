@@ -1,6 +1,4 @@
-// import './Navbar.scss';
-import '/src/components/Navbar.scss';
-
+import './Navbar.scss';
 import {NavLink, useLocation} from "react-router-dom";
 import {useEffect} from 'react';
 

@@ -1,6 +1,4 @@
-// import './NotFound.scss';
-import '/src/components/pages/NotFound.scss';
-
+import './NotFound.scss';
 import notFoundImage from '/resources/404.gif';
 
 const NotFound = () => {

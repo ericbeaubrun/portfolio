@@ -1,11 +1,6 @@
-// import {ContactForm} from "../contact/ContactForm.jsx";
-// import {ContactCard} from "../contact/ContactCard.jsx";
-// import "./Contact.scss";
-
-import {ContactForm} from "/src/components/contact/ContactForm.jsx";
-import {ContactCard} from "/src/components/contact/ContactCard.jsx";
-import "/src/components/pages/Contact.scss";
-
+import {ContactForm} from "../contact/ContactForm.jsx";
+import {ContactCard} from "../contact/ContactCard.jsx";
+import "./Contact.scss";
 import {motion} from "framer-motion";
 
 const Contact = () => {

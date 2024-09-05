@@ -26,13 +26,12 @@ label {
 .contactForm {
   min-width: $MIN_WIDTH;
   max-width: 1000px;
-
+  margin-bottom: $FOOTER-MARGIN;
   width: $WIDTH;
   margin-top: 6.5vh;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);;
   border-radius: $BORDER_RADIUS_DEFAULT;
   background-color: $BACKGROUND_COLOR_COMPONENT;
-
 }
 
 input[type="text"], input[type="email"], textarea {

@@ -1,6 +1,4 @@
-// import "./ContactForm.scss"
-import "/src/components/contact/ContactForm.scss"
-
+import "./ContactForm.scss"
 import {useState} from 'react';
 import emailjs from 'emailjs-com';
 
@@ -48,7 +46,7 @@ export const ContactForm = () => {
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
-                            placeholder="Entrez votre nom"
+                            placeholder="Votre nom complet"
                             required
                         />
                     </div>
@@ -60,7 +58,7 @@ export const ContactForm = () => {
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
-                            placeholder="Entrez votre email"
+                            placeholder="exemple@domaine.com"
                             required
                         />
                     </div>
@@ -71,15 +69,13 @@ export const ContactForm = () => {
                             name="message"
                             value={formData.message}
                             onChange={handleChange}
-                            placeholder="Entrez votre message"
+                            placeholder="Votre message..."
                             required
                         />
                     </div>
                     <button id="form-submit-btn" type="submit">&#x27A4;&nbsp;&nbsp;Envoyer&nbsp;</button>
                 </form>
-
             </div>
-            <div className="spacing"></div>
         </>
     );
 };
