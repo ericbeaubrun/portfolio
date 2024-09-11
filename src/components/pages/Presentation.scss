@@ -23,10 +23,11 @@ body {
 }
 
 #paragraph-text-header {
-  font-size: 2rem;
+  //font-size: 2rem;
+  font-size: 1.75rem;
   margin-left: 10vw;
   margin-right: 10vw;
-
+  margin-bottom: 20px;
 }
 
 .text-presentation-container {
@@ -48,7 +49,8 @@ body {
   background-position: center;
   background-size: cover;
   height: 100px;
-  margin-bottom: 140px;
+  //margin-bottom: 140px;
+  margin-bottom :350px;
 }
 
 .presentation-container {

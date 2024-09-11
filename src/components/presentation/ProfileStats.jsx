@@ -4,17 +4,23 @@ import CountUp from "react-countup";
 
 const stats = [
     {
-        num: 6,
-        text: "Projets",
-    },
-    {
         num: 4,
         text: "Ans d'expériences",
     },
     {
-        num: 1,
-        text: "Stage",
+        num: 22,
+        text: "Compétences",
     },
+    {
+        num: 8,
+        text: "Projets réalisés",
+        // (1) Conquete (2) File System (3) IoT (4) Librairie (5) Fichiers OpenDOC (6) Aerien (7) Appli pedagogique (8) Pointage étudiant
+    },
+    {
+        num: 2,
+        text: "Stages",
+    },
+
 ];
 
 const ProfileStats = () => {

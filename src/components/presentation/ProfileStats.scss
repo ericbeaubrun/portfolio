@@ -5,6 +5,8 @@
   margin-top: 0;
   margin-left: 10vw;
   margin-right: 10vw;
+
+  flex-wrap: wrap;
 }
 
 .stats-container div {
@@ -27,5 +29,6 @@
   .stats-container {
     margin-left: 0;
     margin-right: 0;
+    max-width: 1000px;
   }
 }

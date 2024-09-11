@@ -10,9 +10,9 @@ const Footer = () => {
     return (
         <footer className="footer">
             <ul className="contact-list">
-                <li>
-                    (05/09/2024)
-                </li>
+                {/*<li>*/}
+                {/*    05/09/2024*/}
+                {/*</li>*/}
 
                 <li>
                     <img src={phoneIcon} alt="Téléphone" className="icon"/>

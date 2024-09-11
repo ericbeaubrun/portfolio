@@ -31,7 +31,7 @@ import conqueteIcon6 from '/resources/projects/conquete6.gif';
 
 
 const title = [{
-    type: "heading1", text: "Mes expériences en développement"
+    type: "heading1", text: "Mes expériences"
 }];
 
 const Experiences = () => {

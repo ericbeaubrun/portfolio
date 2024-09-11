@@ -173,7 +173,7 @@ const Competences = () => {
     const title = [
         {
             type: "heading1",
-            text: "Mes compétences en développement"
+            text: "Mes compétences"
         }
     ];
 

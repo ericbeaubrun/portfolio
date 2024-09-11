@@ -9,6 +9,7 @@ import ImageWithText from "../presentation/ImageWithText.jsx";
 import ProfileStats from "../presentation/ProfileStats.jsx";
 import "./Presentation.scss";
 import {motion} from "framer-motion";
+import DashedLine from "../presentation/DashedLine.jsx";
 
 const LINKEDIN_LINK = "https://www.linkedin.com/in/eric-adelaide-beaubrun/";
 const CV_FILENAME = "cv.pdf";
@@ -20,16 +21,26 @@ const stats = [
     {number: 25, label: "Sites web"}
 ];
 
+// const carouselImages = [
+//     iconsUrl + 'java',
+//     iconsUrl + 'devto',
+//     iconsUrl + 'rust',
+//     iconsUrl + 'htmx',
+//     iconsUrl + 'js',
+//     iconsUrl + 'py',
+//     iconsUrl + 'linux',
+//     iconsUrl + 'c',
+//     iconsUrl + 'powershell',
+// ];
+
 const carouselImages = [
     iconsUrl + 'java',
-    iconsUrl + 'devto',
-    iconsUrl + 'rust',
-    iconsUrl + 'htmx',
-    iconsUrl + 'js',
+    iconsUrl + 'react',
     iconsUrl + 'py',
     iconsUrl + 'linux',
-    iconsUrl + 'c',
-    iconsUrl + 'powershell',
+    iconsUrl + 'py',
+    iconsUrl + 'react',
+    iconsUrl + 'java',
 ];
 
 const Presentation = () => {
@@ -61,7 +72,7 @@ const Presentation = () => {
     const titles = [
         {
             type: "heading1",
-            text: "Étudiant Développeur Full Stack"
+            text: "Étudiant en Développement Full Stack"
         },
         {
             type: "heading2",
@@ -115,12 +126,18 @@ const Presentation = () => {
 
                 <div>
                     <h2 className="titre-presentation">Résumé en chiffres</h2>
+                    <DashedLine direction="right"/> {/*--------------------------------------------------------------*/}
+                    <DashedLine direction="left"/> {/*--------------------------------------------------------------*/}
                     <ProfileStats stats={stats}/>
+                    <DashedLine direction="right"/> {/*--------------------------------------------------------------*/}
+                    <DashedLine direction="left"/> {/*--------------------------------------------------------------*/}
                 </div>
 
-
                 <ImageWithText images={carouselImages} paragraphs={text_presentation_4}/>
-                <h2 className="titre-presentation">Mon parcours</h2>
+
+
+
+                <h2 className="titre-presentation">Mon Parcours</h2>
                 <ParcoursChronologique/>
 
                 <Buttons
