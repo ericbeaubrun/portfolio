@@ -113,7 +113,7 @@ const Competences = () => {
         },
         {
             startYear: "2024",
-            name: "Typescript",
+            name: "TypeScript",
             icon: url + "ts",
             description: "Je suis capable de typer mon code JavaScript avec TypeScript, ce qui améliore la fiabilité et la maintenabilité de mes projets front-end."
         },
