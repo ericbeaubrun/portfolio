@@ -106,7 +106,6 @@ const Presentation = () => {
                 </div>
 
                 <div >
-                    {/*TODO*/}
                     {/*<h2 className="titre-presentation">Mes créations</h2>*/}
                     {/*<CardContainer/>*/}
                     <h2 className="titre-presentation"> Pour plus de détails...</h2>
