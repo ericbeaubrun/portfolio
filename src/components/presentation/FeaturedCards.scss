@@ -1,0 +1,128 @@
+@import "src/config.scss";
+
+.featured-card-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  //margin: 40px 0;
+}
+
+.featured-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  box-shadow: $BOX_SHADOW;
+  border-radius: $BORDER_RADIUS_DEFAULT;
+  background-color: $BACKGROUND_COLOR_COMPONENT;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.featured-card .featured-card-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.featured-card:hover .featured-card-content {
+  transform: translateY(-20px);
+}
+
+.featured-card .content .imgBx {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.featured-card .featured-card-content .imgBx img {
+  //position: absolute;
+  //top: 0;
+  //left: 0;
+  width: 100%;
+  height: 100%;
+  //object-fit: cover;
+}
+
+.featured-card .featured-card-content .imgBx img {
+  //position: absolute;
+  //top: 0;
+  //left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-card .featured-card-content .contentBx h3 {
+  color: $TEXT_COLOR_DARK;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+
+.featured-card .featured-card-content .contentBx h3 span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+.featured-card .sci {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+}
+
+.featured-card .sci li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.featured-card:hover .sci li {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.featured-card .sci li a {
+  color: $TEXT_COLOR_DARK;
+  font-size: 20px;
+}
+.featured-card .featured-card-content .imgBx {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 20px; // Ajoute un espacement entre l'image et le titre
+}
+
+
+
+.featured-card .featured-card-content .contentBx {
+  z-index: 2; // Assure que le texte soit au-dessus
+}
+
+.featured-card .featured-card-content .contentBx h3 {
+  color: $TEXT_COLOR_DARK;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+  z-index: 2; // Assure que le texte soit au-dessus de l'image
+}

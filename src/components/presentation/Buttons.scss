@@ -11,12 +11,15 @@
 }
 
 .btn {
+  font-family: $FONT;
   font-size: $FONT_SIZE_MEDIUM;
-  min-width: 165px;
-  width: 10vw;
-  max-width: 250px;
+  //min-width: 165px;
+  min-width: 175px;
+  width: 15vw;
+  max-width: 240px;
   padding: 10px 20px;
-  font-weight: 600;
+  //font-weight: 600;
+  font-weight: bold;
   border-radius: 20px;
   border: none;
   cursor: pointer;
@@ -49,3 +52,9 @@
     background-color: darken(white, 5%);
   }
 }
+
+//@media (max-width: 768px) {
+//  .btn {
+//    min-width: 175px;
+//  }
+//}

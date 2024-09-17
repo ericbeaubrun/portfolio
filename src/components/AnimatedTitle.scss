@@ -5,18 +5,14 @@
   padding-top: 10vh;
 }
 
-.spacing {
-  padding-top: 8vh;
-}
-
 h1 {
-  font-size: 2rem;
+  font-size: $FONT_SIZE_H1;
   margin-top: 5vh;
 }
 
 h2 {
   padding-top: 3vh;
-  font-size: 1.5rem;
+  font-size: $FONT_SIZE_H2;
 }
 
 .word-wrapper {
@@ -38,12 +34,12 @@ h2 {
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: $FONT_SIZE_H1_RESPONSIVE;
     margin-top: 2vh;
   }
 
   h2 {
-    font-size: 1.4rem;
+    font-size: $FONT_SIZE_H2_RESPONSIVE;
     padding-top: 2vh;
   }
 }

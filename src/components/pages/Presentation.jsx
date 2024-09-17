@@ -10,6 +10,8 @@ import ProfileStats from "../presentation/ProfileStats.jsx";
 import "./Presentation.scss";
 import {motion} from "framer-motion";
 import DashedLine from "../presentation/DashedLine.jsx";
+import content from '../../content/presentation.json';
+import CardContainer from "../presentation/FeaturedCards.jsx";
 
 const LINKEDIN_LINK = "https://www.linkedin.com/in/eric-adelaide-beaubrun/";
 const CV_FILENAME = "cv.pdf";
@@ -21,64 +23,34 @@ const stats = [
     {number: 25, label: "Sites web"}
 ];
 
-// const carouselImages = [
-//     iconsUrl + 'java',
-//     iconsUrl + 'devto',
-//     iconsUrl + 'rust',
-//     iconsUrl + 'htmx',
-//     iconsUrl + 'js',
-//     iconsUrl + 'py',
-//     iconsUrl + 'linux',
-//     iconsUrl + 'c',
-//     iconsUrl + 'powershell',
-// ];
-
 const carouselImages = [
     iconsUrl + 'java',
     iconsUrl + 'react',
     iconsUrl + 'py',
     iconsUrl + 'linux',
-    iconsUrl + 'py',
-    iconsUrl + 'react',
-    iconsUrl + 'java',
+    iconsUrl + 'nodejs',
+    iconsUrl + 'devto',
+    iconsUrl + 'htmx',
 ];
 
 const Presentation = () => {
 
-    const text_presentation1 = `
-    Je m'appelle Eric, j'ai 23 ans et je suis passionné par l'informatique depuis plus d'une dizaine d'années. Actuellement titulaire d'une licence en informatique, j'ai pu explorer de nombreux domaines telle que le web, le logiciel, le réseau, la data, l'intelligence artificielle et bien d'autres encore...
-    `
-
-    const text_presentation3 = `
-    Mon objectif est donc de devenir développeur full stack, spécialisé dans le développement web (Java/React), tout en explorant également les domaines de la cybersécurité, du DevOps et du développement d'applications mobiles.
-    `
-
-    // const text_presentation = `
-    // À long terme, je souhaite obtenir un diplôme d'ingénieur BAC+5 et décrocher un poste en CDI en tant que développeur full stack.
-    // Actuellement, je suis à la recherche d'une alternance de 24 à 36 mois pour affiner mes compétences dans ce domaine et
-    // intégrer une école d'ingénieur en Île-de-France.
-    // `
-
-    const text_presentation2 = `
-    Je possède des compétences solides en back-end avec Java et Spring, ainsi qu'en front-end avec JavaScript/TypeScript et React. Étant curieux de nature, je suis également très intéressé par l'apprentissage d'autres technologies comme Django et Next.js.
-    `
-
-    const text_presentation_4 = [
-        `
-        Ma passion pour le développement est née au lycée, lorsque j'ai commencé à programmer sur ma calculatrice. J'ai fait mes premières créations, allant de simples petits programmes à des jeux plus complexes comme le Puissance 4. Cette expérience a renforcé mon envie de m'orienter vers une filière informatique pour apprendre à résoudre des problèmes et à automatiser des tâches.
-        `
-    ];
-
     const titles = [
         {
             type: "heading1",
-            text: "Étudiant en Développement Full Stack"
+            text: content.title
         },
         {
             type: "heading2",
-            text: "Eric ADELAIDE BEAUBRUN"
+            text: content.subtitle
         }
     ];
+
+    const text_presentation1 = content.introduction.paragraph1;
+
+    const text_presentation2 = content.introduction.paragraph2;
+
+    const text_presentation_4 = [content.passion1];
 
     return (
         <>
@@ -116,36 +88,55 @@ const Presentation = () => {
                 </div>
 
                 <div className="text-presentation-container">
-                    <h2 id="paragraph-text-header">Bienvenue sur mon portfolio !</h2>
+                    <h2 id="paragraph-text-header">{content.introduction.title}</h2>
+                    <img src={"/resources/stars.png"} alt={"Stars divider"} className={"stars-divider"}/>
                     <ParagraphPresentation text={text_presentation1} direction={"left"}/>
-                    <ParagraphPresentation text={text_presentation2} direction={"left"}/>
-                    <ParagraphPresentation text={text_presentation3} direction={"right"}/>
+                    <ParagraphPresentation text={text_presentation2} direction={"right"}/>
                 </div>
 
                 <div className="wave-reverse"></div>
 
                 <div>
-                    <h2 className="titre-presentation">Résumé en chiffres</h2>
-                    <DashedLine direction="right"/> {/*--------------------------------------------------------------*/}
-                    <DashedLine direction="left"/> {/*--------------------------------------------------------------*/}
+                    {/*<h2 className="titre-presentation">Résumé en chiffres</h2>*/}
+                    <DashedLine direction="right"/>
+                    <DashedLine direction="left"/>
                     <ProfileStats stats={stats}/>
-                    <DashedLine direction="right"/> {/*--------------------------------------------------------------*/}
-                    <DashedLine direction="left"/> {/*--------------------------------------------------------------*/}
+                    <DashedLine direction="right"/>
+                    <DashedLine direction="left"/>
+                </div>
+
+                <div >
+                    {/*TODO*/}
+                    {/*<h2 className="titre-presentation">Mes créations</h2>*/}
+                    {/*<CardContainer/>*/}
+                    <h2 className="titre-presentation"> Pour plus de détails...</h2>
+                    <Buttons
+                        textBtn1="GitHub"
+                        linkBtn1="https://github.com/ericbeaubrun"
+                        textBtn2="Me joindre"
+                        linkBtn2="/#/contact"
+                    />
+                    {/*<Buttons*/}
+                    {/*    textBtn1="Projets"*/}
+                    {/*    linkBtn1="/#/projets"*/}
+                    {/*    textBtn2="GitHub"*/}
+                    {/*    linkBtn2="https://github.com/ericbeaubrun"*/}
+                    {/*/>*/}
                 </div>
 
                 <ImageWithText images={carouselImages} paragraphs={text_presentation_4}/>
 
+                <div className="mon-parcours">
+                    <h2 className="titre-presentation">Mon Parcours</h2>
+                    <ParcoursChronologique/>
 
-
-                <h2 className="titre-presentation">Mon Parcours</h2>
-                <ParcoursChronologique/>
-
-                <Buttons
-                    textBtn1="Compétences"
-                    linkBtn1="/#/competences"
-                    textBtn2="Experiences"
-                    linkBtn2="/#/experiences"
-                />
+                    <Buttons
+                        textBtn1="Experiences"
+                        linkBtn1="/#/experiences"
+                        textBtn2="Compétences"
+                        linkBtn2="/#/competences"
+                    />
+                </div>
             </div>
 
             <Footer/>

@@ -6,6 +6,7 @@ import mailIcon from '/resources/email.png';
 import phoneIcon from '/resources/telephone.png';
 import linkedinIcon from '/resources/linkedin.png';
 import githubIcon from '/resources/github.png';
+import localisationIcon from '/resources/localisation.png';
 
 export const ContactCard = () => {
     return (
@@ -18,19 +19,12 @@ export const ContactCard = () => {
                             altText="Photo de profil"
                         />
                     </div>
-                    <h2 id="contact-title">Mes coordonnées</h2>
+                    {/*<h2 id="contact-title">Mes coordonnées</h2>*/}
                     <ul className="contact-list">
 
                         <li>
                             <img src={phoneIcon} alt="Téléphone" className="icon"/>
                             <a href="tel:+33643414079">+33 6 43 41 40 79</a>
-                        </li>
-
-                        <li>
-                            <img src={githubIcon} alt="GitHub" className="icon"/>
-                            <a href="https://github.com/ericbeaubrun" target="_blank" rel="noopener noreferrer">
-                                github.com/ericbeaubrun
-                            </a>
                         </li>
 
                         <li>
@@ -43,6 +37,20 @@ export const ContactCard = () => {
                             <a href="https://www.linkedin.com/in/eric-adelaide-beaubrun/" target="_blank"
                                rel="noopener noreferrer">
                                 linkedin.com/in/eric-adelaide-beaubrun/
+                            </a>
+                        </li>
+
+                        <li>
+                            <img src={githubIcon} alt="GitHub" className="icon"/>
+                            <a href="https://github.com/ericbeaubrun" target="_blank" rel="noopener noreferrer">
+                                github.com/ericbeaubrun/
+                            </a>
+                        </li>
+
+                        <li>
+                            <img src={localisationIcon} alt="Adresse" className="icon"/>
+                            <a href="https://www.google.fr/maps?q=,+LE+MEE+SUR+SEINE,+77350,+fr">
+                                Le Mée-sur-Seine (77350)
                             </a>
                         </li>
 

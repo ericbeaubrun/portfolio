@@ -117,7 +117,7 @@ const ProjectCard = ({
                                     </p>
                                 )}
 
-                                <h3>Rôle et Responsabilités :</h3>
+                                <h3>Rôle et responsabilités :</h3>
                                 <ul className="roles-list">
                                     {roles.map((role, index) => (
                                         <li key={index}>{role}</li>

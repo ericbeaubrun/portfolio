@@ -28,19 +28,25 @@ const Navbar = () => {
 
                     <NavLink to="/competences">
                         <div className="item">
-                            <div data-text="Mes points forts" className="linktext">Compétences</div>
+                            <div data-text="Technologies maitrisées" className="linktext">Compétences</div>
                         </div>
                     </NavLink>
 
+                    {/*<NavLink to="/projets">*/}
+                    {/*    <div className="item">*/}
+                    {/*        <div data-text="Mes créations" className="linktext">Projets</div>*/}
+                    {/*    </div>*/}
+                    {/*</NavLink>*/}
+
                     <NavLink to="/experiences">
                         <div className="item">
-                            <div data-text="Projets et Stages" className="linktext">Experiences</div>
+                            <div data-text="Travaux en équipe" className="linktext">Experiences</div>
                         </div>
                     </NavLink>
 
                     <NavLink to="/contact">
                         <div className="item">
-                            <div data-text="me joindre" className="linktext">Contact</div>
+                            <div data-text="Me joindre" className="linktext">Contact</div>
                         </div>
                     </NavLink>
                 </nav>

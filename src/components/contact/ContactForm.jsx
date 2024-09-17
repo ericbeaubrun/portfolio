@@ -39,26 +39,26 @@ export const ContactForm = () => {
 
                 <form onSubmit={handleSubmit}>
                     <div>
-                        <label htmlFor="name">Nom :</label>
+                        <label htmlFor="name">Nom complet</label>
                         <input
                             type="text"
                             id="name"
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
-                            placeholder="Votre nom complet"
+                            placeholder="Qui êtes-vous ?"
                             required
                         />
                     </div>
                     <div>
-                        <label htmlFor="email">Email :</label>
+                        <label htmlFor="email">Email</label>
                         <input
                             type="email"
                             id="email"
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
-                            placeholder="exemple@domaine.com"
+                            placeholder="exemple@domaine.fr"
                             required
                         />
                     </div>

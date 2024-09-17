@@ -8,7 +8,6 @@ form {
   background-color: $BACKGROUND_COLOR_COMPONENT;
   padding: 2rem;
   border-radius: $BORDER_RADIUS_DEFAULT;
-  //margin-bottom: 6vh;
 }
 
 h2 {
@@ -37,16 +36,13 @@ label {
 input[type="text"], input[type="email"], textarea {
   font-family: $FONT;
   color: $TEXT_COLOR_DARK;
-  //font-family: "Arial", sans-serif;
   width: 98%;
   padding: 0.75rem;
   margin-bottom: 1rem;
-  //border: 1px solid $BORDER_RADIUS_COMPONENT;
   border-color: black;
   border-radius: $BORDER_RADIUS_COMPONENT;
-  //background-color: #cbd5d8;
   background-color: #eee;
-  font-size: $FONT_SIZE_SMALL;
+  font-size: 1.2rem;
   transition: border-color 0.3s ease;
   border-width: 1px;
 
@@ -75,7 +71,7 @@ textarea {
   padding: 0.75rem;
   font-weight: bold;
   cursor: pointer;
-  font-size: $FONT_SIZE_SMALL;
+  font-size: 1.0rem;
   min-width: 120px;
 
   &:hover {

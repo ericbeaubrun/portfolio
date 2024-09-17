@@ -31,7 +31,8 @@ import conqueteIcon6 from '/resources/projects/conquete6.gif';
 
 
 const title = [{
-    type: "heading1", text: "Mes expériences"
+    type: "heading1",
+    text: "Expériences Universitaires et Professionnelles"
 }];
 
 const Experiences = () => {
@@ -67,7 +68,6 @@ const Experiences = () => {
 
             <ProjectCard
                 amountPerson={4}
-                // isCompleted={true}
                 isCompleted={false}
                 images={[aerienIcon1, aerienIcon2, aerienIcon3, aerienIcon4]}
                 githubLink="https://github.com/ericbeaubrun/aerien"
@@ -100,7 +100,6 @@ const Experiences = () => {
 
             <ProjectCard
                 amountPerson={5}
-                // isCompleted={true}
                 isCompleted={false}
                 images={[learnPyIcon1, learnPyIcon2, learnPyIcon3]}
                 githubLink="https://github.com/ericbeaubrun/learn_py_app"
@@ -185,7 +184,6 @@ L'application inclut la génération de feedbacks en temps réel, et le stockage
 
             <ProjectCard
                 amountPerson={3}
-                // isCompleted={true}
                 isCompleted={false}
                 images={[conqueteIcon1, conqueteIcon2, conqueteIcon3, conqueteIcon4, conqueteIcon5, conqueteIcon6]}
                 githubLink="https://github.com/ericbeaubrun/conquete"
@@ -215,6 +213,7 @@ L'application inclut la génération de feedbacks en temps réel, et le stockage
             />
 
             <ProjectCard
+                amountPerson={2}
                 isCompleted={false}
                 icon={documentIcon}
                 title="Logiciel de Gestion de Documents"

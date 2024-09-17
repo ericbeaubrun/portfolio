@@ -1,10 +1,8 @@
 @import "src/config.scss";
 
-
 body {
   overflow-y: visible;
   overflow-x: hidden;
-
   position: relative;
   display: flex;
   justify-content: center;
@@ -15,7 +13,6 @@ body {
   margin: 0;
 }
 
-
 .titre-presentation {
   padding-top: 125px;
   padding-bottom: 50px;
@@ -23,11 +20,11 @@ body {
 }
 
 #paragraph-text-header {
-  //font-size: 2rem;
   font-size: 1.75rem;
   margin-left: 10vw;
   margin-right: 10vw;
   margin-bottom: 20px;
+  padding-top: 0;
 }
 
 .text-presentation-container {
@@ -49,10 +46,23 @@ body {
   background-position: center;
   background-size: cover;
   height: 100px;
-  //margin-bottom: 140px;
-  margin-bottom :350px;
+  margin-bottom :300px;
 }
 
 .presentation-container {
-  margin-bottom: $FOOTER-MARGIN;
+  //margin-bottom: $FOOTER-MARGIN;
+}
+
+.mon-parcours {
+  background-image: url('../../../public/resources/background/background3.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 14vh ;
+  background-position: center;
+}
+
+.stars-divider {
+  //width: 22.5em;
+  width: 55em;
+  height: 5em;
 }

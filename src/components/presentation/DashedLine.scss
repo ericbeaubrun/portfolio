@@ -4,15 +4,15 @@ svg {
 }
 
 line {
-  stroke: #000; /* Couleur des tirets */
-  stroke-width: 2; /* Épaisseur de la ligne */
+  stroke: #4d4c49;
+  stroke-width: 2;
   stroke-linecap: round;
-  stroke-dasharray: 10, 10; /* Taille des tirets et des espaces */
-  stroke-dashoffset: 20; /* Décalage initial */
+  stroke-dasharray: 10, 10;
+  stroke-dashoffset: 20;
 }
 
 .line-right {
-  animation: lineMoveRight 0.5s infinite linear; /* Animation vers la droite */
+  animation: lineMoveRight 0.5s infinite linear;
 }
 
 @keyframes lineMoveRight {
@@ -22,11 +22,11 @@ line {
 }
 
 .line-left {
-  animation: lineMoveLeft 0.5s infinite linear; /* Animation vers la gauche */
+  animation: lineMoveLeft 0.5s infinite linear;
 }
 
 @keyframes lineMoveLeft {
   to {
-    stroke-dashoffset: 40; /* Distance plus grande pour donner l'effet de mouvement inversé */
+    stroke-dashoffset: 40;
   }
 }

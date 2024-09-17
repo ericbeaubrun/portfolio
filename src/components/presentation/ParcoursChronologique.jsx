@@ -4,33 +4,33 @@ import cyIcon from "/resources/cy.png";
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import content from '../../content/presentation.json';
 
 const ParcoursChronologique = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     const parcours = [
         {
-            annee: 'Juin 2020',
-            titre: 'Baccalauréat scientifique',
-            description: "Obtention de mon BAC qui m'a permis d'obtenir de solides bases en mathématiques.",
+            annee: content.parcours.container1.date,
+            titre: content.parcours.container1.title,
+            description: content.parcours.container1.description
         },
         {
-            annee: '2021-2024',
-            titre: "Admission à l'université",
-            description: "Intégration du parcours licence Maths, Informatique, Physique et Ingénierie à Cergy-Pontoise où j'ai travaillé sur de nombreux projets" +
-                " permettant de développer des solutions Back-End et Front-End.",
+            annee: content.parcours.container2.date,
+            titre: content.parcours.container2.title,
+            description: content.parcours.container2.description,
             icon: cyIcon,
         },
         {
-            annee: 'Avril 2024',
-            titre: 'Stage en entreprise',
-            description: "Réalisation d’un stage passionnant dans le domaine du Web-Mining en tant que développeur Java au sein d'idIA-Tech.",
+            annee: content.parcours.container3.date,
+            titre: content.parcours.container3.title,
+            description: content.parcours.container3.description,
             icon: idiaTechIcon,
         },
         {
-            annee: 'Juin 2024',
-            titre: 'Licence Générale',
-            description: "Obtention de mon diplôme BAC+3 en Informatique.",
+            annee: content.parcours.container4.date,
+            titre: content.parcours.container4.title,
+            description: content.parcours.container4.description,
         },
     ];
 
@@ -43,8 +43,8 @@ const ParcoursChronologique = () => {
                     onHoverStart={() => setHoveredIndex(index)}
                     onHoverEnd={() => setHoveredIndex(null)}
                     initial={{ opacity: 1, scale: 1 }}
-                    animate={hoveredIndex === index ? { scale: 1.1 } : { scale: 1 }}
-                    transition={{ type: 'spring', stiffness: 200, damping: 10 }}
+                    animate={hoveredIndex === index ? { scale: 1.05 } : { scale: 1 }}
+                    transition={{ type: 'spring', stiffness: 250, damping: 10 }}
                 >
                     <motion.div
                         initial={{opacity: 0, y: -20}}
@@ -65,7 +65,6 @@ const ParcoursChronologique = () => {
                 </motion.div>
             ))}
         </div>
-    );
-};
+    );};
 
 export default ParcoursChronologique;

@@ -1,0 +1,9 @@
+.spacing {
+  margin-bottom: 0;
+}
+
+@media(max-width: 439px) {
+  .spacing {
+    padding-top: 8vh;
+  }
+}

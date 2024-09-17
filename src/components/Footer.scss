@@ -56,22 +56,27 @@
     }
   }
 
-  @media (max-width: 480px) {
-    .contact-list {
-      li {
-        padding: 8px 0;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-
-        .icon {
-          margin-bottom: 5px;
-        }
-
-        a {
-          font-size: 0.9em;
-        }
-      }
-    }
-  }
+  //@media (max-width: 480px) {
+  //  .contact-list {
+  //
+  //    li {
+  //      display: flow;
+  //      //padding: 8px 0;
+  //      //align-items: center;
+  //      width: 100%;
+  //      flex-direction: column;
+  //
+  //      padding:0;
+  //
+  //      .icon {
+  //        margin-bottom: 5px;
+  //
+  //      }
+  //
+  //      a {
+  //        font-size: 0.9em;
+  //      }
+  //    }
+  //  }
+  //}
 }
