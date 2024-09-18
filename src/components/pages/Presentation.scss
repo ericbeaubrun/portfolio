@@ -46,7 +46,7 @@ body {
   background-position: center;
   background-size: cover;
   height: 100px;
-  margin-bottom :300px;
+  margin-bottom: 300px;
 }
 
 .presentation-container {
@@ -57,12 +57,21 @@ body {
   background-image: url('../../../public/resources/background/background3.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 14vh ;
+  padding-bottom: 14vh;
   background-position: center;
 }
 
 .stars-divider {
-  //width: 22.5em;
-  width: 55em;
   height: 5em;
+  width: 55em;
+  transform: translate (-50%,0);
 }
+
+.stars-divider-container {
+  width: 100vw;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+

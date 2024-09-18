@@ -89,7 +89,11 @@ const Presentation = () => {
 
                 <div className="text-presentation-container">
                     <h2 id="paragraph-text-header">{content.introduction.title}</h2>
-                    <img src={"/resources/stars.png"} alt={"Stars divider"} className={"stars-divider"}/>
+
+                    <div className={"stars-divider-container"}>
+                        <img src="/resources/stars.png" alt="Stars divider" className="stars-divider"/>
+                    </div>
+
                     <ParagraphPresentation text={text_presentation1} direction={"left"}/>
                     <ParagraphPresentation text={text_presentation2} direction={"right"}/>
                 </div>
