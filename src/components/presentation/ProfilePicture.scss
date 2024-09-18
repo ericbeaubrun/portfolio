@@ -1,6 +1,6 @@
 @import "src/config.scss";
 
-$BORDER_RADIUS_PICTURE: 7.5%;
+$BORDER_RADIUS_PICTURE: 15%;
 
 .container {
   //padding-top: 0vh;
@@ -31,7 +31,8 @@ $BORDER_RADIUS_PICTURE: 7.5%;
   transform: translate(0vw, 0vw);
   border-radius: $BORDER_RADIUS_PICTURE;
   //box-shadow: 7px 7px 21px black, -7px -7px 21px #ffffff;
-  box-shadow: 3px 3px 41px black, -3px -3px 41px #ffffff;
+  //box-shadow: 3px 3px 41px black, -3px -3px 41px #ffffff;
+  box-shadow: 3px 3px 150px black, -3px -3px 10px #ffffff;
   //box-shadow: 10px 10px 100px black;
   transition: box-shadow 1s ease-in-out;
 }
@@ -59,7 +60,8 @@ $BORDER_RADIUS_PICTURE: 7.5%;
 
 .card:hover {
   .image {
-    box-shadow: 10px 10px 80px black;
+    //box-shadow: 10px 10px 80px black;
+    box-shadow: 10px 10px 66px black;
     -webkit-filter: grayscale(60%);
     filter: grayscale(60%);
     -webkit-transition: 1s ease-in-out;

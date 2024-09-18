@@ -18,7 +18,7 @@ const ProfilePicture = () => {
                     <div className="card">
                         <div className="image"></div>
                         <div className="info">
-                            <h2 id="infoTitle">Mon point de vue</h2>
+                            <h2 id="infoTitle">Point de vue</h2>
                             <p id="infoText">{text}</p>
                         </div>
                     </div>
