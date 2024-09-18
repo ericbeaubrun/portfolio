@@ -2,10 +2,31 @@
 
 $BORDER_RADIUS_PICTURE: 4%;
 
-$BASIC_SHADOW: 12px -12px 15px 2px rgb(44, 107, 153,0.75), -10px 12px 15px 2px rgb(106, 101, 55,0.75);
+$BASIC_SHADOW: 12px -12px 25px 5px rgb(44, 107, 153, 0.85), /* Ombre extérieure bleue */
+inset 12px -12px 25px 5px darken(rgb(106, 101, 55, 0.3),   12%),
+-10px 12px 25px 5px rgba(122, 117, 64, 0.85), /* Ombre extérieure verte */
+inset -10px 12px 25px 5px darken(rgb(44, 107, 153, 0.3), 12%); /* Ombre interne subtile pour adoucir la transition */
 
-$HOVER_SHADOW: 10px -10px 15px 0px darken(rgb(78, 140, 166,1), 10%), -10px 10px 15px 0px darken(rgb(128, 118, 75,1), 10%);
+$HOVER_SHADOW: 12px -12px 25px 5px darken(rgb(78, 140, 166, 1), 10%), /* Ombre extérieure bleue */
+inset 12px -12px 25px 5px darken(rgb(106, 101, 55, 0.3),   22%),
+-10px 12px 25px 5px darken(rgb(128, 118, 75, 1), 10%), /* Ombre extérieure verte */
+inset -10px 12px 25px 5px darken(rgb(44, 107, 153, 0.3), 22%);
 
+// Alternatives :
+//$BASIC_SHADOW: 12px -12px 15px 2px rgb(44, 107, 153, 0.75), -10px 12px 15px 2px rgb(106, 101, 55, 0.75);
+
+//$HOVER_SHADOW: 10px -10px 15px 0px darken(rgb(78, 140, 166, 1), 10%), -10px 10px 15px 0px darken(rgb(128, 118, 75, 1), 10%);
+
+//$BASIC_SHADOW:
+//        12px -12px 25px 5px rgb(44, 107, 153,0.75),  /* Flou plus important, plus de transparence */
+//        -10px 12px 25px 5px rgb(106, 101, 55,0.75);  /* Flou plus important, plus de transparence */
+//
+//$HOVER_SHADOW:
+//        10px -10px 20px 2px darken(rgb(78, 140, 166,1), 10%), /* Moins de saturation et plus de flou */
+//        -10px 10px 20px 2px darken(rgb(128, 118, 75,1), 10%); /* Moins de saturation et plus de flou */
+
+//$HOVER_SHADOW: 10px -10px 20px 2px darken(rgb(78, 140, 166, 1), 10%), /* Ombre extérieure bleu ciel */
+//-10px 10px 20px 2px darken(rgb(128, 118, 75, 1), 10%);
 
 .container {
   //padding-top: 0vh;
@@ -180,6 +201,7 @@ $HOVER_SHADOW: 10px -10px 15px 0px darken(rgb(78, 140, 166,1), 10%), -10px 10px 
   }
 
   .container .card .info {
+    padding: 3%;
     margin-left: 3vw;
     width: 97%;
   }
