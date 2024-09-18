@@ -1,6 +1,11 @@
 @import "src/config.scss";
 
-$BORDER_RADIUS_PICTURE: 15%;
+$BORDER_RADIUS_PICTURE: 4%;
+
+$BASIC_SHADOW: 12px -12px 15px 2px rgb(44, 107, 153,0.75), -10px 12px 15px 2px rgb(106, 101, 55,0.75);
+
+$HOVER_SHADOW: 10px -10px 15px 0px darken(rgb(78, 140, 166,1), 10%), -10px 10px 15px 0px darken(rgb(128, 118, 75,1), 10%);
+
 
 .container {
   //padding-top: 0vh;
@@ -32,7 +37,8 @@ $BORDER_RADIUS_PICTURE: 15%;
   border-radius: $BORDER_RADIUS_PICTURE;
   //box-shadow: 7px 7px 21px black, -7px -7px 21px #ffffff;
   //box-shadow: 3px 3px 41px black, -3px -3px 41px #ffffff;
-  box-shadow: 3px 3px 150px black, -3px -3px 10px #ffffff;
+  //box-shadow: 3px 3px 70px black, -3px -3px 10px #ffffff;
+  box-shadow: $BASIC_SHADOW;
   //box-shadow: 10px 10px 100px black;
   transition: box-shadow 1s ease-in-out;
 }
@@ -61,7 +67,9 @@ $BORDER_RADIUS_PICTURE: 15%;
 .card:hover {
   .image {
     //box-shadow: 10px 10px 80px black;
-    box-shadow: 10px 10px 66px black;
+    //box-shadow: 10px 10px 66px black;
+    box-shadow: $HOVER_SHADOW;
+
     -webkit-filter: grayscale(60%);
     filter: grayscale(60%);
     -webkit-transition: 1s ease-in-out;
@@ -131,7 +139,7 @@ $BORDER_RADIUS_PICTURE: 15%;
   .container .card .info {
     //margin-left: 3vw;
     //width: 92.5%;
-  margin-left: -0.5vw;
+    margin-left: -0.5vw;
     width: 100%;
   }
 
